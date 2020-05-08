@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/fergus-quant/static/css/main.3480ba0d.chunk.css",
+    "main.js": "/fergus-quant/static/js/main.b84f7024.chunk.js",
+    "main.js.map": "/fergus-quant/static/js/main.b84f7024.chunk.js.map",
+    "runtime-main.js": "/fergus-quant/static/js/runtime-main.e556baa0.js",
+    "runtime-main.js.map": "/fergus-quant/static/js/runtime-main.e556baa0.js.map",
+    "static/js/2.516b06bc.chunk.js": "/fergus-quant/static/js/2.516b06bc.chunk.js",
+    "static/js/2.516b06bc.chunk.js.map": "/fergus-quant/static/js/2.516b06bc.chunk.js.map",
+    "index.html": "/fergus-quant/index.html",
+    "precache-manifest.36e60dd85b5b0c12ffe11dbeb7dcfe48.js": "/fergus-quant/precache-manifest.36e60dd85b5b0c12ffe11dbeb7dcfe48.js",
+    "service-worker.js": "/fergus-quant/service-worker.js",
+    "static/css/main.3480ba0d.chunk.css.map": "/fergus-quant/static/css/main.3480ba0d.chunk.css.map",
+    "static/js/2.516b06bc.chunk.js.LICENSE.txt": "/fergus-quant/static/js/2.516b06bc.chunk.js.LICENSE.txt",
+    "static/media/Illustration1.png": "/fergus-quant/static/media/Illustration1.d88d3a62.png",
+    "static/media/Illustration2.png": "/fergus-quant/static/media/Illustration2.dbb925b8.png",
+    "static/media/Illustration3.png": "/fergus-quant/static/media/Illustration3.ada9c502.png",
+    "static/media/Mathjex.scss": "/fergus-quant/static/media/icomoon.fa36e9fd.ttf",
+    "static/media/Resume Kwan_Tak_Hei_Fergus.pdf": "/fergus-quant/static/media/Resume Kwan_Tak_Hei_Fergus.13fce513.pdf",
+    "static/media/raccoon.png": "/fergus-quant/static/media/raccoon.6feb41c3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e556baa0.js",
+    "static/js/2.516b06bc.chunk.js",
+    "static/css/main.3480ba0d.chunk.css",
+    "static/js/main.b84f7024.chunk.js"
+  ]
+}
