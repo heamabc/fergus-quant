@@ -162,8 +162,9 @@ class HomePage extends Component {
                 To create a class method, we have to add a <code>@classmethod</code> decorator before the method. The syntax of static method is like this
                 <pre className="prettyprint linenums lang-python">
                     @classmethod {'\n'}
-                    def func1(x):
+                    def func1(cls, x):
                 </pre>
+                Notice that the argument <code>cls</code> is the class object.
             </p>
             <PassageTitle label="Superclass and Subclass" />
             <p>

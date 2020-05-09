@@ -34,6 +34,7 @@ main{
 
     p{
         font-size: large;
+        margin-top:0.5rem;
     }
     
     .MuiPaper-root{
@@ -49,6 +50,10 @@ main{
     ::-moz-selection{
         color:white;
         background:$primary;
+    }
+
+    .linenums li {
+        list-style-type: decimal;
     }
 
 }

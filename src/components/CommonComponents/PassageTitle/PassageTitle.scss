@@ -10,8 +10,9 @@
 
 .MinorTitle{
   @extend .fontLemonMilk;
-  font-size: 1em;
+  font-size: 1.5em;
   color: $grey;
   font-weight: normal;
   padding-left: 2rem;
+  margin-bottom: 0.5rem;
 }

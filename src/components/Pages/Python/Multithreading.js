@@ -73,17 +73,17 @@ class HomePage extends Component {
             <PassageTitle label="Script" />
             <MinorTitle label="Multiprocessing" />
             <pre className="prettyprint linenums lang-python">
-                import concurrent.futures
-                with concurrent.futures.ProcessPoolExecutor(max_workers=2) as executor:
-                    result1 = executor.submit(function1, argument)
-                    result2 = executor.submit(function2, argument)
+                import concurrent.futures {'\n'}
+                with concurrent.futures.ProcessPoolExecutor(max_workers=2) as executor: {'\n'}
+                    result1 = executor.submit(function1, argument) {'\n'}
+                    result2 = executor.submit(function2, argument) 
             </pre>
             <MinorTitle label="Multithreading" />
             <pre className="prettyprint linenums lang-python">
-                import concurrent.futures
-                with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-                    result1 = executor.submit(function1, argument)
-                    result2 = executor.submit(function2, argument)
+                import concurrent.futures {'\n'}
+                with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor: {'\n'}
+                    result1 = executor.submit(function1, argument) {'\n'}
+                    result2 = executor.submit(function2, argument) 
             </pre>
         </Page>
     )}}

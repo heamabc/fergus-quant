@@ -6,8 +6,6 @@ import PythonTable,{StatTable, DataBaseTable, SoftwareEngineeringTable, QuantTab
 import './css/AllPages.scss';
 
 
-import Table1 from '../Table/Table1'
-
 class HomePage extends Component {
     render() {
         return (
