@@ -1,0 +1,37 @@
+@import "../../../common";
+
+.Page{
+  display:flex;
+  min-height:100vh;  
+}
+
+.pageContainer {
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  
+  .middleContainer{
+    min-height: 90vh;
+    width: 100%;
+  }
+
+  .pageContent {
+    @extend .fontRobotoLt;
+    background: $lightgrey;
+    align-items: center;
+    display: flex;
+    
+  }
+}
+@include tablet-and-desktop{
+  .pageContent {
+    width:80%;
+    margin-left: 3rem;
+    }
+}
+
+@include phone{
+  .pageContent {
+    width:100%;
+    }
+}

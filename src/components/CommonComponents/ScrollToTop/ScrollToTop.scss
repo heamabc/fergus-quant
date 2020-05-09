@@ -1,0 +1,14 @@
+@import "../../../common";
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    animation: fadeIn 500ms ease-in-out 0.5s both;
+    cursor: pointer;
+  }
+
+.ScrollToTopButton{
+  transform: scale(3);
+  color:$primary;
+}

@@ -1,0 +1,44 @@
+@import "../../../common";
+
+.entry {
+    @extend .fontRobotoLt;
+    border-left: 4px solid $primary;
+    padding: .6em .6em .6em 1em;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 2rem;
+    background: white;
+    width:100%;
+
+    .date, .details {
+      color: $grey;
+      font-size: .5em;
+      margin-bottom: 10px;
+    }
+  
+    .title {
+      color: $primary;
+      margin-bottom: 10px;
+    }
+  
+    .location {
+      @extend .fontRoboto;
+      color: black;
+      margin-bottom: 10px;
+    }
+  
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color :$primary;
+      text-decoration: none;
+    }
+  
+    a:hover,
+    a:active{
+      color:$orange;
+    }
+
+  }

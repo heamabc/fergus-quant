@@ -1,0 +1,49 @@
+@import "./color_variables";
+@import "assets/fonts/LemonMilk/stylesheet";
+@import "assets/fonts/Roboto/stylesheet";
+@import "assets/fonts/Icomoon/style";
+
+// ========================for media size===========================================
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin phone {
+    @media (min-width: 1px) and (max-width: #{$tablet-width - 1px}) {
+      @content;
+    }
+  }
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-and-desktop {
+    @media (min-width: #{$tablet-width}) {
+      @content;
+    }
+  }
+
+// ========================for media size===========================================
+
+.fontLemonMilk {
+    font-family: 'Lemon/Milk';
+    font-weight: bold;
+  }
+  
+  .fontRobotoLt {
+    font-family: 'Roboto Lt';
+  }
+  
+  .fontRoboto {
+    font-family: 'Roboto';
+    font-weight: bold;
+  }
+  

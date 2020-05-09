@@ -1,0 +1,56 @@
+@import "../../../common";
+
+main{
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+    width:100%;
+
+    a:hover{
+        color: $orange;
+    }
+
+    .EntryContainer{
+        width:95%;
+    }
+    
+    .MJX-TEX{
+        margin-left:0.3rem;
+    }
+    
+    code{
+        background-color: white;
+        color: $dark-red;
+    }
+    
+    pre{
+        white-space: pre-wrap;
+    }
+    
+    .MuiTableCell-head{
+        background-color: $primary;
+        color:white;
+    }
+
+    p{
+        font-size: large;
+    }
+    
+    .MuiPaper-root{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    ::selection{
+        color:white;
+        background:$primary;
+    }
+
+    ::-moz-selection{
+        color:white;
+        background:$primary;
+    }
+
+}
+
+

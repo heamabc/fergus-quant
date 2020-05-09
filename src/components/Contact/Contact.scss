@@ -1,0 +1,49 @@
+@import "../../common";
+
+.Contact {
+    display:flex;
+    height: 50px;
+    text-align: center;
+
+    margin-left: 2rem;
+
+    ul{
+        display:flex;
+        list-style-type:none;
+        text-align: center;
+        width:100%;
+    }
+
+    li{
+        margin-left: 2em; 
+        vertical-align: text-top;
+        
+    }
+
+    .vl {
+        border-left: 1px solid $primary;
+        height: 30px;
+      }
+
+    .MaterialIcon {
+        transform: scale(1.1);
+        display: inline-flex;
+        vertical-align: top;
+        margin-right:20px;
+        margin-left:20px;
+        color: $primary;
+    }   
+
+    svg:hover {
+        color: $orange;
+    }   
+
+
+}
+
+@include phone{
+    .Contact{
+        display:none;
+    }
+}
+

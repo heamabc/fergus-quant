@@ -1,0 +1,118 @@
+@import "../../common";
+
+
+.toolbar{
+
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 400px;
+    display:flex;
+
+    .LogoContainer{
+        
+        background: $primary;
+        width: 80px;
+        display:flex;
+        
+        
+        
+        .toggle-button{
+            margin-left: 1.2rem;
+            margin-top: 1.5rem;
+            height:3rem;
+            width:2.5rem;
+            position: absolute;
+            top:0;
+            left:0;
+            display:float;
+        }
+
+        .HomeButton{
+            @extend .fontLemonMilk;
+            text-decoration: none;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            text-align:right;
+            transform: rotate(180deg);
+            text-transform: uppercase;
+            font-size: 3.2rem;
+            vertical-align: text-bottom;
+            
+            
+
+            .PreferredName{
+                color: $orange;
+            }
+    
+            .LastName{
+                color:white;
+                margin-top: 1rem;
+                
+            }
+
+            .toggle-button__line{
+                background-color:white;
+                margin-top: 5px;
+                width:100%;
+            }
+        }
+    }
+
+    .toolbar__navigation-items{
+        background: $primary;
+        width: 100%;
+    }
+
+    
+}
+
+
+
+.toolbar__navigation-items a {
+    color : white;
+    text-decoration: none;
+}
+
+.toolbar__navigation-items a:hover,
+.toolbar__navigation-items a:active,
+.toolbar__navigation-items a.ActivePage {
+    color: $orange;
+}
+
+.toolbar__navigation-items ul {
+    padding:5px;
+    list-style: none;
+    width: 100%;
+}
+
+.toolbar__navigation-items li {
+    @extend .fontLemonMilk;
+    font-size: large;
+    margin-top:15px;
+    padding-right: 2rem;
+    width: 100%;
+    font-size: x-large;
+}
+
+.toolbar__navigation-items ul li.active-link>a{
+    text-decoration:underline;
+    color: #fa923f;
+ }
+
+ @include tablet-and-desktop {
+    .toggle-button{
+        display:none;
+    }
+
+    .HomeButton{
+        margin-top: 2.5rem;
+    }
+ }
+
+ @include phone{
+     .HomeButton{
+        margin-top: 6rem;
+     }
+ }
+

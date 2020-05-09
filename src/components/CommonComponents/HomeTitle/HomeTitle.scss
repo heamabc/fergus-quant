@@ -1,0 +1,13 @@
+@import "../../../common";
+
+.HomeTitle {
+  @extend .fontLemonMilk;
+  font-size: 2.5em;
+  color: $primary;
+  text-align: center;
+  display:float;
+
+  .PreferredName{
+    color: $orange;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../../common";
+
+.PassageTitle {
+  @extend .fontLemonMilk;
+  font-size: 1.5em;
+  color: $primary;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.MinorTitle{
+  @extend .fontLemonMilk;
+  font-size: 1em;
+  color: $grey;
+  font-weight: normal;
+  padding-left: 2rem;
+}

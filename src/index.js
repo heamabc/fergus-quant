@@ -1,17 +1,63 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom'
+import ScrollToTop from './components/CommonComponents/ScrollToTop/ScrollToTop'
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Home from './components/Pages/Home';
+import Education from './components/Pages/Education';
+import Experience from './components/Pages/Experience';
+import RecentProjects from './components/Pages/RecentProjects';
+import Resume from './components/Pages/Resume';
+import About from './components/Pages/About';
+import Tutorial from './components/Pages/Tutorial';
+import Python from './components/Pages/Python/Python'
+import Multithreading from './components/Pages/Python/Multithreading'
+import Econometrics from './components/Pages/Statistics/Econometrics'
+import TTestAndANOVA from './components/Pages/Statistics/TTestAndANOVA'
+import Heteroskedasticity from './components/Pages/Statistics/Heteroskedasticity'
+import StochasticProcess from './components/Pages/Statistics/StochasticProcess'
+import MomentGeneratingFunctions from './components/Pages/Statistics/MomentGeneratingFunctions'
+import RelationalDataBase from './components/Pages/Database/RelationalDatabase'
+import Linux from './components/Pages/SoftwareEngineering/Linux'
+import Git from './components/Pages/SoftwareEngineering/Git'
+import AnalysisOfAlgorithms from './components/Pages/SoftwareEngineering/AnalysisOfAlgorithms'
+import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
+import SmartBeta from './components/Pages/Quant/SmartBeta'
+import AWSJupyterNotebook from './components/Pages/Others/AWSJupyterNotebook'
+import UsefulWebsite from './components/Pages/Others/UsefulWebsite'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const routing = (
+    <React.StrictMode>
+      <ScrollToTop />
+      <Router>
+        <Switch>
+        <Route exact path="/" component={Home} />
+          <Route exact path="/info/education" component={Education} />
+          <Route exact path="/info/experience" component={Experience} />
+          <Route exact path="/info/recent-projects" component={RecentProjects} />
+          <Route exact path="/info/resume" component={Resume} />
+          <Route exact path="/info/about" component={About} />
+          <Route exact path="/tutorial" component={Tutorial} />
+          <Route exact path="/tutorial/python" component={Python} />
+          <Route exact path="/tutorial/multithreading" component={Multithreading} />
+          <Route exact path="/tutorial/econometrics" component={Econometrics} />
+          <Route exact path="/tutorial/Heteroskedasticity" component={Heteroskedasticity} />
+          <Route exact path="/tutorial/ttest-and-anova" component={TTestAndANOVA} />
+          <Route exact path="/tutorial/stochastic-process" component={StochasticProcess} />
+          <Route exact path="/tutorial/moment-generating-functions" component={MomentGeneratingFunctions} />
+          <Route exact path="/tutorial/relational-database" component={RelationalDataBase} />
+          <Route exact path="/tutorial/linux" component={Linux} />
+          <Route exact path="/tutorial/git" component={Git} />
+          <Route exact path="/tutorial/analysis-of-algorithms" component={AnalysisOfAlgorithms} />
+          <Route exact path="/tutorial/portfolio-theory" component={PortfolioTheory} />
+          <Route exact path="/tutorial/aws-jupyter-notebook" component={AWSJupyterNotebook} />
+          <Route exact path="/tutorial/smart-beta" component={SmartBeta} />
+          <Route exact path="/tutorial/useful-website" component={UsefulWebsite} />
+          <Redirect to="/" />
+      </Switch>
+    </Router>
+    </React.StrictMode>
+)
+
+ReactDOM.render(routing, document.getElementById('root'))
