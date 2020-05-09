@@ -11,7 +11,7 @@ import Resume from './components/Pages/Resume';
 import About from './components/Pages/About';
 import Tutorial from './components/Pages/Tutorial';
 import Python from './components/Pages/Python/Python'
-import Multithreading from './components/Pages/Python/Multithreading'
+import Parallelization from './components/Pages/Python/Parallelization'
 import Econometrics from './components/Pages/Statistics/Econometrics'
 import TTestAndANOVA from './components/Pages/Statistics/TTestAndANOVA'
 import Heteroskedasticity from './components/Pages/Statistics/Heteroskedasticity'
@@ -40,7 +40,7 @@ const routing = (
           <Route exact path="/info/about" component={About} />
           <Route exact path="/tutorial" component={Tutorial} />
           <Route exact path="/tutorial/python" component={Python} />
-          <Route exact path="/tutorial/multithreading" component={Multithreading} />
+          <Route exact path="/tutorial/parallelization" component={Parallelization} />
           <Route exact path="/tutorial/econometrics" component={Econometrics} />
           <Route exact path="/tutorial/Heteroskedasticity" component={Heteroskedasticity} />
           <Route exact path="/tutorial/ttest-and-anova" component={TTestAndANOVA} />

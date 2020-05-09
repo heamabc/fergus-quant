@@ -6,7 +6,7 @@ const PythonTable = (props) => (
     <div className="NavigationTableContainer" >
         <ul>
             <li><NavLink  to="/tutorial/python/" activeClassName={"ActivePage"}>Python</NavLink ></li>
-            <li><NavLink  to="/tutorial/multithreading/" activeClassName={"ActivePage"}>Multithreading & Multiprocessing</NavLink ></li>
+            <li><NavLink  to="/tutorial/parallelization/" activeClassName={"ActivePage"}>Parallelization</NavLink ></li>
         </ul>
     </div>
 )

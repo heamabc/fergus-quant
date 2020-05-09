@@ -20,22 +20,43 @@ class HomePage extends Component {
     render() {
       return (
         <Page>
-            <Title label="Multithreading" />
-            <PassageTitle label="Process vs Thread" />
+            <PassageTitle label="Multiprocessing" />
             <p>
-                First of all, both process and thread are operating environment feature, meaning that it is not some physical
-                component in the computer. 
+                Multiprocessing means concurrent execution of multiple processes using more than one processor. 
+                <p>
+                    Process provides the resourced need to execute a program. The address space, executable code, handles to system
+                    objects, etc.. Each process has at least one thread of execution. Process is started with a single thread, 
+                    the first thread is called primary thread.
+                </p>
+                <p>
+                    As such, each process has its own memory space.
+                </p>
+                <p>
+                    Multiprocessing can be done by one machine with multiple CPUs, or by a collection of machines 
+                    connected by a network. We usually call the collection of machines as a <strong>cluster</strong>.
+                </p>
+            </p>
+            <PassageTitle label="Multithreading" />
+            <p>
+                All threads use the resrouces provided by process. They share the same memory space provided by the process. 
+                Also, each threads can communicate with one and other efficiently.
             </p>
             <p>
-                Process provides the resourced need to execute a program. The address space, executable code, handles to system
-                objects, etc.. Each process has at least one thread of execution. Process is started with a single thread, 
-                the first thread is called primary thread. Process is isolated from other process in terms of recourses. 
+                As thread only uses resources provided by process, it is more lightweight.
             </p>
             <p>
-                All threads use the resrouces provided by process. They reference to the same data in the process. Also, each threads
-                can communicate with one and other efficiently.
+                However, it is hard to implement multithreading due to the GIL
             </p>
-
+            <p>
+                Libraries imported (e.g. numpy, xgboost) and JIT-compiled code run in low level execution environments can 
+                prevent the GIL problem.
+            </p>
+            <PassageTitle label="Pros & Cons for Numerical Programming"/>
+            <ul>
+                <li>Thread is more lightweight</li>
+                <li>Thread access a shared pool of memory is very convenient</li>
+                <li>Thread is more flexible and can be distributed across clusters</li>
+            </ul>
             <PassageTitle label="CPU Bound and I/O Bound" />
             <p>
                 A program is CPU bound if it would go faster if the CPU were faster. An I/O bound job is a program that could run
