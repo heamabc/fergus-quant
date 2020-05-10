@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const CodeSnippet = () => {
+class CodeSnippet extends Component {
     componentDidMount()  {
     const script = document.createElement("script");
 
@@ -8,6 +8,11 @@ const CodeSnippet = () => {
     script.async = true;
 
     document.body.appendChild(script);
+  }
+  render(){
+    return(
+        <div className="Hide" />
+      )
   }
 }
 

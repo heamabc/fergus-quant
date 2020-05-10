@@ -3,7 +3,6 @@ import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, {MinorTitle} from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title from '../../CommonComponents/Title/Title'
 import '../css/AllPages.scss';
-import img1 from '../../../assets/Pages/AnalysisOfAlgorithms/Illustration1.png'
 
 class HomePage extends Component {
     render() {
@@ -15,7 +14,7 @@ class HomePage extends Component {
                 <p>
                     We can think of the big O notation is to count the maximum number of operations needed to perform the function.
                 </p>
-                <img src={img1} />
+                <img src="https://drive.google.com/uc?id=18LM8KObV7jlY298kf-HEE14-09QBFW0K" stlye={{width:"800px", height:"500px"}}/>
                 <PassageTitle label="O(1)" />
                 <p>
                     An O(1) function is a function that has a constant runtime. Therefore, it is a function that doesn't contain loop, 

@@ -2,23 +2,14 @@ import React, { Component } from 'react';
 import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, {MinorTitle} from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title from '../../CommonComponents/Title/Title'
+import CodeSnippet from '../../CommonComponents/Mount/CodeSnippet/CodeSnippet'
 import '../css/AllPages.scss';
 
-import img1 from '../../../assets/Pages/Git/Illustration1.png'
-
 class HomePage extends Component {
-    componentDidMount()  {
-        const script = document.createElement("script");
-    
-        script.src = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert";
-        script.async = true;
-    
-        document.body.appendChild(script);
-      }
-
     render() {
         return (
             <Page>
+                <CodeSnippet />
                 <PassageTitle label="Checking Status" />
                 <o>
                 <code>git status</code> is a very powerful command. It allows us to see what changes is staged/unstaged and committed/not committed.
@@ -30,7 +21,7 @@ class HomePage extends Component {
                     Which means that any changes after staging cannot be committed. Staging is to put the changes of files
                     to staging area for git to prepare to commit it.
                 </p>
-                <img src={img1} alt="Git" stlye={{width:"1000px", height:"500px"}}/>
+                <img src="https://drive.google.com/uc?id=1YdM_zrNq8K3RNz7DCWCtsu5ZhDM8o6dV" alt="img1" stlye={{width:"1000px", height:"500px"}}/>
                 <Title label="Useful Command" />
                 <PassageTitle label="Fetching and Pushing" />
                 <pre className="prettyprint lang-bsh">

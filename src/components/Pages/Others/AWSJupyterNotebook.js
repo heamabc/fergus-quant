@@ -2,21 +2,14 @@ import React, { Component } from 'react';
 import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, {MinorTitle} from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title from '../../CommonComponents/Title/Title'
+import CodeSnippet from '../../CommonComponents/Mount/CodeSnippet/CodeSnippet'
 import '../css/AllPages.scss';
 
 class HomePage extends Component {
-    componentDidMount() {
-        const script = document.createElement("script");
-    
-        script.src = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert";
-        script.async = true;
-    
-        document.body.appendChild(script);
-      }
-
     render() {
         return (
             <Page>
+                <CodeSnippet />
                 <Title label="Connecting to jupyter notebook on AWS" />
                 <a href="https://chrisalbon.com/aws/basics/run_project_jupyter_on_amazon_ec2/">Guide</a>
                 <PassageTitle label="EC2" />

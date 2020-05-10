@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, version } from 'react';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 import './Contact.scss'
+
+// TODO Make mobile version
+// Make it become center
 
 class Contact extends Component {
     render(){

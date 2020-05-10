@@ -2,11 +2,16 @@ import React from 'react';
 import {NavLink } from 'react-router-dom';
 import './NavigationTable.scss'
 
+/* TODO
+Add content within page navigation
+*/
+
 const PythonTable = (props) => (
     <div className="NavigationTableContainer" >
         <ul>
-            <li><NavLink  to="/tutorial/python/" activeClassName={"ActivePage"}>Python</NavLink ></li>
+            <li><NavLink  to="/tutorial/basics/" activeClassName={"ActivePage"}>Basics</NavLink ></li>
             <li><NavLink  to="/tutorial/parallelization/" activeClassName={"ActivePage"}>Parallelization</NavLink ></li>
+            <li><NavLink  to="/tutorial/numpy/" activeClassName={"ActivePage"}>Numpy</NavLink ></li>
         </ul>
     </div>
 )
@@ -39,6 +44,7 @@ export const SoftwareEngineeringTable =(props) => (
             <li><NavLink  to="/tutorial/linux/" activeClassName={"ActivePage"}>Linux</NavLink ></li>
             <li><NavLink  to="/tutorial/git/" activeClassName={"ActivePage"}>Git</NavLink ></li>
             <li><NavLink  to="/tutorial/analysis-of-algorithms/" activeClassName={"ActivePage"}>Analysis of Algorithms</NavLink ></li>
+            <li><NavLink  to="/tutorial/debug/" activeClassName={"ActivePage"}>Debug</NavLink ></li>
         </ul>
     </div>
 )

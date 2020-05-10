@@ -2,25 +2,16 @@ import React, { Component } from 'react';
 import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, {MinorTitle} from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title from '../../CommonComponents/Title/Title'
+import CodeSnippet from '../../CommonComponents/Mount/CodeSnippet/CodeSnippet'
 import '../css/AllPages.scss';
-
-import img1 from '../../../assets/Pages/Linux/Illustration1.png'
 
 import Table2 from '../../Table/Table2'
 
 class HomePage extends Component {
-    componentDidMount()  {
-        const script = document.createElement("script");
-    
-        script.src = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert";
-        script.async = true;
-    
-        document.body.appendChild(script);
-      }
-    
     render() {
         return (
             <Page>
+                <CodeSnippet />
                 <Title label="Tools" />
                 <PassageTitle label="Git Bash" />
                 <p>
@@ -110,7 +101,7 @@ class HomePage extends Component {
                         <li><strong>-</strong> = no permission</li>
                     </ul>
                     In linux, we will see the file/directory permission in this order. The below image demonstrate the format.
-                    <img src={img1} style={{width:'500px', height:'300px'}} alt='rwx'/>
+                    <img src="https://drive.google.com/uc?id=1ohCf9BjN-qglpw9h2FvIbnH9UNdqANrO" style={{width:'500px', height:'300px'}} alt='rwx'/>
                 </p>
                 <PassageTitle label="Octal Mode" />
                 <p>

@@ -3,23 +3,14 @@ import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, {MinorTitle} from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title from '../../CommonComponents/Title/Title'
 import '../css/AllPages.scss';
-import img1 from '../../../assets/Pages/Multithreading/Illustration1.png'
-import img2 from '../../../assets/Pages/Multithreading/Illustration2.png'
-import img3 from '../../../assets/Pages/Multithreading/Illustration3.png'
+
+import CodeSnippet from '../../CommonComponents/Mount/CodeSnippet/CodeSnippet'
 
 class HomePage extends Component {
-    componentDidMount()  {
-        const script = document.createElement("script");
-    
-        script.src = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert";
-        script.async = true;
-    
-        document.body.appendChild(script);
-      }
-
     render() {
       return (
         <Page>
+            <CodeSnippet />
             <PassageTitle label="Multiprocessing" />
             <p>
                 Multiprocessing means concurrent execution of multiple processes using more than one processor. 
@@ -67,8 +58,8 @@ class HomePage extends Component {
                 slower with multithreading because of the overhead cost of creating thread, managing thread, etc.
             </p>
             <PassageTitle label="Global Interpreter Lock (GIL)" />
-            <img src={img1} />
-            <img src={img2} />
+            <img src="https://drive.google.com/uc?id=158xE8bEGDbweY3BJWkFhALddiqE9_ofc" alt="img1" style={{width:"500px",height:"300px"}}/>
+            <img src="https://drive.google.com/uc?id=1ZBJ-XYqxBTOmthna4IiLu1WNzDvrD_2F" alt="img2" style={{width:"500px",height:"300px"}}/>
             <p>
                 The above graph show what happens if we implement multithreading. First of all, your python script will always first run on a
                 primary thread that read the script from to bottom. Due to the Global interpreter lock (GIL) of python, there can actually be 
@@ -82,8 +73,8 @@ class HomePage extends Component {
                 Notice that process is more heavy-weighted component in the operating system, the creation and managment of processor will take more
                 time compared to thread.
             </p>
-            <img src={img1} />
-            <img src={img3} />
+            <img src="https://drive.google.com/uc?id=158xE8bEGDbweY3BJWkFhALddiqE9_ofc" alt="img1" style={{width:"500px",height:"300px"}}/>
+            <img src="https://drive.google.com/uc?id=1ScH0oq3VKmXdJ2sTcMOpbCSTMPZUoSFP" alt="img3" style={{width:"500px",height:"300px"}}/>
 
             <Title label="How to use" />
             <PassageTitle label="Independence of the script" />

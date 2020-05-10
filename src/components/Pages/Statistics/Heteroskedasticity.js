@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, { MinorTitle } from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title from '../../CommonComponents/Title/Title'
-import Mathjex from '../../CommonComponents/Mount/Mathjex'
+import Mathjex from '../../CommonComponents/Mount/Mathjex/Mathjex'
 import '../css/AllPages.scss';
 
-import img1 from '../../../assets/Pages/Heteroskedasticity/Illustration1.png'
 
 class HomePage extends Component {
     render() {
@@ -27,7 +26,7 @@ class HomePage extends Component {
                 As we can see from the formula above, variance of disturbance should be constant when given X. Therefore, when we
                 plot the dependent variable against independent variable, the variance of the plot should not change much.
             </p>
-            <img src={img1} style={{width:"50rem",height:"20rem"}}/>
+            <img src="https://drive.google.com/uc?id=1zrKEkH7DsDtgkY0ZNFcipT1Fbko244cu" style={{width:"50rem",height:"20rem"}} alt="img1"/>
             <p>
                 Other than qualitative checking, heteroskedasticity can also be tested by statistical tests.
             </p>
