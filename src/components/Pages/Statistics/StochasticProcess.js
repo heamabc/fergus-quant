@@ -20,7 +20,7 @@ class HomePage extends Component {
                     {String.raw`$$ S_i = \sum^{i}_{k=1}{Z_i} $$`}
                     From the below graph, we can see that S is a random walk!
                     <div className="IllustrationImage">
-                        <img src="https://drive.google.com/uc?id=1ATmKHs4-83hsp3iFdibqPnm4QmxMBQ28" alt="S" style={{width:"800px", height:"500px"}}/>
+                        <img src="https://drive.google.com/uc?id=1ATmKHs4-83hsp3iFdibqPnm4QmxMBQ28" alt="S" style={{height: "100%", width: "100%", "object-fit": "contain"}}/>
                     </div>
                     Then we can easily prove that
                     {String.raw`$$ E[S_i] = 0, E[S_i^2] = E[Z_1^2 + 2Z_1Z_2 + \cdots] = i $$`}

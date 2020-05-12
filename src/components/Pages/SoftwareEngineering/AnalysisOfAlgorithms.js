@@ -14,7 +14,7 @@ class HomePage extends Component {
                 <p>
                     We can think of the big O notation is to count the maximum number of operations needed to perform the function.
                 </p>
-                <img src="https://drive.google.com/uc?id=18LM8KObV7jlY298kf-HEE14-09QBFW0K" stlye={{width:"800px", height:"500px"}}/>
+                <img src="https://drive.google.com/uc?id=18LM8KObV7jlY298kf-HEE14-09QBFW0K" style={{height: "100%", width: "100%", "object-fit": "contain"}} alt="img1"/>
                 <PassageTitle label="O(1)" />
                 <p>
                     An O(1) function is a function that has a constant runtime. Therefore, it is a function that doesn't contain loop, 

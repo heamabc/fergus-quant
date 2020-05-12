@@ -101,7 +101,7 @@ class HomePage extends Component {
                         <li><strong>-</strong> = no permission</li>
                     </ul>
                     In linux, we will see the file/directory permission in this order. The below image demonstrate the format.
-                    <img src="https://drive.google.com/uc?id=1ohCf9BjN-qglpw9h2FvIbnH9UNdqANrO" style={{width:'500px', height:'300px'}} alt='rwx'/>
+                    <img src="https://drive.google.com/uc?id=1ohCf9BjN-qglpw9h2FvIbnH9UNdqANrO" style={{height: "100%", width: "100%", "object-fit": "contain"}} alt='rwx'/>
                 </p>
                 <PassageTitle label="Octal Mode" />
                 <p>

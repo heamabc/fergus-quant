@@ -4,7 +4,6 @@ import PassageTitle, {MinorTitle} from '../../CommonComponents/PassageTitle/Pass
 import Title from '../../CommonComponents/Title/Title'
 import Mathjex from '../../CommonComponents/Mount/Mathjex/Mathjex'
 import '../css/AllPages.scss';
-import '../css/sunburst.css'
 
 class HomePage extends Component {
     render() {

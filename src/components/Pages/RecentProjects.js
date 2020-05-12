@@ -31,6 +31,11 @@ class HomePage extends Component {
                         location='Statistical Arbitrage in US Stock Market'
                         details='cointegration, PCA'
                 />  
+                <EntryWithLink 
+                        href='https://github.com/heamabc/Stocks-And-Funds-Data-Scrapping'
+                        location='Stock and Fund Data Scrapping'
+                        details='Lambda, Eventbridge, Cloud9, Selenium'
+                />  
                 </div>
             </Page>
         )

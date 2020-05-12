@@ -45,6 +45,7 @@ export const SoftwareEngineeringTable =(props) => (
             <li><NavLink  to="/tutorial/git/" activeClassName={"ActivePage"}>Git</NavLink ></li>
             <li><NavLink  to="/tutorial/analysis-of-algorithms/" activeClassName={"ActivePage"}>Analysis of Algorithms</NavLink ></li>
             <li><NavLink  to="/tutorial/debug/" activeClassName={"ActivePage"}>Debug</NavLink ></li>
+            <li><NavLink  to="/tutorial/network-protocol/" activeClassName={"ActivePage"}>Network Protocol</NavLink ></li>
         </ul>
     </div>
 )
@@ -54,6 +55,14 @@ export const QuantTable = (props) =>(
         <ul>
             <li><NavLink  to="/tutorial/portfolio-theory/" activeClassName={"ActivePage"}>Portfolio Theory</NavLink ></li>
             <li><NavLink  to="/tutorial/smart-beta/" activeClassName={"ActivePage"}>Smart Beta</NavLink ></li>
+        </ul>
+    </div>
+)
+
+export const MLTable = (props) =>(
+    <div className="NavigationTableContainer" >
+        <ul>
+            <li><NavLink  to="/tutorial/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
         </ul>
     </div>
 )

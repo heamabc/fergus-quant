@@ -21,7 +21,7 @@ class HomePage extends Component {
                     Which means that any changes after staging cannot be committed. Staging is to put the changes of files
                     to staging area for git to prepare to commit it.
                 </p>
-                <img src="https://drive.google.com/uc?id=1YdM_zrNq8K3RNz7DCWCtsu5ZhDM8o6dV" alt="img1" stlye={{width:"1000px", height:"500px"}}/>
+                <img src="https://drive.google.com/uc?id=1YdM_zrNq8K3RNz7DCWCtsu5ZhDM8o6dV" alt="img1" style={{height: "100%", width: "100%", "object-fit": "contain"}}/>
                 <Title label="Useful Command" />
                 <PassageTitle label="Fetching and Pushing" />
                 <pre className="prettyprint lang-bsh">

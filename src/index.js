@@ -28,9 +28,12 @@ import Linux from './components/Pages/SoftwareEngineering/Linux'
 import Git from './components/Pages/SoftwareEngineering/Git'
 import AnalysisOfAlgorithms from './components/Pages/SoftwareEngineering/AnalysisOfAlgorithms'
 import Debug from './components/Pages/SoftwareEngineering/Debug'
+import NetworkProtocol from './components/Pages/SoftwareEngineering/NetworkProtocol'
 //======================================= Quant =========================================
 import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Quant/SmartBeta'
+//======================================= Machine Learning =========================================
+import EDA from './components/Pages/MachineLearning/EDA'
 //======================================= Others =========================================
 import AWSJupyterNotebook from './components/Pages/Others/AWSJupyterNotebook'
 import UsefulWebsite from './components/Pages/Others/UsefulWebsite'
@@ -69,9 +72,12 @@ const routing = (
           <Route exact path="/tutorial/git" component={Git} />
           <Route exact path="/tutorial/analysis-of-algorithms" component={AnalysisOfAlgorithms} />
           <Route exact path="/tutorial/debug" component={Debug} />
+          <Route exact path="/tutorial/network-protocol" component={NetworkProtocol} />
 
           <Route exact path="/tutorial/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/smart-beta" component={SmartBeta} />
+
+          <Route exact path="/tutorial/eda" component={EDA} />
 
           <Route exact path="/tutorial/aws-jupyter-notebook" component={AWSJupyterNotebook} />
           <Route exact path="/tutorial/useful-website" component={UsefulWebsite} />
