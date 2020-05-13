@@ -26,6 +26,8 @@ export const StatTable =(props) => (
             <li><NavLink  to="/tutorial/ttest-and-anova/" activeClassName={"ActivePage"}>T-Test & ANOVA</NavLink ></li>
             <li><NavLink  to="/tutorial/stochastic-process/" activeClassName={"ActivePage"}>Stochastic Process</NavLink ></li>
             <li><NavLink  to="/tutorial/moment-generating-functions/" activeClassName={"ActivePage"}>Moment Generating Functions</NavLink ></li>
+            <li><NavLink  to="/tutorial/hurst-exponent/" activeClassName={"ActivePage"}>Hurst Exponent</NavLink ></li>
+            <li><NavLink  to="/tutorial/time-series/" activeClassName={"ActivePage"}>Time Series</NavLink ></li>
         </ul>
     </div>
 )
@@ -63,6 +65,8 @@ export const MLTable = (props) =>(
     <div className="NavigationTableContainer" >
         <ul>
             <li><NavLink  to="/tutorial/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
+            <li><NavLink  to="/tutorial/neural-network-basics/" activeClassName={"ActivePage"}>Neural Network Basics</NavLink ></li>
         </ul>
     </div>
 )

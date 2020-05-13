@@ -16,38 +16,21 @@ class HomePage extends Component {
           <p>
             In Ordinary Least Squares (OLS), our goal is to fit the data into a linear model which minimizes the mean squared error.
             {String.raw`$$ y_{i} = \beta_0 + \beta_1 x_i + e_i \tag{1} $$`}
-          </p>
-          
-          <p>
             Therefore, mathematically our goal is
             {String.raw`$$ min_{\hat{\beta}_0\hat{\beta}_1} \sum_{i=1}^n(y_i - (\hat{\beta}_0 + \hat{\beta}_1x_i))^2 \tag{2} $$`}
-          </p>
-          
-          <p>
             For econometrics, I believe the best way to learn it is from the perspective of linear algebra.
             From linear algebra, we can know more about how each components interact with each other and can 
             understand the proof more easily.
-          </p> 
-          <p>
             In linear algebra, Equation 1 can be expressed as 
             {String.raw`$$\underbrace{y}_{n*1}  = \underbrace{X}_{n*m} \underbrace{\beta}_{m*1} + \underbrace{e}_{n*1} \tag{3} $$`}
-          </p>
-          
-          <p>
             and Euqation 2 can be expressed as
             {String.raw`$$\min_{\beta}(y-X\beta)^2 = e^Te \tag{4} $$`}
-          </p>
-          
-          <p>
             If we decompose e, we can have the following equation
             {String.raw`\begin{align} 
                             e^Te & = (y-X\beta)^T(y-X\beta) \\
                             & = (y^T - \beta^TX^T)(y-X\beta) \\
                             & =y^Ty-y^TX\beta-\beta^TX^Ty+\beta^TX^TX\beta  \tag{5}
                             \end{align}`}
-          </p>
-
-          <p>
             Furthermore, notice that 
             &nbsp;
             {String.raw`\(\beta^TX^Ty\)`}
@@ -58,23 +41,51 @@ class HomePage extends Component {
             {String.raw`\(\beta^TX^Ty = y^T\beta X\)`}
             &nbsp;
             Now, the equation becomes
+            {String.raw`$$ e^Te =y^Ty-2\beta^TX^Ty+\beta^TX^TX\beta \tag{6}$$`}
+            To find the minimum of the equation, we have to differentiate the equation with repsect to its variable.
+            {String.raw`\begin{align} 
+                        \frac{\partial}{\partial\beta}e^Te & =  \frac{\partial}{\partial\beta}(y^Ty-2\beta^TX^Ty+\beta^TX^TX\beta) \\
+                        & = 0-2X^Ty+2X^TX\beta \\
+                        & = 2(X^TX\beta-X^Ty) \tag{7}
+                        \end{align}`}
+            As the MSE will always be convex, We can set Equation 7 to zero to find the minimum of the MSE.
+            {String.raw`\begin{align} 
+                        2(X^TX\hat\beta-X^Ty) & = 0 \\ 
+                        \hat\beta & = (X^TX)^{-1}X^Ty \tag{8}
+                        \end{align} 
+                        `} 
+            That's it! We now find the equation to get the OLS estimator!
           </p>
 
-          {String.raw`$$ e^Te =y^Ty-2\beta^TX^Ty+\beta^TX^TX\beta \tag{6}$$`}
 
-          <p>to find the minimum of the equation, we have to differentiate the equation with repsect to its variable.</p>
-          {String.raw`\begin{align} 
-                      \frac{\partial}{\partial\beta}e^Te & =  \frac{\partial}{\partial\beta}(y^Ty-2\beta^TX^Ty+\beta^TX^TX\beta) \\
-                      & = 0-2X^Ty+2X^TX\beta \\
-                      & = 2(X^TX\beta-X^Ty) \tag{7}
-                      \end{align}`}
-          <p>As the MSE will always be convex, We can set Equation 7 to zero to find the minimum of the MSE.</p>
-          {String.raw`\begin{align} 
-                      2(X^TX\hat\beta-X^Ty) & = 0 \\ 
-                      \hat\beta & = (X^TX)^{-1}X^Ty \tag{8}
-                      \end{align} 
-                      `} 
-          <p>That's it! We now find the equation to get the OLS estimator!</p>
+          <PassageTitle label="Goodness of Fit" />
+          <MinorTitle label="R Squared" />
+          <p>
+            Once we have the model, it is natrual to ask how well the model is. Let me introduce you the R squared here.
+            {String.raw`\begin{align}
+            R^2 & = \frac{\sum(\hat{y}_{t} - \bar{y})^2}{\sum(y_{t}-\bar{y})^2} \\
+            R^2 & = \frac{SSR}{SST} \\
+            R^2 & = \frac{\text{Variation explained by model}}{\text{Variation of the dependent variable}}
+            \end{align}`}
+            The R squared calculate the propotion of variation in the forecast variable that is explained by the 
+            regression model. Notice that as the relationship 
+            {String.raw`$$
+            SSR + SSE = SST
+            $$`}
+            As the SST cannot be changed by adjusting the model. Maximising R squared means maximizing SSR. Also means 
+            minimizing SSE.
+          </p>
+          <MinorTitle label="Adjusted R Squared" />
+          <p>
+            Notice that R squared will always increase or reamin unchange after adding additional independent variable. 
+            It is not a good measure to measure the goodness of fit. We should use a measure that will account for the 
+            degrees of freedom to measure it more accurately.
+            {String.raw`$$
+            \bar{R}^2 = 1-(1-R^2)\frac{T-1}{T-k-1}
+            $$`}
+          </p>
+
+
           <PassageTitle label="Properties of Linear Regression Models" />
           <p>
             So, now we have the proof of the linear regression, let examine the properties of it.
@@ -87,13 +98,14 @@ class HomePage extends Component {
                     \end{align} 
                     `}
           
+
           <PassageTitle label="The Gaussian-Markov Assumptions" />
           <p>
             The Gaussian-Markove Theorem states that for an OLS regression model, the estimator is the
             best linear unbiased estimator. We call the estimator BLUE for abbreviation. Let's first put
             aside the meaning of BLUE, discuss about the assumptions first. There are total of 4 assumptions.
           </p>
-          <MinorTitle label="1. Linearity of the regression model" />
+            <MinorTitle label="1. Linearity of the regression model" />
           <p>
             It means that the regressor and regressand can be expressed in a linear model. That is, can
             be expressed in the form of below equation
@@ -138,6 +150,8 @@ class HomePage extends Component {
             The second thing to notice is no autocorrelation. From equation 9 it means that all the elements outside of diagonal are zero. 
             It means that the covarnace between disturbance should be zero, i.e. {String.raw`\( Cov[e_i,e_j|X] = 0, for all i \ne j \)`}.
           </p>
+
+
           <PassageTitle label="Gaussian-Markov Theorem" />
           <MinorTitle label="Unbiased estimator" />
           <p>
@@ -191,6 +205,8 @@ class HomePage extends Component {
               Efficiency of the estimator states that the estimator has the least variance among all unbiased estimators.
             </p>
           </p>
+
+
           <PassageTitle label="Consequence of violating Gauss-Markov Assumptions" />
           <MinorTitle label="2. X is a full rank matrix" />
           <p>
@@ -205,11 +221,15 @@ class HomePage extends Component {
           <p>
             In addition, the variance of the estimator may be biased. Therefore, the inference and hypothesis testing may be wrong. (eg. t-test, F-test of estimator)
           </p>
+
+
           <PassageTitle label="Detection of Heteroskedasticity and Autocorrelation" />
           <h3>Correlogram on Disturbance</h3>
           <p>
             See if there is any lag that is above the critical level.
           </p>
+
+
           <Title label="Generalized Least Squares" />
           <PassageTitle label="Problem" />
           <p>

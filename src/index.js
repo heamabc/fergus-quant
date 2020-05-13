@@ -21,6 +21,8 @@ import TTestAndANOVA from './components/Pages/Statistics/TTestAndANOVA'
 import Heteroskedasticity from './components/Pages/Statistics/Heteroskedasticity'
 import StochasticProcess from './components/Pages/Statistics/StochasticProcess'
 import MomentGeneratingFunctions from './components/Pages/Statistics/MomentGeneratingFunctions'
+import HurstExponent from './components/Pages/Statistics/HurstExponent'
+import TimeSeries from './components/Pages/Statistics/TimeSeries'
 //======================================= DataBase =========================================
 import RelationalDataBase from './components/Pages/Database/RelationalDatabase'
 //======================================= Software Engineering =========================================
@@ -34,6 +36,8 @@ import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Quant/SmartBeta'
 //======================================= Machine Learning =========================================
 import EDA from './components/Pages/MachineLearning/EDA'
+import MLBasics from './components/Pages/MachineLearning/MLBasics'
+import NeuralNetworkBascis from './components/Pages/MachineLearning/NeuralNetworkBasics'
 //======================================= Others =========================================
 import AWSJupyterNotebook from './components/Pages/Others/AWSJupyterNotebook'
 import UsefulWebsite from './components/Pages/Others/UsefulWebsite'
@@ -65,6 +69,8 @@ const routing = (
           <Route exact path="/tutorial/ttest-and-anova" component={TTestAndANOVA} />
           <Route exact path="/tutorial/stochastic-process" component={StochasticProcess} />
           <Route exact path="/tutorial/moment-generating-functions" component={MomentGeneratingFunctions} />
+          <Route exact path="/tutorial/hurst-exponent" component={HurstExponent} />
+          <Route exact path="/tutorial/time-series" component={TimeSeries} />
 
           <Route exact path="/tutorial/relational-database" component={RelationalDataBase} />
 
@@ -78,6 +84,8 @@ const routing = (
           <Route exact path="/tutorial/smart-beta" component={SmartBeta} />
 
           <Route exact path="/tutorial/eda" component={EDA} />
+          <Route exact path="/tutorial/machine-learning-basics" component={MLBasics} />
+          <Route exact path="/tutorial/neural-network-basics" component={NeuralNetworkBascis} />
 
           <Route exact path="/tutorial/aws-jupyter-notebook" component={AWSJupyterNotebook} />
           <Route exact path="/tutorial/useful-website" component={UsefulWebsite} />
