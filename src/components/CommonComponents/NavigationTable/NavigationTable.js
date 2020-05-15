@@ -67,6 +67,7 @@ export const MLTable = (props) =>(
             <li><NavLink  to="/tutorial/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
             <li><NavLink  to="/tutorial/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network-basics/" activeClassName={"ActivePage"}>Neural Network Basics</NavLink ></li>
+            <li><NavLink  to="/tutorial/deep-learning/" activeClassName={"ActivePage"}>Deep Learning</NavLink ></li>
         </ul>
     </div>
 )

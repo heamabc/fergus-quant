@@ -31,8 +31,12 @@ class HomePage extends Component {
             <FancyBox link="https://drive.google.com/uc?id=1dm6G0Y0Am3waypLwlb4khL6hO3vO3_Tz"  caption="Sigmoid Function" alt="Sigmoid" />
             Notice that when z is very large, the sigmoid function will tends to be one. When z is very small, 
             the sigmoid function will tends to be zero.
+            <p>The derivative of the logistic regression is 
+            {String.raw`$$ \frac{d\sigma (x)}{d(x)} = \sigma (x)\cdot (1-\sigma(x)) $$`}
+            </p>
+            As you can see from the derivative, the gradient will tend to zero when the x is very large and very small.
           </p>
-          <PassageTitle label="Logistic Loss Function" />
+          <PassageTitle label="Cross Entropy Loss Function" />
           <p>
             In logistic regression, we cannot use the linear regression cost function. It is because it will result 
             in a non-convex function. It is very hard to find the global minimum.
