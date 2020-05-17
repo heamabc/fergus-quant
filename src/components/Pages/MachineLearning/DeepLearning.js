@@ -188,6 +188,76 @@ class HomePage extends Component {
             W & = W - \alpha \frac{V_{dw}}{\sqrt{S_{dw}} + \epsilon } \\
             b & = b - \alpha \frac{V_{db}}{\sqrt{S_{db}} + \epsilon } 
             \end{align}`}
+            The epsilon is a very small number, for example {String.raw`\( 10^{-8} \)`}. The reason we 
+            put epsilon is to prevent the case that the denomiator is zero.
+          </p>
+          <Title label="Learning Rate Decay" />
+          <p>
+            As we can see from above exmple, when we converge to the minimum of cost function, we 
+            want our learning rate to decrease as it will move around the minimum. While we want 
+            the learning rate that near the initial state to be big. There are several ways to decay 
+            the learning rate over epochs.
+            {String.raw`\begin{align}
+            & \alpha = \frac{1}{1+k* \text{(epoch num)}} * \alpha \tag{1} \\
+            & \alpha = k^{\text{(epoch num)}} * \alpha \tag{2} \\
+            & \alpha = \frac{k}{\sqrt{\text{epoch num}}} * \alpha \tag{3}
+            \end{align}`}
+            One last common way to decay learning rate is to simply divide it by half after some number 
+            of epoch.
+          </p>
+          <Title label="Batch Normalization" />
+          <p>
+            Batch normalization can make our NN more robust. That is, if the distriubtion of input changed, 
+            NN can perform pretty well. Also, the hyperparameter can perform well in a wider range of value.
+            <p>
+              Consider a normal NN. If we ignore the biase, we will have
+              {String.raw`$$
+              z^{[l]} = W^{[l]} a^{[l-1]}
+              $$`}
+              Then form batch normalization, we want to normalize the value of z.
+              {String.raw`\begin{align}
+              \mu & = \frac{1}{m} \sum_{i=1}^{m} z^{[l](i)} \\
+              \sigma^2 & = \frac{1}{m} \sum_{i=1}^{m} ( z^{[l](i)} - \mu )^2 \\
+              z_{\text{norm}}^{[l]} & = \frac{z^{[l](i)} - \mu}{\sigma} \\
+              \tilde{z}^{[l]} & = \gamma^{[l]} z_{\text{norm}}^{[l]} + \beta^{[l]}
+              \end{align}`}
+              Luckily, the gamma and beta are both differentiable and therefore can perform backwar propagation 
+              to optimize their value. Therefore, during the gradient descent, we will compute <code>dW</code>, 
+              <code>dgamma</code>, and <code>dbeta</code> instead of <code>dW</code> and <code>db</code>. 
+              Notice that as we already have the term beta, the original bias term 
+              is not needed as the beta will adjust for the value. Also notice that when 
+              {String.raw`\begin{align}
+              \gamma & = \sigma \\
+              \beta & = \mu
+              \end{align}`}
+              the batch normalization will be the same as original NN.
+            </p>
+          </p>
+          <PassageTitle label="How Batch Normalization Can Help" />
+          <MinorTitle label="Covariate Shift" />
+          <p>
+            Covariate Shift is the situation where the randomness in parameter 
+            initialization and randomness in the input data can make the distribution of different layers 
+            of neurons different and unstable. Due to the magnifying effect of forward and backward 
+            propagation, different layers have to adjust for new distribution constantly as small changes
+            are added. Batch normalization is to ensure that the neuron can have a fixed normalize 
+            distribution. This can speed up the training and build a more robust model.
+          </p>
+          <MinorTitle label="Exploding/Vanishing Gardient" />
+          <p>
+            As we can control the neurons to a certain distribution, we can prevent exploding or 
+            vanishing gradient.
+          </p>
+          <MinorTitle label="Regularization Effect" />
+          <p>
+            As the distribution of the neurons are similar, we will not have some neurons have very 
+            different distribution. Therefore the layers after that will not depend so heavily on a 
+            differently distributed neurons.
+          </p>
+          <MinorTitle label="Hyperparameter Tuning" />
+          <p>
+            As our model is more robust, it can perform well in a wider range of hyperparameter. Therefore, 
+            it is easier to find a good set of hyperparameter.
           </p>
         </Page>
       )}}

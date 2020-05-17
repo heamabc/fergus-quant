@@ -37,8 +37,10 @@ import SmartBeta from './components/Pages/Quant/SmartBeta'
 //======================================= Machine Learning =========================================
 import EDA from './components/Pages/MachineLearning/EDA'
 import MLBasics from './components/Pages/MachineLearning/MLBasics'
+import MLTechniques from './components/Pages/MachineLearning/MLTechniques'
 import NeuralNetworkBascis from './components/Pages/MachineLearning/NeuralNetworkBasics'
 import DeepLearning from './components/Pages/MachineLearning/DeepLearning'
+import SequenceModelDL from './components/Pages/MachineLearning/SequenceModelDL'
 //======================================= Others =========================================
 import AWSJupyterNotebook from './components/Pages/Others/AWSJupyterNotebook'
 import UsefulWebsite from './components/Pages/Others/UsefulWebsite'
@@ -86,8 +88,10 @@ const routing = (
 
           <Route exact path="/tutorial/eda" component={EDA} />
           <Route exact path="/tutorial/machine-learning-basics" component={MLBasics} />
+          <Route exact path="/tutorial/machine-learning-techniques" component={MLTechniques} />
           <Route exact path="/tutorial/neural-network-basics" component={NeuralNetworkBascis} />
           <Route exact path="/tutorial/deep-learning" component={DeepLearning} />
+          <Route exact path="/tutorial/sequence-model-with-deep-learning" component={SequenceModelDL} />
 
           <Route exact path="/tutorial/aws-jupyter-notebook" component={AWSJupyterNotebook} />
           <Route exact path="/tutorial/useful-website" component={UsefulWebsite} />
