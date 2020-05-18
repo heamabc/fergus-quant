@@ -63,13 +63,21 @@ export const QuantTable = (props) =>(
 
 export const MLTable = (props) =>(
     <div className="NavigationTableContainer" >
-			<ul>
+		<ul>
 				<li><NavLink  to="/tutorial/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
 				<li><NavLink  to="/tutorial/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
 				<li><NavLink  to="/tutorial/machine-learning-techniques/" activeClassName={"ActivePage"}>Machine Learning Techniques</NavLink ></li>
 				<li><NavLink  to="/tutorial/neural-network-basics/" activeClassName={"ActivePage"}>Neural Network Basics</NavLink ></li>
 				<li><NavLink  to="/tutorial/deep-learning/" activeClassName={"ActivePage"}>Deep Learning</NavLink ></li>
 				<li><NavLink  to="/tutorial/sequence-model-with-deep-learning/" activeClassName={"ActivePage"}>SequenceModel with Deep Learning</NavLink ></li>
+        </ul>
+    </div>
+) 
+
+export const BigDataTable = (props) =>(
+    <div className="NavigationTableContainer" >
+        <ul>
+        <li><NavLink  to="/tutorial/aws-ec2-hadoop/" activeClassName={"ActivePage"}>AWS EC2 Hadoop</NavLink ></li>
         </ul>
     </div>
 )

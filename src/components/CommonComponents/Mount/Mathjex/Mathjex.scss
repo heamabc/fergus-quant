@@ -7,3 +7,9 @@
 .MJX-TEX{
     margin-left:0.3rem;
 }
+
+@include phone{
+    .MJX-TEX{
+        font-size:16px;
+    }
+}

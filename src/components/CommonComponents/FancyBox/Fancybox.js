@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './Fancybox.scss'
 
 const FancyBox = (props) => (
   <div className="FancyboxImageContainer">

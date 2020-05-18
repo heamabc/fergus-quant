@@ -17,28 +17,36 @@ class HomePage extends Component {
                 Garbage in, garbage out. If the data is incorrect and inconsistent, the machine learning will be of no uses.
               </p>
               <PassageTitle label="Common Problem about Data" />
+              <MinorTitle label="Incorrect Datatype" />
               <p>
                 First, check if the data type is correct, and get familiar with the datatype of each column. For example, for the stock tickers, you 
                 would not expect a boolean variable. We need to check if there exist such data. 
-                
-                <p>
-                  Another constraint is, there will be a lot of nan in a 
-                  dataset. we need to indentify the nan and inspect if it is reasonable to exist. For example, we would not expect a nan in the stock tickers.
-                </p>
-                <p>
-                  Another problem is duplicate. For example, we need to check if there is duplicate of stock ticker. And find the reason why the data 
-                  appears twice.
-                </p>
-                <p>
-                  The last problem is sometimes data is inaccurate. we need to check if the data is reasonable. For example, if we know that S&P500 is in the range 
-                  of 2700-3000 this year. But you spot the data describing S&P500 is 2000. Then you should inspect why this problem arise.
-                </p>
               </p>
+              <MinorTitle label="Null/NaN" />
+              <p>
+                Another constraint is, there will be a lot of nan in a 
+                dataset. we need to indentify the nan and inspect if it is reasonable to exist. For example, we would not expect a nan in the stock tickers.
+              </p>
+              <MinorTitle label="Duplicate" />
+              <p>
+                Another problem is duplicate. For example, we need to check if there is duplicate of stock ticker. And find the reason why the data 
+                appears twice.
+              </p>
+              <MinorTitle label="Inaccurate" />
+              <p>
+                The last problem is sometimes data is inaccurate. we need to check if the data is reasonable. For example, if we know that S&P500 is in the range 
+                of 2700-3000 this year. But you spot the data describing S&P500 is 2000. Then you should inspect why this problem arise.
+              </p>
+
               <PassageTitle label="Inspection of Data" />
               <p>
                 We first have a basic understanding of each column. How many nan, what is their distribution, what is their shape, etc.
                 <pre className="prettyprint lang-python">
                   df.describe()
+                </pre>
+                Also, we can check the datatype of the dataframe and the memory usage by this command.
+                <pre className="prettyprint lang-python">
+                  df.info()
                 </pre>
                 If the data is not small, it is good to have a look at the whole data. If not, sample some data to view them.
                 <pre className="prettyprint lang-python">

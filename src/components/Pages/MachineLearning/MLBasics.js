@@ -17,12 +17,12 @@ class HomePage extends Component {
             example, will the stock price increase or not. Therefore, the target 
             {String.raw`$$ y^{(i)} \in  \left\{ 1,0 \right\} $$`}
           </p>
-          <PassageTitle label="Logistic Regression" />
+          <PassageTitle label="Logistic Regression (Sigmoid Function)" />
           <p>
             A very simple algorithm to perform the task is logistic regression. it is the regression 
             that we apply a sigmoid function to the normal linear regression formula. That is,
             {String.raw`$$
-            y^{(i)} = \sigma (w^T x + e)
+            y = \sigma (w^T x + e)
             $$`}
             {String.raw`$$
             \sigma (z) = \frac{1}{1+e^{-z}}
@@ -41,21 +41,23 @@ class HomePage extends Component {
             In logistic regression, we cannot use the linear regression cost function. It is because it will result 
             in a non-convex function. It is very hard to find the global minimum.
             <FancyBox link="https://drive.google.com/uc?id=1KVnWJNH8GwbrA5-TydDVsY14Gxapu1s3"  caption="Linear Regression Cost Function" alt="Cost Function" />
-            Therefore, we need another cost function that is differentiable and convex. The logistic loss function can 
-            help us in this situation. The logistic loss is defined as
+            Therefore, we need another cost function that is differentiable and convex. The cross entropy function (logistic 
+            cost function) can help us in this situation. The cross entropy is defined as
             {String.raw`$$
             \text{Loss}(\hat{y},y) = -(y ln(\hat{y}) + (1-y)ln(1-\hat{y}))
             $$`}
             We can see that when y = 1, the loss will become {String.raw`\( -ln(\hat{y}) \)`}. As we want 
             the loss function to be as small as possible, we want to maximize {String.raw`\( ln(\hat{y}) \)`}. 
-            <p>
-              When y = 0, the loss will become {String.raw`\( -ln(1-\hat{y}) \)`}. Also when we want to minimize 
-              the loss function, we want to maximize {String.raw`\( ln(1-\hat{y}) \)`} and thus minimize {String.raw`\( \hat{y} \)`}.
-            </p>
+          </p>
+          <p>
+            When y = 0, the loss will become {String.raw`\( -ln(1-\hat{y}) \)`}. Also when we want to minimize 
+            the loss function, we want to maximize {String.raw`\( ln(1-\hat{y}) \)`} and thus minimize {String.raw`\( \hat{y} \)`}.
+          </p>
             <FancyBox link="https://drive.google.com/uc?id=1y51P3yU6mrTwb6ylG0FwlS1pvF7b6XPj"  caption="Linear Regression Cost Function" alt="Logistic Loss"/>
+          <p>
             As we can see from the above graph. When we combine the positive and negative part of the logistic loss, 
             it will be concave and differentiable. And the global minimum of the graph can be easily found.
-          </p>
+            </p>
           <PassageTitle label="Cost Function" />
           <p>
             Loss function is applied to every sample and cost function is applied to the model. The cost function is to 

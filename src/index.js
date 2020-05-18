@@ -41,6 +41,8 @@ import MLTechniques from './components/Pages/MachineLearning/MLTechniques'
 import NeuralNetworkBascis from './components/Pages/MachineLearning/NeuralNetworkBasics'
 import DeepLearning from './components/Pages/MachineLearning/DeepLearning'
 import SequenceModelDL from './components/Pages/MachineLearning/SequenceModelDL'
+//======================================= Big Data =========================================
+import AWSEC2Hadoop from './components/Pages/BigData/AWSEC2Hadoop'
 //======================================= Others =========================================
 import AWSJupyterNotebook from './components/Pages/Others/AWSJupyterNotebook'
 import UsefulWebsite from './components/Pages/Others/UsefulWebsite'
@@ -92,6 +94,8 @@ const routing = (
           <Route exact path="/tutorial/neural-network-basics" component={NeuralNetworkBascis} />
           <Route exact path="/tutorial/deep-learning" component={DeepLearning} />
           <Route exact path="/tutorial/sequence-model-with-deep-learning" component={SequenceModelDL} />
+
+          <Route exact path="/tutorial/aws-ec2-hadoop" component ={AWSEC2Hadoop} />
 
           <Route exact path="/tutorial/aws-jupyter-notebook" component={AWSJupyterNotebook} />
           <Route exact path="/tutorial/useful-website" component={UsefulWebsite} />
