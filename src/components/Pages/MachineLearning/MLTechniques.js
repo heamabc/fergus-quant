@@ -27,8 +27,8 @@ class HomePage extends Component {
             $$ \text{F1} = 2 \frac{\text{Precision} * \text{Recall}}{\text{Precision} + \text{Recall}} = \frac{2}{\frac{1}{\text{Precision}} + \frac{1}{Recall}} $$
             `}
             <ul>
-              <li>Accuracy : Of the total sample, what % of them are predicted correctly.</li>
-              <li>Precision : Of the predicted positive, what % of them are truly positive</li>
+              <li>Accuracy : Of all the total sample, what % of them are predicted correctly.</li>
+              <li>Precision : Of all the predicted positive, what % of them are truly positive</li>
               <li>Recall : Of all the positive, what % of them are predicted positive.</li>
             </ul>
             Often, there will be a precision and recall tradeoff. It means that if we tune the model to increase 

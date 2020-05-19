@@ -4,6 +4,7 @@ import PassageTitle, { MinorTitle } from '../../CommonComponents/PassageTitle/Pa
 import Title from '../../CommonComponents/Title/Title'
 import Mathjex from '../../CommonComponents/Mount/Mathjex/Mathjex'
 import CodeSnippet from '../../CommonComponents/Mount/CodeSnippet/CodeSnippet'
+import FancyBox from '../../CommonComponents/FancyBox/Fancybox'
 import '../css/AllPages.scss';
 
 
@@ -51,9 +52,7 @@ class HomePage extends Component {
             plt.show()
             </pre>
             This will simulate 20 stocks that follow a geometric brownian motion. We can examine their price from the graph.
-            <a data-fancybox="gallery" href="https://drive.google.com/uc?id=1klKgVI-JtwtlkIrxLJAO1GewJ5D2EjWE"  data-caption="Simulation of 20 stocks price">
-                <img src="https://drive.google.com/uc?id=1klKgVI-JtwtlkIrxLJAO1GewJ5D2EjWE" alt=""/>
-            </a>
+            <FancyBox caption="Simulation of 20 stocks price" alt="Simulation of 20 stocks price" link="https://drive.google.com/uc?id=1klKgVI-JtwtlkIrxLJAO1GewJ5D2EjWE"  />
         </p>
         <Title label="Monte Carlo Simulation of Portfolio"/>
         <p>
@@ -90,9 +89,7 @@ class HomePage extends Component {
             plt.show()
             </pre>
             Let's see the graph of the risk and return. We can see a bell shape in the graph.
-            <a data-fancybox="gallery" href="https://drive.google.com/uc?id=1x3wA2lCgSLnfmc7W4kOiTE0SJa7CDI6s"  data-caption="5000 Portfolios">
-                <img src="https://drive.google.com/uc?id=1x3wA2lCgSLnfmc7W4kOiTE0SJa7CDI6s" alt=""/>
-            </a>
+            <FancyBox caption="5000 Portfolios" alt="5000 Portfolios" link="https://drive.google.com/uc?id=1x3wA2lCgSLnfmc7W4kOiTE0SJa7CDI6s"  />
         </p>
         <Title label="Global Minimum Variance" />
         <p>
@@ -156,9 +153,7 @@ class HomePage extends Component {
             plt.show()
             </pre>
             The graph of 5000 portfolios with GMV is like this. The GMV is at the leftest position of the graph.
-            <a data-fancybox="gallery" href="https://drive.google.com/uc?id=1z83lyPyoichl7p6AeCfrTWAj3Yml2xvh"  data-caption="5000 Portfolios & GMV">
-                <img src="https://drive.google.com/uc?id=1z83lyPyoichl7p6AeCfrTWAj3Yml2xvh" alt=""/>
-            </a>
+            <FancyBox caption="5000 Portfolios & GMV" alt="5000 Portfolios & GMV" link="https://drive.google.com/uc?id=1z83lyPyoichl7p6AeCfrTWAj3Yml2xvh"  />
         </p>
         <Title label="Efficient Portfolio" />
         <p>
@@ -238,10 +233,7 @@ class HomePage extends Component {
             plt.legend() {next_line}
             plt.show()
             </pre>
-            <a data-fancybox="gallery" href="https://drive.google.com/uc?id=1wEIsshzlseFu8pw_rFbTLtYe1GvJkgpE"  data-caption="5000 Portfolios & GMV & Efficient Portfolio">
-                <img src="https://drive.google.com/uc?id=1wEIsshzlseFu8pw_rFbTLtYe1GvJkgpE" alt=""/>
-            </a>
-            
+            <FancyBox caption="5000 Portfolios & GMV & Efficient Portfolio" alt="5000 Portfolios & GMV & Efficient Portfolio" link="https://drive.google.com/uc?id=1wEIsshzlseFu8pw_rFbTLtYe1GvJkgpE"  />            
         </p>
         <Title label="Efficient Frontier" />
         <p>

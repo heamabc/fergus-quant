@@ -57,7 +57,7 @@ class HomePage extends Component {
           <p>
             As we can see from the above graph. When we combine the positive and negative part of the logistic loss, 
             it will be concave and differentiable. And the global minimum of the graph can be easily found.
-            </p>
+          </p>
           <PassageTitle label="Cost Function" />
           <p>
             Loss function is applied to every sample and cost function is applied to the model. The cost function is to 

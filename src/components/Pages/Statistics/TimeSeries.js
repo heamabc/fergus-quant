@@ -10,7 +10,7 @@ class HomePage extends Component {
         return (
             <Page>
               <Mathjex />
-              <Title label="Selecting Predictors" />
+              <Title label="Selection of Number of Lags" />
               <PassageTitle label="Adjusted R Squared" />
               Click <a href="/tutorial/econometrics/#Goodness-of-Fit">here</a> for more explanation.
               <PassageTitle label="Akaike’s Information Criterion (AIC)" />

@@ -85,7 +85,7 @@ class HomePage extends Component {
                     </p>
                 </p>
             </p>
-            <PassageTitle label="Hypothesis" />
+            <PassageTitle label="Hypothesis Testing" />
             {String.raw`\begin{align}
             & H_0:\mu_1=\mu_2= \cdots = \mu_k \\
             & H_1:H_0 \text{ is not true}
