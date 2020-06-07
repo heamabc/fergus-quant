@@ -14,6 +14,16 @@ class HomePage extends Component {
           <Mathjex />
           <CodeSnippet />
           <Title label="One Hot Encoding" />
+          <p>
+            When dealing with categorical data, The numeric representation or text representation of that data is not meaningful. For 
+            example, when we have a column indicate the object of the picture. 0 means cat, 1 means dog, 2 means bird. The number 
+            here has no meaning and training the model with these data would mislead the data to believe there is some meaning behind 
+            the number. For example, the model may believe 1+1 = 2.
+          </p>
+          <p>
+            To deal with this problem, we can use one hot encoding. Each column will represent a categorical data. To perform one 
+            hot encoding, we can simply use <code>pd.get_dummies()</code>.
+          </p>
           <Title label="Evaluation Metrics" />
           <PassageTitle label="Accuracy, Precision, Recall, F1" />
           <p>

@@ -3,6 +3,7 @@ import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, { MinorTitle } from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title from '../../CommonComponents/Title/Title'
 import Mathjex from '../../CommonComponents/Mount/Mathjex/Mathjex'
+import FancyBox from '../../CommonComponents/FancyBox/Fancybox'
 import '../css/AllPages.scss';
 
 class HomePage extends Component {

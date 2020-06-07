@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './css/AllPages.scss';
-import Page from '../CommonComponents/PageTemplate/PageTemplate'
-import Title from '../CommonComponents/Title/Title'
-import LinkButton from '../CommonComponents/Button/Button'
+import '../css/AllPages.scss';
+import Page from '../../CommonComponents/PageTemplate/PageTemplate'
+import Title from '../../CommonComponents/Title/Title'
+import LinkButton from '../../CommonComponents/Button/Button'
 
 
 class HomePage extends Component {

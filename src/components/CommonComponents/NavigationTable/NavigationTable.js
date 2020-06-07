@@ -9,9 +9,9 @@ Add content within page navigation
 const PythonTable = (props) => (
     <div className="NavigationTableContainer" >
         <ul>
-            <li><NavLink  to="/tutorial/basics/" activeClassName={"ActivePage"}>Basics</NavLink ></li>
-            <li><NavLink  to="/tutorial/parallelization/" activeClassName={"ActivePage"}>Parallelization</NavLink ></li>
-            <li><NavLink  to="/tutorial/numpy/" activeClassName={"ActivePage"}>Numpy</NavLink ></li>
+            <li><NavLink  to="/tutorial/python/basics/" activeClassName={"ActivePage"}>Basics</NavLink ></li>
+            <li><NavLink  to="/tutorial/python/parallelization/" activeClassName={"ActivePage"}>Parallelization</NavLink ></li>
+            <li><NavLink  to="/tutorial/python/numpy/" activeClassName={"ActivePage"}>Numpy</NavLink ></li>
         </ul>
     </div>
 )
@@ -21,13 +21,15 @@ export default PythonTable
 export const StatTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
-            <li><NavLink  to="/tutorial/econometrics/" activeClassName={"ActivePage"}>Econometrics</NavLink ></li>
-            <li><NavLink  to="/tutorial/Heteroskedasticity/" activeClassName={"ActivePage"}>Heteroskedasticity</NavLink ></li>
-            <li><NavLink  to="/tutorial/ttest-and-anova/" activeClassName={"ActivePage"}>T-Test & ANOVA</NavLink ></li>
-            <li><NavLink  to="/tutorial/stochastic-process/" activeClassName={"ActivePage"}>Stochastic Process</NavLink ></li>
-            <li><NavLink  to="/tutorial/moment-generating-functions/" activeClassName={"ActivePage"}>Moment Generating Functions</NavLink ></li>
-            <li><NavLink  to="/tutorial/hurst-exponent/" activeClassName={"ActivePage"}>Hurst Exponent</NavLink ></li>
-            <li><NavLink  to="/tutorial/time-series/" activeClassName={"ActivePage"}>Time Series</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/econometrics/" activeClassName={"ActivePage"}>Econometrics</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/Heteroskedasticity/" activeClassName={"ActivePage"}>Heteroskedasticity</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/ttest-and-anova/" activeClassName={"ActivePage"}>T-Test & ANOVA</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/stochastic-process/" activeClassName={"ActivePage"}>Stochastic Process</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/moment-generating-functions/" activeClassName={"ActivePage"}>Moment Generating Functions</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/hurst-exponent/" activeClassName={"ActivePage"}>Hurst Exponent</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/time-series/" activeClassName={"ActivePage"}>Time Series</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/normal-distribution-theory/" activeClassName={"ActivePage"}>Normal Distribution Theory</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/PCA/" activeClassName={"ActivePage"}>Principal Components Analysis (PCA)</NavLink ></li>
         </ul>
     </div>
 )
@@ -35,7 +37,7 @@ export const StatTable =(props) => (
 export const DataBaseTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
-            <li><NavLink  to="/tutorial/relational-database/" activeClassName={"ActivePage"}>Relational DataBase</NavLink ></li>
+            <li><NavLink  to="/tutorial/database/relational-database/" activeClassName={"ActivePage"}>Relational DataBase</NavLink ></li>
         </ul>
     </div>
 )
@@ -43,11 +45,12 @@ export const DataBaseTable =(props) => (
 export const SoftwareEngineeringTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
-            <li><NavLink  to="/tutorial/linux/" activeClassName={"ActivePage"}>Linux</NavLink ></li>
-            <li><NavLink  to="/tutorial/git/" activeClassName={"ActivePage"}>Git</NavLink ></li>
-            <li><NavLink  to="/tutorial/analysis-of-algorithms/" activeClassName={"ActivePage"}>Analysis of Algorithms</NavLink ></li>
-            <li><NavLink  to="/tutorial/debug/" activeClassName={"ActivePage"}>Debug</NavLink ></li>
-            <li><NavLink  to="/tutorial/network-protocol/" activeClassName={"ActivePage"}>Network Protocol</NavLink ></li>
+            <li><NavLink  to="/tutorial/software-engineering/linux/" activeClassName={"ActivePage"}>Linux</NavLink ></li>
+            <li><NavLink  to="/tutorial/software-engineering/git/" activeClassName={"ActivePage"}>Git</NavLink ></li>
+            <li><NavLink  to="/tutorial/software-engineering/analysis-of-algorithms/" activeClassName={"ActivePage"}>Analysis of Algorithms</NavLink ></li>
+            <li><NavLink  to="/tutorial/software-engineering/debug/" activeClassName={"ActivePage"}>Debug</NavLink ></li>
+            <li><NavLink  to="/tutorial/software-engineering/network-protocol/" activeClassName={"ActivePage"}>Network Protocol</NavLink ></li>
+            <li><NavLink  to="/tutorial/software-engineering/sorting-algorithm/" activeClassName={"ActivePage"}>Sorting Algorithm</NavLink ></li>
         </ul>
     </div>
 )
@@ -55,8 +58,8 @@ export const SoftwareEngineeringTable =(props) => (
 export const QuantTable = (props) =>(
     <div className="NavigationTableContainer" >
         <ul>
-            <li><NavLink  to="/tutorial/portfolio-theory/" activeClassName={"ActivePage"}>Portfolio Theory</NavLink ></li>
-            <li><NavLink  to="/tutorial/smart-beta/" activeClassName={"ActivePage"}>Smart Beta</NavLink ></li>
+            <li><NavLink  to="/tutorial/quant/portfolio-theory/" activeClassName={"ActivePage"}>Portfolio Theory</NavLink ></li>
+            <li><NavLink  to="/tutorial/quant/smart-beta/" activeClassName={"ActivePage"}>Smart Beta</NavLink ></li>
         </ul>
     </div>
 )
@@ -64,12 +67,13 @@ export const QuantTable = (props) =>(
 export const MLTable = (props) =>(
     <div className="NavigationTableContainer" >
 		<ul>
-				<li><NavLink  to="/tutorial/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
-				<li><NavLink  to="/tutorial/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
-				<li><NavLink  to="/tutorial/machine-learning-techniques/" activeClassName={"ActivePage"}>Machine Learning Techniques</NavLink ></li>
-				<li><NavLink  to="/tutorial/neural-network-basics/" activeClassName={"ActivePage"}>Neural Network Basics</NavLink ></li>
-				<li><NavLink  to="/tutorial/deep-learning/" activeClassName={"ActivePage"}>Deep Learning</NavLink ></li>
-				<li><NavLink  to="/tutorial/sequence-model-with-deep-learning/" activeClassName={"ActivePage"}>SequenceModel with Deep Learning</NavLink ></li>
+				<li><NavLink  to="/tutorial/machine-learning/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
+				<li><NavLink  to="/tutorial/machine-learning/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
+				<li><NavLink  to="/tutorial/machine-learning/machine-learning-techniques/" activeClassName={"ActivePage"}>Machine Learning Techniques</NavLink ></li>
+				<li><NavLink  to="/tutorial/machine-learning/neural-network-basics/" activeClassName={"ActivePage"}>Neural Network Basics</NavLink ></li>
+				<li><NavLink  to="/tutorial/machine-learning/deep-learning/" activeClassName={"ActivePage"}>Deep Learning</NavLink ></li>
+				<li><NavLink  to="/tutorial/machine-learning/sequence-model-with-deep-learning/" activeClassName={"ActivePage"}>SequenceModel with Deep Learning</NavLink ></li>
+                <li><NavLink  to="/tutorial/machine-learning/imbalanced-data/" activeClassName={"ActivePage"}>Imbalanced Data</NavLink ></li>
         </ul>
     </div>
 ) 
@@ -77,7 +81,7 @@ export const MLTable = (props) =>(
 export const BigDataTable = (props) =>(
     <div className="NavigationTableContainer" >
         <ul>
-        <li><NavLink  to="/tutorial/aws-ec2-hadoop/" activeClassName={"ActivePage"}>AWS EC2 Hadoop</NavLink ></li>
+        <li><NavLink  to="/tutorial/big-data/aws-ec2-hadoop/" activeClassName={"ActivePage"}>AWS EC2 Hadoop</NavLink ></li>
         </ul>
     </div>
 )
@@ -85,8 +89,8 @@ export const BigDataTable = (props) =>(
 export const OthersTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
-            <li><NavLink  to="/tutorial/useful-website/" activeClassName={"ActivePage"}>Useful Website</NavLink ></li>
-            <li><NavLink  to="/tutorial/aws-jupyter-notebook/" activeClassName={"ActivePage"}>AWS Juputer Notebook</NavLink ></li>
+            <li><NavLink  to="/tutorial/others/useful-website/" activeClassName={"ActivePage"}>Useful Website</NavLink ></li>
+            <li><NavLink  to="/tutorial/others/aws-jupyter-notebook/" activeClassName={"ActivePage"}>AWS Juputer Notebook</NavLink ></li>
         </ul>
     </div>
 )

@@ -3,6 +3,7 @@ import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, {MinorTitle} from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title from '../../CommonComponents/Title/Title'
 import Mathjex from '../../CommonComponents/Mount/Mathjex/Mathjex'
+import FancyBox from '../../CommonComponents/FancyBox/Fancybox'
 import '../css/AllPages.scss';
 
 class HomePage extends Component {  
@@ -19,9 +20,7 @@ class HomePage extends Component {
                     Next, we have a variable{String.raw`\( S_i \)`} indicating the money that we won. That is,
                     {String.raw`$$ S_i = \sum^{i}_{k=1}{Z_i} $$`}
                     From the below graph, we can see that S is a random walk!
-                    <div className="IllustrationImage">
-                        <img src="https://drive.google.com/uc?id=1ATmKHs4-83hsp3iFdibqPnm4QmxMBQ28" alt="S" style={{height: "100%", width: "100%", "object-fit": "contain"}}/>
-                    </div>
+                    <FancyBox caption="S" alt="S" link="https://drive.google.com/uc?id=1ATmKHs4-83hsp3iFdibqPnm4QmxMBQ28" />
                     Then we can easily prove that
                     {String.raw`$$ E[S_i] = 0, E[S_i^2] = E[Z_1^2 + 2Z_1Z_2 + \cdots] = i $$`}
 

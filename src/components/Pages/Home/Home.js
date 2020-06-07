@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import HomeTitle from '../CommonComponents/HomeTitle/HomeTitle'
-import LinkButton from '../CommonComponents/Button/Button'
-import Icon from '../CommonComponents/Icon/Icon'
-import './css/Home.scss'
+import HomeTitle from '../../CommonComponents/HomeTitle/HomeTitle'
+import LinkButton from '../../CommonComponents/Button/Button'
+import Icon from '../../CommonComponents/Icon/Icon'
+import '../css/Home.scss'
 
 class HomePage extends Component {
     render() {

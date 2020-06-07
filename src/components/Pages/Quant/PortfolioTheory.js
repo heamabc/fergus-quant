@@ -259,9 +259,7 @@ class HomePage extends Component {
                 \mu_0 & = \alpha w_x \mu + ( 1 - \alpha) w_y \mu \\
                 \alpha & = \frac{\mu_0 - w_y \mu}{w_x \mu - w_y \mu}
                 \end{align}`}
-                <a data-fancybox="gallery" href="https://drive.google.com/uc?id=1xfQjHQNidJl6l0aARLYORApJ3bWgL9AG"  data-caption="5000 Portfolios & GMV & Efficient Portfolio & Efficient Frontier">
-                    <img src="https://drive.google.com/uc?id=1xfQjHQNidJl6l0aARLYORApJ3bWgL9AG" alt=""/>
-                </a>
+                <FancyBox caption="5000 Portfolios & GMV & Efficient Portfolio & Efficient Frontier" alt="5000 Portfolios & GMV & Efficient Portfolio & Efficient Frontier" link="https://drive.google.com/uc?id=1xfQjHQNidJl6l0aARLYORApJ3bWgL9AG" />
             </p>
             <Title label="Tangency Portfolio" />
             <p>
