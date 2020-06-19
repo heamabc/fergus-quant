@@ -16,6 +16,7 @@ import Basics from './components/Pages/Python/Basics'
 import Parallelization from './components/Pages/Python/Parallelization'
 import Numpy from './components/Pages/Python/Numpy'
 //======================================= Statistics =========================================
+import Probability from './components/Pages/Statistics/Probability'
 import Econometrics from './components/Pages/Statistics/Econometrics'
 import TTestAndANOVA from './components/Pages/Statistics/TTestAndANOVA'
 import Heteroskedasticity from './components/Pages/Statistics/Heteroskedasticity'
@@ -34,17 +35,24 @@ import AnalysisOfAlgorithms from './components/Pages/SoftwareEngineering/Analysi
 import Debug from './components/Pages/SoftwareEngineering/Debug'
 import NetworkProtocol from './components/Pages/SoftwareEngineering/NetworkProtocol'
 import SortingAlgorithm from './components/Pages/SoftwareEngineering/SortingAlgorithm'
+//======================================= Finance =========================================
+import OptionsStrategy from './components/Pages/Finance/OptionsStrategy'
 //======================================= Quant =========================================
 import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Quant/SmartBeta'
 //======================================= Machine Learning =========================================
 import EDA from './components/Pages/MachineLearning/EDA'
 import MLBasics from './components/Pages/MachineLearning/MLBasics'
+import Regularization from './components/Pages/MachineLearning/Regularization'
 import MLTechniques from './components/Pages/MachineLearning/MLTechniques'
 import NeuralNetworkBascis from './components/Pages/MachineLearning/NeuralNetworkBasics'
 import DeepLearning from './components/Pages/MachineLearning/DeepLearning'
 import SequenceModelDL from './components/Pages/MachineLearning/SequenceModelDL'
 import ImbalancedData from './components/Pages/MachineLearning/ImbalancedData'
+import FeatureSelection from './components/Pages/MachineLearning/FeatureSelection'
+import BigDataset from  './components/Pages/MachineLearning/BigDataset'
+import LogisticRegression from  './components/Pages/MachineLearning/LogisticRegression'
+import XGBoost from  './components/Pages/MachineLearning/XGBoost'
 //======================================= Big Data =========================================
 import AWSEC2Hadoop from './components/Pages/BigData/AWSEC2Hadoop'
 //======================================= Others =========================================
@@ -73,6 +81,7 @@ const routing = (
           <Route exact path="/tutorial/python/parallelization" component={Parallelization} />
           <Route exact path="/tutorial/python/numpy" component={Numpy} />
 
+          <Route exact path="/tutorial/statistics/Probability" component={Probability} />
           <Route exact path="/tutorial/statistics/econometrics" component={Econometrics} />
           <Route exact path="/tutorial/statistics/Heteroskedasticity" component={Heteroskedasticity} />
           <Route exact path="/tutorial/statistics/ttest-and-anova" component={TTestAndANOVA} />
@@ -92,17 +101,24 @@ const routing = (
           <Route exact path="/tutorial/software-engineering/network-protocol" component={NetworkProtocol} />
           <Route exact path="/tutorial/software-engineering/sorting-algorithm" component={SortingAlgorithm} />
 
+          <Route exact path="/tutorial/finance/options-strategy" component={OptionsStrategy} />
+
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />
 
           <Route exact path="/tutorial/machine-learning/eda" component={EDA} />
           <Route exact path="/tutorial/machine-learning/machine-learning-basics" component={MLBasics} />
+          <Route exact path="/tutorial/machine-learning/regularization" component={Regularization} />
           <Route exact path="/tutorial/machine-learning/machine-learning-techniques" component={MLTechniques} />
           <Route exact path="/tutorial/machine-learning/neural-network-basics" component={NeuralNetworkBascis} />
           <Route exact path="/tutorial/machine-learning/deep-learning" component={DeepLearning} />
           <Route exact path="/tutorial/machine-learning/sequence-model-with-deep-learning" component={SequenceModelDL} />
           <Route exact path="/tutorial/machine-learning/imbalanced-data" component={ImbalancedData} />
-
+          <Route exact path="/tutorial/machine-learning/feature-selection" component={FeatureSelection} />
+          <Route exact path="/tutorial/machine-learning/big-dataset" component={BigDataset} />
+          <Route exact path="/tutorial/machine-learning/logistic-regression" component={LogisticRegression} />
+          <Route exact path="/tutorial/machine-learning/xgboost" component={XGBoost} />
+          
           <Route exact path="/tutorial/big-data/aws-ec2-hadoop" component ={AWSEC2Hadoop} />
 
           <Route exact path="/tutorial/others/aws-jupyter-notebook" component={AWSJupyterNotebook} />

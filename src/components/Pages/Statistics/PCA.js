@@ -12,6 +12,8 @@ class HomePage extends Component {
         <Page>       
           <Mathjex />
           <CodeSnippet />
+          
+          <Title label="Linear Algebra Background" />
           <PassageTitle label="Eigenvector and Eigenvalue" />
           <p>
             We first start with this simple equation. When we have a symmetric matrix\(A\) (It means that 
@@ -38,7 +40,6 @@ class HomePage extends Component {
             Hence, from the above system, we can find lambda. After finding the lambda, we can plug in the lambda to (1) and solve vector
             v.
           </p>
-          <Title label="Linear Algebra Background" />
           <PassageTitle label="SSCP Matrix"/>
           <p>
             The sum-of-squared-and-cross-product matrix (\(A^TA\) or \(AA^T\)) is a very usefl matrix in this topic. For every 
@@ -52,7 +53,7 @@ class HomePage extends Component {
               S_{i,j} = a_ia_j
               $$`}
           </p>
-          <Title label="Principal Component Analysis (PCA)" />
+          <Title label="Procedure of PCA" />
           <p>
             1. We have a matrix A where A is in the form as below,
             {String.raw`$$ A = \begin{pmatrix}
@@ -94,6 +95,53 @@ class HomePage extends Component {
             (a_{n,1} - \mu_1)(a_{n,n} - \mu_n) & (a_{n,2} - \mu_2)(a_{n,n} - \mu_n) & \cdots & (a_{n,n} - \mu_n)^2
             \end{pmatrix}
             \end{align}`}
+            5. We calculate the eigenvalue and eigenvector of the covariance matrix. Then we place the eigenvalue into a descending
+            order.
+            {String.raw`\begin{align}
+            & Su = \lambda u \\ 
+            & U = 
+            \begin{pmatrix}
+            \vert & \vert & & \vert\\
+            u_1 & u_2 & \cdots & u_n \\
+            \vert & \vert & & \vert
+            \end{pmatrix}
+            \end{align}`}
+            6. Choose the top k eigenvector and multiply the raw data.
+            {String.raw`$$
+            A_{\text{new}} = U A
+            $$`}
+          </p>
+          <Title label="Math Behind PCA" />
+          <p>
+            Mathematically, PCA is want to project the data into a lower dimenstion while keeping as much 
+            the variance of the data as possible. The variance can be calculated as below
+            {String.raw`\begin{align}
+            \sigma^2_u & = \frac{1}{n-1} \sum_i (x_i \cdot u)^2 \\
+            & = \frac{1}{n-1} (x u)^T (x u) \\
+            & = \frac{1}{n-1} u^T x^T x u \\
+            & = u^T \frac{x^T x}{n-1} u \\
+            & = u^T S u \\
+            \end{align}`}
+            Next, we add a constraint to the maximization. We only look at unit vectors of w. Therefore,
+            {String.raw`\begin{align}
+            \text{max } u^T S u \\
+            \text{s.t. } u^T u = 1
+            \end{align}`}
+            Using the method of Lagrange multipliers, we can find the maximum.
+            {String.raw`\begin{align}
+            & L(u, \lambda) = u^T S u - \lambda(u^T u - 1) \\ 
+            & \frac{\partial L }{\partial \lambda} = u^T u - 1 \\
+            & \frac{\partial L }{\partial u} = 2Su - 2 \lambda u
+            \end{align}`}
+            Setting the partial derivatives to 0 can help us find the solution.
+            {String.raw`\begin{align}
+            & u^T u - 1 = 0 \\
+            & u^T u = 1 \\
+            & 2Su - 2 \lambda u = 0 \\
+            & Su = \lambda u
+            \end{align}`}
+            We can see the last equation is exactly the eigen decomposition of the covariance matrix. Thus, the eigenvector w 
+            and the largest eigenvalue \( \lambda \) is the solution.
           </p>
         </Page>
       )}}

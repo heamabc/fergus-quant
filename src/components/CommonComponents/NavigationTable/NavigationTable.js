@@ -21,6 +21,7 @@ export default PythonTable
 export const StatTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
+            <li><NavLink  to="/tutorial/statistics/probability/" activeClassName={"ActivePage"}>Probability</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/econometrics/" activeClassName={"ActivePage"}>Econometrics</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/Heteroskedasticity/" activeClassName={"ActivePage"}>Heteroskedasticity</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/ttest-and-anova/" activeClassName={"ActivePage"}>T-Test & ANOVA</NavLink ></li>
@@ -55,6 +56,14 @@ export const SoftwareEngineeringTable =(props) => (
     </div>
 )
 
+export const FinanceTable =(props) => (
+    <div className="NavigationTableContainer" >
+        <ul>
+            <li><NavLink  to="/tutorial/finance/options-strategy/" activeClassName={"ActivePage"}>Options</NavLink ></li>
+        </ul>
+    </div>
+)
+
 export const QuantTable = (props) =>(
     <div className="NavigationTableContainer" >
         <ul>
@@ -69,11 +78,16 @@ export const MLTable = (props) =>(
 		<ul>
 				<li><NavLink  to="/tutorial/machine-learning/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
 				<li><NavLink  to="/tutorial/machine-learning/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
+                <li><NavLink  to="/tutorial/machine-learning/regularization/" activeClassName={"ActivePage"}>Regularization</NavLink ></li>
 				<li><NavLink  to="/tutorial/machine-learning/machine-learning-techniques/" activeClassName={"ActivePage"}>Machine Learning Techniques</NavLink ></li>
 				<li><NavLink  to="/tutorial/machine-learning/neural-network-basics/" activeClassName={"ActivePage"}>Neural Network Basics</NavLink ></li>
 				<li><NavLink  to="/tutorial/machine-learning/deep-learning/" activeClassName={"ActivePage"}>Deep Learning</NavLink ></li>
 				<li><NavLink  to="/tutorial/machine-learning/sequence-model-with-deep-learning/" activeClassName={"ActivePage"}>SequenceModel with Deep Learning</NavLink ></li>
                 <li><NavLink  to="/tutorial/machine-learning/imbalanced-data/" activeClassName={"ActivePage"}>Imbalanced Data</NavLink ></li>
+                <li><NavLink  to="/tutorial/machine-learning/feature-selection/" activeClassName={"ActivePage"}>Feature Selection</NavLink ></li>
+                <li><NavLink  to="/tutorial/machine-learning/big-dataset/" activeClassName={"ActivePage"}>Big Dataset</NavLink ></li>
+                <li><NavLink  to="/tutorial/machine-learning/logistic-regression/" activeClassName={"ActivePage"}>Logistic Regression</NavLink ></li>
+                <li><NavLink  to="/tutorial/machine-learning/xgboost/" activeClassName={"ActivePage"}>XGBoost</NavLink ></li>
         </ul>
     </div>
 ) 

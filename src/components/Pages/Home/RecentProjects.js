@@ -10,6 +10,11 @@ class HomePage extends Component {
             <Page>
                 <Title style={{marginBottom: 60}} label={'Recent Project'}/>
                 <div className='EntryContainer'>
+                <EntryWithLink 
+                        href='#'
+                        location='P2P Loan Acceptance and Default Prediction with AI'
+                        details='Neural Network, Logistic Regression, SVM'
+                />  
                 <EntryWithLink  
                         href='https://github.com/heamabc/Smart-Beta-Regularization'
                         location='Smart Beta with Regularization'
