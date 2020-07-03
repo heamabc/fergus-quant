@@ -80,8 +80,6 @@ export const MLTable = (props) =>(
 				<li><NavLink  to="/tutorial/machine-learning/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
                 <li><NavLink  to="/tutorial/machine-learning/regularization/" activeClassName={"ActivePage"}>Regularization</NavLink ></li>
 				<li><NavLink  to="/tutorial/machine-learning/machine-learning-techniques/" activeClassName={"ActivePage"}>Machine Learning Techniques</NavLink ></li>
-				<li><NavLink  to="/tutorial/machine-learning/neural-network-basics/" activeClassName={"ActivePage"}>Neural Network Basics</NavLink ></li>
-				<li><NavLink  to="/tutorial/machine-learning/deep-learning/" activeClassName={"ActivePage"}>Deep Learning</NavLink ></li>
 				<li><NavLink  to="/tutorial/machine-learning/sequence-model-with-deep-learning/" activeClassName={"ActivePage"}>SequenceModel with Deep Learning</NavLink ></li>
                 <li><NavLink  to="/tutorial/machine-learning/imbalanced-data/" activeClassName={"ActivePage"}>Imbalanced Data</NavLink ></li>
                 <li><NavLink  to="/tutorial/machine-learning/feature-selection/" activeClassName={"ActivePage"}>Feature Selection</NavLink ></li>
@@ -91,6 +89,17 @@ export const MLTable = (props) =>(
         </ul>
     </div>
 ) 
+
+
+export const NNTable = (props) =>(
+    <div className="NavigationTableContainer" >
+		<ul>
+            <li><NavLink  to="/tutorial/machine-learning/neural-network-basics/" activeClassName={"ActivePage"}>Neural Network Basics</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/deep-learning/" activeClassName={"ActivePage"}>Deep Learning</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/auto-encoder/" activeClassName={"ActivePage"}>Auto Encoder</NavLink ></li>
+        </ul>
+    </div>
+)
 
 export const BigDataTable = (props) =>(
     <div className="NavigationTableContainer" >

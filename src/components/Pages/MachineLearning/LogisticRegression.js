@@ -14,7 +14,7 @@ class HomePage extends Component {
           <Title label="Logistic Regression"/>
           <p>
             Logistic regression is widely used as a binary classifier. In a logistic regression, a linear model (i.e. 
-            \(\beta X\)) is fit into a logistic (sigmoid) function {String.raw`\( \frac{1}{1+e^{-z}} \)`}, such that:
+            \(\beta^T X\)) is fit into a logistic (sigmoid) function {String.raw`\( \frac{1}{1+e^{-z}} \)`}, such that:
             {String.raw`$$
             P(y_i=1|X) = \frac{1}{1+e^{-\beta^T X}} = \sigma(\beta^T X)
             $$`}
@@ -49,8 +49,12 @@ class HomePage extends Component {
             \frac{\partial l(\beta)}{\partial \beta_j} = \frac{\partial l(\beta)}{\partial p} \cdot 
                                                         \frac{\partial p}{\partial z} \cdot
                                                         \frac{\partial z}{\partial \beta_j}
+                                                        \text{, where}
+                                                        p = \sigma(\beta^T X) \text{,}
+                                                        z = \beta^T X
             \end{align}`}
-            , where \(p = \sigma(\beta^T X) \), \( z = \beta^T X \)
+            Therefore, we can find the partial derivatives of each component to find the partial derivative of the log likelihood with 
+            respect to beta.
             {String.raw`\begin{align}
             & l(\beta) = \sum_{i=1}^{n} y_i log(p) + (1-y_i) log(1 - p) \\
             & \frac{\partial l(\beta)}{\partial p} = \frac{y}{p} - \frac{1-y}{1-p} \\

@@ -12,7 +12,12 @@ class HomePage extends Component {
         <Page>       
           <Mathjex />
           <CodeSnippet />
-          
+          <Title label="Definition" />
+          <p>
+            PCA is a technique to reduce the dimensiionality of a dataset. It finds the best linear subspace and project the data on the subspace such that 
+            it can remain as much variation as possible after the transformation. The main property of PCA is that each principal component will become orthogonal. Meaning 
+            that they will be independent.
+          </p>
           <Title label="Linear Algebra Background" />
           <PassageTitle label="Eigenvector and Eigenvalue" />
           <p>

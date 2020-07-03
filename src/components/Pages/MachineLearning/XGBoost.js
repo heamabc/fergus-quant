@@ -29,6 +29,7 @@ class HomePage extends Component {
             why the tree splits in this way. The answer is that the tree will split according to whatever its algorithm told it to. For example, gini impurity. The goal of 
             splitting is to minimize the variance within the same node.
             <FancyBox caption="Illustration" alt="Illustration" link="https://drive.google.com/uc?id=1aI0TIaw9OFTlJAdiBP0JUgB-OZwzzYa4"/>
+            As we can see from the above table, the MSE of the model become lower and lower. After a considerable 
           </p>
         </Page>
 )}}
