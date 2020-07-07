@@ -49,8 +49,12 @@ class HomePage extends Component {
           <Title label="Variational Autoencoder"/>
           <p>
             Variational autoencoder is similar to the autoencoder we described above. However, instead of encoding the input to a single latent variable, VAE will encode the input to 
-            a normal distribution. 
+            a normal distribution. There are two main reasons for modelling distributions instead of single value. 
           </p>
+          <p>
+            First, we might want to draw samples from the distribution and create a new plausible values of x.
+          </p>
+
         </Page>
 )}}
 

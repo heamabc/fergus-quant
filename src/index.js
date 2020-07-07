@@ -45,6 +45,7 @@ import EDA from './components/Pages/MachineLearning/EDA'
 import MLBasics from './components/Pages/MachineLearning/MLBasics'
 import Regularization from './components/Pages/MachineLearning/Regularization'
 import MLTechniques from './components/Pages/MachineLearning/MLTechniques'
+import EvaluationMetrics from './components/Pages/MachineLearning/EvaluationMetrics'
 import SequenceModelDL from './components/Pages/MachineLearning/SequenceModelDL'
 import ImbalancedData from './components/Pages/MachineLearning/ImbalancedData'
 import FeatureSelection from './components/Pages/MachineLearning/FeatureSelection'
@@ -52,8 +53,9 @@ import BigDataset from  './components/Pages/MachineLearning/BigDataset'
 import LogisticRegression from  './components/Pages/MachineLearning/LogisticRegression'
 import XGBoost from  './components/Pages/MachineLearning/XGBoost'
 //======================================= Neural Network =========================================
-import DeepLearning from './components/Pages/NueralNetwork/DeepLearning'
 import NeuralNetworkBascis from './components/Pages/NueralNetwork/NeuralNetworkBasics'
+import ActivationFunction from './components/Pages/NueralNetwork/ActivationFunction'
+import DeepLearning from './components/Pages/NueralNetwork/DeepLearning'
 import AutoEncoder from './components/Pages/NueralNetwork/AutoEncoder'
 //======================================= Big Data =========================================
 import AWSEC2Hadoop from './components/Pages/BigData/AWSEC2Hadoop'
@@ -112,6 +114,7 @@ const routing = (
           <Route exact path="/tutorial/machine-learning/machine-learning-basics" component={MLBasics} />
           <Route exact path="/tutorial/machine-learning/regularization" component={Regularization} />
           <Route exact path="/tutorial/machine-learning/machine-learning-techniques" component={MLTechniques} />
+          <Route exact path="/tutorial/machine-learning/evaluation-metrics" component={EvaluationMetrics} />
           <Route exact path="/tutorial/machine-learning/sequence-model-with-deep-learning" component={SequenceModelDL} />
           <Route exact path="/tutorial/machine-learning/imbalanced-data" component={ImbalancedData} />
           <Route exact path="/tutorial/machine-learning/feature-selection" component={FeatureSelection} />
@@ -119,9 +122,10 @@ const routing = (
           <Route exact path="/tutorial/machine-learning/logistic-regression" component={LogisticRegression} />
           <Route exact path="/tutorial/machine-learning/xgboost" component={XGBoost} />
           
-          <Route exact path="/tutorial/machine-learning/neural-network-basics" component={NeuralNetworkBascis} />
-          <Route exact path="/tutorial/machine-learning/deep-learning" component={DeepLearning} />
-          <Route exact path="/tutorial/machine-learning/auto-encoder" component={AutoEncoder} />
+          <Route exact path="/tutorial/neural-network/neural-network-basics" component={NeuralNetworkBascis} />
+          <Route exact path="/tutorial/neural-network/activation-function" component={ActivationFunction} />
+          <Route exact path="/tutorial/neural-network/deep-learning" component={DeepLearning} />
+          <Route exact path="/tutorial/neural-network/auto-encoder" component={AutoEncoder} />
 
           <Route exact path="/tutorial/big-data/aws-ec2-hadoop" component ={AWSEC2Hadoop} />
 

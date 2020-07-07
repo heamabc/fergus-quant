@@ -10,6 +10,10 @@ class HomePage extends Component {
             <Page>
                 <Title style={{marginBottom: 60}} label={'Experience'}/>
                 <div className='EntryContainer'>
+                <Entry date='June 2019 - Now'
+                        title='Research Assistant (Data Science)'
+                        location='Centre of Financial Engineering, The Chinese University of Hong Kong, Hong Kong'
+                />   
                 <Entry date='September 2019 - April 2020'
                         title='Data Scientist Intern'
                         location='AXA HK, Hong Kong'

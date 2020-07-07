@@ -8,10 +8,16 @@ class HomePage extends Component {
     render() {
         return (
             <Page>
+                
                 <Title style={{marginBottom: 60}} label={'Recent Project'}/>
                 <div className='EntryContainer'>
                 <EntryWithLink 
-                        href='#'
+                        href='https://github.com/heamabc/P2P-Loan-Acceptance-and-Default-Prediction'
+                        location='Stock Price Prediction - Goldman Sachs'
+                        details='GAN, Reinforcement Learning Hyperparameters Optimization, ARIMA'
+                />  
+                <EntryWithLink 
+                        href='https://github.com/heamabc/P2P-Loan-Acceptance-and-Default-Prediction'
                         location='P2P Loan Acceptance and Default Prediction with AI'
                         details='Neural Network, Logistic Regression, SVM'
                 />  
