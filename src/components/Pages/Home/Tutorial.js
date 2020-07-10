@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, {MinorTitle} from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title, {CategoryTitle} from '../../CommonComponents/Title/Title'
-import PythonTable,{StatTable, DataBaseTable, SoftwareEngineeringTable, FinanceTable, QuantTable, MLTable, NNTable , BigDataTable, OthersTable} from '../../CommonComponents/NavigationTable/NavigationTable'
+import PythonTable,{StatTable, EconometricsTable, DataBaseTable, SoftwareEngineeringTable, FinanceTable, QuantTable, MLTable, NNTable , BigDataTable, OthersTable} from '../../CommonComponents/NavigationTable/NavigationTable'
 import '../css/AllPages.scss';
 
 
@@ -15,6 +15,9 @@ class HomePage extends Component {
 
                 <CategoryTitle label="Statistics" />
                 <StatTable />
+
+                <CategoryTitle label="Econometrics" />
+                <EconometricsTable />
 
                 <CategoryTitle label="Database" />
                 <DataBaseTable />

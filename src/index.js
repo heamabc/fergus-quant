@@ -17,7 +17,6 @@ import Parallelization from './components/Pages/Python/Parallelization'
 import Numpy from './components/Pages/Python/Numpy'
 //======================================= Statistics =========================================
 import Probability from './components/Pages/Statistics/Probability'
-import Econometrics from './components/Pages/Statistics/Econometrics'
 import TTestAndANOVA from './components/Pages/Statistics/TTestAndANOVA'
 import Heteroskedasticity from './components/Pages/Statistics/Heteroskedasticity'
 import StochasticProcess from './components/Pages/Statistics/StochasticProcess'
@@ -26,6 +25,10 @@ import HurstExponent from './components/Pages/Statistics/HurstExponent'
 import TimeSeries from './components/Pages/Statistics/TimeSeries'
 import NormalDistributionTheory from './components/Pages/Statistics/NormalDistributionTheory'
 import PCA from './components/Pages/Statistics/PCA'
+//======================================= Econometrics =========================================
+import OLS from './components/Pages/Econometrics/OLS'
+import GaussianMarkov from './components/Pages/Econometrics/GaussianMarkov'
+import GLS from './components/Pages/Econometrics/GLS'
 //======================================= DataBase =========================================
 import RelationalDataBase from './components/Pages/Database/RelationalDatabase'
 //======================================= Software Engineering =========================================
@@ -42,6 +45,7 @@ import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Quant/SmartBeta'
 //======================================= Machine Learning =========================================
 import EDA from './components/Pages/MachineLearning/EDA'
+import DataCleaning from './components/Pages/MachineLearning/DataCleaning'
 import MLBasics from './components/Pages/MachineLearning/MLBasics'
 import Regularization from './components/Pages/MachineLearning/Regularization'
 import MLTechniques from './components/Pages/MachineLearning/MLTechniques'
@@ -51,11 +55,13 @@ import ImbalancedData from './components/Pages/MachineLearning/ImbalancedData'
 import FeatureSelection from './components/Pages/MachineLearning/FeatureSelection'
 import BigDataset from  './components/Pages/MachineLearning/BigDataset'
 import LogisticRegression from  './components/Pages/MachineLearning/LogisticRegression'
+import RegressionDecisionTree from  './components/Pages/MachineLearning/RegressionDecisionTree'
 import XGBoost from  './components/Pages/MachineLearning/XGBoost'
 //======================================= Neural Network =========================================
 import NeuralNetworkBascis from './components/Pages/NueralNetwork/NeuralNetworkBasics'
 import ActivationFunction from './components/Pages/NueralNetwork/ActivationFunction'
 import DeepLearning from './components/Pages/NueralNetwork/DeepLearning'
+import RecurrentNN from './components/Pages/NueralNetwork/RecurrentNN'
 import AutoEncoder from './components/Pages/NueralNetwork/AutoEncoder'
 //======================================= Big Data =========================================
 import AWSEC2Hadoop from './components/Pages/BigData/AWSEC2Hadoop'
@@ -86,7 +92,6 @@ const routing = (
           <Route exact path="/tutorial/python/numpy" component={Numpy} />
 
           <Route exact path="/tutorial/statistics/Probability" component={Probability} />
-          <Route exact path="/tutorial/statistics/econometrics" component={Econometrics} />
           <Route exact path="/tutorial/statistics/Heteroskedasticity" component={Heteroskedasticity} />
           <Route exact path="/tutorial/statistics/ttest-and-anova" component={TTestAndANOVA} />
           <Route exact path="/tutorial/statistics/stochastic-process" component={StochasticProcess} />
@@ -95,6 +100,10 @@ const routing = (
           <Route exact path="/tutorial/statistics/time-series" component={TimeSeries} />
           <Route exact path="/tutorial/statistics/normal-distribution-theory" component={NormalDistributionTheory} />
           <Route exact path="/tutorial/statistics/PCA" component={PCA} />
+
+          <Route exact path="/tutorial/econometrics/OLS" component={OLS} />
+          <Route exact path="/tutorial/econometrics/gaussian-markov-theorem" component={GaussianMarkov} />
+          <Route exact path="/tutorial/econometrics/GLS" component={GLS} />
 
           <Route exact path="/tutorial/database/relational-database" component={RelationalDataBase} />
 
@@ -111,6 +120,7 @@ const routing = (
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />
 
           <Route exact path="/tutorial/machine-learning/eda" component={EDA} />
+          <Route exact path="/tutorial/machine-learning/data-cleaning" component={DataCleaning} />
           <Route exact path="/tutorial/machine-learning/machine-learning-basics" component={MLBasics} />
           <Route exact path="/tutorial/machine-learning/regularization" component={Regularization} />
           <Route exact path="/tutorial/machine-learning/machine-learning-techniques" component={MLTechniques} />
@@ -120,11 +130,13 @@ const routing = (
           <Route exact path="/tutorial/machine-learning/feature-selection" component={FeatureSelection} />
           <Route exact path="/tutorial/machine-learning/big-dataset" component={BigDataset} />
           <Route exact path="/tutorial/machine-learning/logistic-regression" component={LogisticRegression} />
+          <Route exact path="/tutorial/machine-learning/regression-decision-tree" component={RegressionDecisionTree} />
           <Route exact path="/tutorial/machine-learning/xgboost" component={XGBoost} />
           
           <Route exact path="/tutorial/neural-network/neural-network-basics" component={NeuralNetworkBascis} />
           <Route exact path="/tutorial/neural-network/activation-function" component={ActivationFunction} />
           <Route exact path="/tutorial/neural-network/deep-learning" component={DeepLearning} />
+          <Route exact path="/tutorial/neural-network/recurrent-neural-network" component={RecurrentNN} />
           <Route exact path="/tutorial/neural-network/auto-encoder" component={AutoEncoder} />
 
           <Route exact path="/tutorial/big-data/aws-ec2-hadoop" component ={AWSEC2Hadoop} />

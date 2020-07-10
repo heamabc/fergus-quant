@@ -22,7 +22,6 @@ export const StatTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
             <li><NavLink  to="/tutorial/statistics/probability/" activeClassName={"ActivePage"}>Probability</NavLink ></li>
-            <li><NavLink  to="/tutorial/statistics/econometrics/" activeClassName={"ActivePage"}>Econometrics</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/Heteroskedasticity/" activeClassName={"ActivePage"}>Heteroskedasticity</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/ttest-and-anova/" activeClassName={"ActivePage"}>T-Test & ANOVA</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/stochastic-process/" activeClassName={"ActivePage"}>Stochastic Process</NavLink ></li>
@@ -31,6 +30,16 @@ export const StatTable =(props) => (
             <li><NavLink  to="/tutorial/statistics/time-series/" activeClassName={"ActivePage"}>Time Series</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/normal-distribution-theory/" activeClassName={"ActivePage"}>Normal Distribution Theory</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/PCA/" activeClassName={"ActivePage"}>Principal Components Analysis (PCA)</NavLink ></li>
+        </ul>
+    </div>
+)
+
+export const EconometricsTable = (props) => (
+    <div className="NavigationTableContainer" >
+        <ul>
+            <li><NavLink  to="/tutorial/econometrics/OLS/" activeClassName={"ActivePage"}>Ordinary Least Squares (OLS)</NavLink ></li>
+            <li><NavLink  to="/tutorial/econometrics/gaussian-markov-theorem/" activeClassName={"ActivePage"}>Gaussian-Markov Theorem</NavLink ></li>
+            <li><NavLink  to="/tutorial/econometrics/GLS/" activeClassName={"ActivePage"}>Generalized Least Squared (GLS)</NavLink ></li>
         </ul>
     </div>
 )
@@ -76,17 +85,19 @@ export const QuantTable = (props) =>(
 export const MLTable = (props) =>(
     <div className="NavigationTableContainer" >
 		<ul>
-				<li><NavLink  to="/tutorial/machine-learning/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
-				<li><NavLink  to="/tutorial/machine-learning/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
-                <li><NavLink  to="/tutorial/machine-learning/regularization/" activeClassName={"ActivePage"}>Regularization</NavLink ></li>
-				<li><NavLink  to="/tutorial/machine-learning/machine-learning-techniques/" activeClassName={"ActivePage"}>Machine Learning Techniques</NavLink ></li>
-                <li><NavLink  to="/tutorial/machine-learning/evaluation-metrics/" activeClassName={"ActivePage"}>Evaluation Metrics</NavLink ></li>
-				<li><NavLink  to="/tutorial/machine-learning/sequence-model-with-deep-learning/" activeClassName={"ActivePage"}>SequenceModel with Deep Learning</NavLink ></li>
-                <li><NavLink  to="/tutorial/machine-learning/imbalanced-data/" activeClassName={"ActivePage"}>Imbalanced Data</NavLink ></li>
-                <li><NavLink  to="/tutorial/machine-learning/feature-selection/" activeClassName={"ActivePage"}>Feature Selection</NavLink ></li>
-                <li><NavLink  to="/tutorial/machine-learning/big-dataset/" activeClassName={"ActivePage"}>Big Dataset</NavLink ></li>
-                <li><NavLink  to="/tutorial/machine-learning/logistic-regression/" activeClassName={"ActivePage"}>Logistic Regression</NavLink ></li>
-                <li><NavLink  to="/tutorial/machine-learning/xgboost/" activeClassName={"ActivePage"}>XGBoost</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/data-cleaning/" activeClassName={"ActivePage"}>Data Cleaning</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/regularization/" activeClassName={"ActivePage"}>Regularization</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/machine-learning-techniques/" activeClassName={"ActivePage"}>Machine Learning Techniques</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/evaluation-metrics/" activeClassName={"ActivePage"}>Evaluation Metrics</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/sequence-model-with-deep-learning/" activeClassName={"ActivePage"}>SequenceModel with Deep Learning</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/imbalanced-data/" activeClassName={"ActivePage"}>Imbalanced Data</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/feature-selection/" activeClassName={"ActivePage"}>Feature Selection</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/big-dataset/" activeClassName={"ActivePage"}>Big Dataset</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/logistic-regression/" activeClassName={"ActivePage"}>Logistic Regression</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/regression-decision-tree/" activeClassName={"ActivePage"}>Regression Decision Tree</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/xgboost/" activeClassName={"ActivePage"}>XGBoost</NavLink ></li>
         </ul>
     </div>
 ) 
@@ -98,6 +109,7 @@ export const NNTable = (props) =>(
             <li><NavLink  to="/tutorial/neural-network/neural-network-basics/" activeClassName={"ActivePage"}>Neural Network Basics</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network/activation-function/" activeClassName={"ActivePage"}>Activation Function</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network/deep-learning/" activeClassName={"ActivePage"}>Deep Learning</NavLink ></li>
+            <li><NavLink  to="/tutorial/neural-network/recurrent-neural-network/" activeClassName={"ActivePage"}>Recurrent Neural Network</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network/auto-encoder/" activeClassName={"ActivePage"}>Auto Encoder</NavLink ></li>
         </ul>
     </div>

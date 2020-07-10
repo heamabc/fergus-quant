@@ -10,7 +10,10 @@ class HomePage extends Component {
         <Page>
             <Title style={{marginBottom: 60}} label={'About'}/>
             <p>
-                Hi! Welcome to my website! This is Fergus! I am a student studying quantitative finance in The Chinese University of Hong Kong.
+                Hi! Welcome to my website! This is Fergus! 
+            </p>
+            <p>
+                I am a student studying quantitative finance in The Chinese University of Hong Kong.
                 I love quantitative research and software engineering!
             </p>
             <p>

@@ -4,7 +4,7 @@ import './Fancybox.scss'
 const FancyBox = (props) => (
   <div className="FancyboxImageContainer">
     <a data-fancybox="gallery" href={props.link} data-caption={props.caption}>
-      <img src={props.link} alt={props.alt}/>
+      <img src={props.link} alt={props.alt} style={props.style}/>
     </a>
   </div>
 )

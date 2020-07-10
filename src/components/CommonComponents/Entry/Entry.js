@@ -41,15 +41,13 @@ export const EntryWithLink = (props) => {
             
             {props.date && (
                 <div className="date">
-                    <a href={props.href}>{props.date}</a>
+                    {props.date}
                 </div>
             )}
 
             {props.title && (
                 <div className="title">
-                    
                         {props.title}
-                    
                 </div>
             )}
 

@@ -12,10 +12,25 @@ class HomePage extends Component {
       return (
         <Page>       
           <Mathjex />
+          <Title label="Gradient Boosting" />
+          <PassageTitle label="Ensemble Learning" />
+          <p>
+            Ensemble learning is the method to combine multiple learning algorithms. It is believe that when combining several learning algorithms, we can 
+            achieve a better result than using only one learning algorithm. Overall, there are 2 major ensemble learning method. Namely bagging and boosting.
+          </p>
+          <MinorTitle label="Bagging" />
+          <p>
+            Bagging is to have multiple learning algorithms learning independently and in parallel. Then using some deterministic method to combine the results 
+            of all the learning algorithms.
+          </p>
+          <MinorTitle label="Boosting" />
+          <p>
+            Boosting is to have multiple learning algorithms learning dependently and sequentially.
+          </p>
           <Title label="Math behind XGBoost" />
           <p>
-            First we have an initial model\( F_0 \) to produce an initial guess about the data. Usually, we will produce a mean of the 
-            y.
+            First we have an initial model\( F_0 \) to produce an initial guess about the data. If the loss function is MSE, we will produce a mean of the 
+            y as the mean is a single value that will minimize the MSE function.
           </p>
           <PassageTitle label="Example" />
           <p>
