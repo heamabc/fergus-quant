@@ -27,7 +27,7 @@ class HomePage extends Component {
           & l(\cdot) = \text{loss function.} \\
           & J(\cdot) = \text{cost function.} \\
           \end{align}`}
-          The relationship between these variables can be seen in this way.
+          For the forward propagation, the relationship between these variables can be seen in this way.
           {String.raw`\begin{align}
           & \underbrace{z^{[l]}}_{(n^{[l]},m)} =  \underbrace{W^{[l]}}_{(n^{[l]}, n^{[l-1]})} \underbrace{a^{[l-1]}}_{(n^{[l-1]},m)} + \underbrace{b^{[l]}}_{(n^{[l]},m)} \\
           & a^{[l]} = g(z^{[l]})

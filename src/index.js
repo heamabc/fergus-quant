@@ -59,6 +59,7 @@ import RegressionDecisionTree from  './components/Pages/MachineLearning/Regressi
 import XGBoost from  './components/Pages/MachineLearning/XGBoost'
 //======================================= Neural Network =========================================
 import NeuralNetworkBascis from './components/Pages/NueralNetwork/NeuralNetworkBasics'
+import WeightInitialization from './components/Pages/NueralNetwork/WeightInitialization'
 import ActivationFunction from './components/Pages/NueralNetwork/ActivationFunction'
 import DeepLearning from './components/Pages/NueralNetwork/DeepLearning'
 import RecurrentNN from './components/Pages/NueralNetwork/RecurrentNN'
@@ -135,6 +136,7 @@ const routing = (
           
           <Route exact path="/tutorial/neural-network/neural-network-basics" component={NeuralNetworkBascis} />
           <Route exact path="/tutorial/neural-network/activation-function" component={ActivationFunction} />
+          <Route exact path="/tutorial/neural-network/weight-initialization" component={WeightInitialization} />
           <Route exact path="/tutorial/neural-network/deep-learning" component={DeepLearning} />
           <Route exact path="/tutorial/neural-network/recurrent-neural-network" component={RecurrentNN} />
           <Route exact path="/tutorial/neural-network/auto-encoder" component={AutoEncoder} />
