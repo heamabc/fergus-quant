@@ -33,7 +33,7 @@ class HomePage extends Component {
           </p>
           {String.raw`\begin{align}
           E[a^{[l-1]}] & = E[a^{[l]}] = 0 \\
-          Var(a^{[l-1]}) & = Var(a^{[l]})
+          Var(a^{[l-1]}) & = Var(a^{[l]}) = \sigma^2
           \end{align}`}
         </Page>
 )}}
