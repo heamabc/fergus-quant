@@ -44,6 +44,7 @@ import OptionsStrategy from './components/Pages/Finance/OptionsStrategy'
 import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Quant/SmartBeta'
 //======================================= Machine Learning =========================================
+import CommonProblem from './components/Pages/MachineLearning/CommonProblem'
 import EDA from './components/Pages/MachineLearning/EDA'
 import DataCleaning from './components/Pages/MachineLearning/DataCleaning'
 import MLBasics from './components/Pages/MachineLearning/MLBasics'
@@ -120,7 +121,8 @@ const routing = (
 
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />
-
+          
+          <Route exact path="/tutorial/machine-learning/common-problem" component={CommonProblem} />
           <Route exact path="/tutorial/machine-learning/eda" component={EDA} />
           <Route exact path="/tutorial/machine-learning/data-cleaning" component={DataCleaning} />
           <Route exact path="/tutorial/machine-learning/machine-learning-basics" component={MLBasics} />

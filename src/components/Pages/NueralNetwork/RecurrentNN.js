@@ -25,7 +25,10 @@ class HomePage extends Component {
             In each time step, LSTM takes 3 inputs. The current input data, the hidden state from the previous cell, and cel state from the 
             previous cell.
             <FancyBox caption="RNN" alt="RNN" link="https://drive.google.com/uc?id=1KvVxl9OCO1eSUvVMd2YJZ_IfIgV7QDXN"/>
-            
+            <PassageTitle label="GRU" />
+            <PassageTitle label="LSTM" />
+            <PassageTitle label="Bidirectional RNN" />
+            <PassageTitle label="Deep RNN" />
           </p>
         </Page>
 )}}

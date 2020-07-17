@@ -85,6 +85,7 @@ export const QuantTable = (props) =>(
 export const MLTable = (props) =>(
     <div className="NavigationTableContainer" >
 		<ul>
+            <li><NavLink  to="/tutorial/machine-learning/common-problem/" activeClassName={"ActivePage"}>Common Problem</NavLink ></li>
             <li><NavLink  to="/tutorial/machine-learning/eda/" activeClassName={"ActivePage"}>EDA</NavLink ></li>
             <li><NavLink  to="/tutorial/machine-learning/data-cleaning/" activeClassName={"ActivePage"}>Data Cleaning</NavLink ></li>
             <li><NavLink  to="/tutorial/machine-learning/machine-learning-basics/" activeClassName={"ActivePage"}>Machine Learning Basics</NavLink ></li>
