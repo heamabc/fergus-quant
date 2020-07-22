@@ -64,6 +64,7 @@ import LearningRateScheduler from './components/Pages/NueralNetwork/LearningRate
 import WeightInitialization from './components/Pages/NueralNetwork/WeightInitialization'
 import ActivationFunction from './components/Pages/NueralNetwork/ActivationFunction'
 import DeepLearning from './components/Pages/NueralNetwork/DeepLearning'
+import ConvolutionalNN from './components/Pages/NueralNetwork/ConvolutionalNN'
 import RecurrentNN from './components/Pages/NueralNetwork/RecurrentNN'
 import AutoEncoder from './components/Pages/NueralNetwork/AutoEncoder'
 //======================================= Big Data =========================================
@@ -142,6 +143,7 @@ const routing = (
           <Route exact path="/tutorial/neural-network/weight-initialization" component={WeightInitialization} />
           <Route exact path="/tutorial/neural-network/learning-rate-scheduler" component={LearningRateScheduler} />
           <Route exact path="/tutorial/neural-network/deep-learning" component={DeepLearning} />
+          <Route exact path="/tutorial/neural-network/convolutional-neural-network" component={ConvolutionalNN} />
           <Route exact path="/tutorial/neural-network/recurrent-neural-network" component={RecurrentNN} />
           <Route exact path="/tutorial/neural-network/auto-encoder" component={AutoEncoder} />
 

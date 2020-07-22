@@ -112,6 +112,7 @@ export const NNTable = (props) =>(
             <li><NavLink  to="/tutorial/neural-network/weight-initialization/" activeClassName={"ActivePage"}>Weight Initialization</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network/learning-rate-scheduler/" activeClassName={"ActivePage"}>Learning Rate Scheduler</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network/deep-learning/" activeClassName={"ActivePage"}>Deep Learning</NavLink ></li>
+            <li><NavLink  to="/tutorial/neural-network/convolutional-neural-network/" activeClassName={"ActivePage"}>Convolutional Neural Network</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network/recurrent-neural-network/" activeClassName={"ActivePage"}>Recurrent Neural Network</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network/auto-encoder/" activeClassName={"ActivePage"}>Auto Encoder</NavLink ></li>
         </ul>
