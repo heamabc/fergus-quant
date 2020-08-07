@@ -67,10 +67,14 @@ import DeepLearning from './components/Pages/NueralNetwork/DeepLearning'
 import ConvolutionalNN from './components/Pages/NueralNetwork/ConvolutionalNN'
 import RecurrentNN from './components/Pages/NueralNetwork/RecurrentNN'
 import AutoEncoder from './components/Pages/NueralNetwork/AutoEncoder'
+//======================================= GAN =========================================
+import VanillaGAN from './components/Pages/GAN/VanillaGAN'
+//======================================= AWS =========================================
+import ExtendingDisk from './components/Pages/AWS/ExtendingDisk'
+import AWSJupyterNotebook from './components/Pages/AWS/AWSJupyterNotebook'
 //======================================= Big Data =========================================
 import AWSEC2Hadoop from './components/Pages/BigData/AWSEC2Hadoop'
 //======================================= Others =========================================
-import AWSJupyterNotebook from './components/Pages/Others/AWSJupyterNotebook'
 import UsefulWebsite from './components/Pages/Others/UsefulWebsite'
 
 /* TODO
@@ -147,9 +151,13 @@ const routing = (
           <Route exact path="/tutorial/neural-network/recurrent-neural-network" component={RecurrentNN} />
           <Route exact path="/tutorial/neural-network/auto-encoder" component={AutoEncoder} />
 
+          <Route exact path="/tutorial/GAN/vanilla-GAN" component={VanillaGAN} />
+
+          <Route exact path="/tutorial/AWS/extending-disk-space" component={ExtendingDisk} />
+          <Route exact path="/tutorial/AWS/aws-jupyter-notebook" component={AWSJupyterNotebook} />
+
           <Route exact path="/tutorial/big-data/aws-ec2-hadoop" component ={AWSEC2Hadoop} />
 
-          <Route exact path="/tutorial/others/aws-jupyter-notebook" component={AWSJupyterNotebook} />
           <Route exact path="/tutorial/others/useful-website" component={UsefulWebsite} />
           <Redirect to="/" />
       </Switch>

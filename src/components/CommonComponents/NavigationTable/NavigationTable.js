@@ -119,6 +119,23 @@ export const NNTable = (props) =>(
     </div>
 )
 
+export const GANTable = (props) =>(
+    <div className="NavigationTableContainer" >
+        <ul>
+        <li><NavLink  to="/tutorial/GAN/vanilla-GAN/" activeClassName={"ActivePage"}>Vanilla GAN</NavLink ></li>
+        </ul>
+    </div>
+)
+
+export const AWSTable = (props) =>(
+    <div className="NavigationTableContainer" >
+        <ul>
+        <li><NavLink  to="/tutorial/AWS/extending-disk-space/" activeClassName={"ActivePage"}>Extending Disk Space</NavLink ></li>
+        <li><NavLink  to="/tutorial/AWS/aws-jupyter-notebook/" activeClassName={"ActivePage"}>AWS Juputer Notebook</NavLink ></li>
+        </ul>
+    </div>
+)
+
 export const BigDataTable = (props) =>(
     <div className="NavigationTableContainer" >
         <ul>
@@ -131,7 +148,6 @@ export const OthersTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
             <li><NavLink  to="/tutorial/others/useful-website/" activeClassName={"ActivePage"}>Useful Website</NavLink ></li>
-            <li><NavLink  to="/tutorial/others/aws-jupyter-notebook/" activeClassName={"ActivePage"}>AWS Juputer Notebook</NavLink ></li>
         </ul>
     </div>
 )
