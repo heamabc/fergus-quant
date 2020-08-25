@@ -22,6 +22,7 @@ export const StatTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
             <li><NavLink  to="/tutorial/statistics/probability/" activeClassName={"ActivePage"}>Probability</NavLink ></li>
+            <li><NavLink  to="/tutorial/statistics/bayes-theorem/" activeClassName={"ActivePage"}>Bayes Theorem</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/Heteroskedasticity/" activeClassName={"ActivePage"}>Heteroskedasticity</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/ttest-and-anova/" activeClassName={"ActivePage"}>T-Test & ANOVA</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/stochastic-process/" activeClassName={"ActivePage"}>Stochastic Process</NavLink ></li>
@@ -115,6 +116,14 @@ export const NNTable = (props) =>(
             <li><NavLink  to="/tutorial/neural-network/convolutional-neural-network/" activeClassName={"ActivePage"}>Convolutional Neural Network</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network/recurrent-neural-network/" activeClassName={"ActivePage"}>Recurrent Neural Network</NavLink ></li>
             <li><NavLink  to="/tutorial/neural-network/auto-encoder/" activeClassName={"ActivePage"}>Auto Encoder</NavLink ></li>
+        </ul>
+    </div>
+)
+
+export const TimeSeriesMLTable = (props) =>(
+    <div className="NavigationTableContainer" >
+        <ul>
+        <li><NavLink  to="/tutorial/time-series-ml/denoising-data/" activeClassName={"ActivePage"}>Denoising Data</NavLink ></li>
         </ul>
     </div>
 )

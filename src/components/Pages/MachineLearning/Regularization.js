@@ -64,7 +64,8 @@ class HomePage extends Component {
           <Title label="Constraints in Learning Process" />
           <PassageTitle label="Dropout" />
           <PassageTitle label="Early Stopping" />
-
+          <Title label="Others" />
+          <PassageTitle label="Data Augmentation" />
         </Page>
 )}}
 

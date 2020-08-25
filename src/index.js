@@ -11,12 +11,14 @@ import RecentProjects from './components/Pages/Home/RecentProjects';
 import Resume from './components/Pages/Home/Resume';
 import About from './components/Pages/Home/About';
 import Tutorial from './components/Pages/Home/Tutorial';
+import Hireme from './components/Pages/Home//HireMe';
 //======================================= Python =========================================
 import Basics from './components/Pages/Python/Basics'
 import Parallelization from './components/Pages/Python/Parallelization'
 import Numpy from './components/Pages/Python/Numpy'
 //======================================= Statistics =========================================
 import Probability from './components/Pages/Statistics/Probability'
+import BayesTheorem from './components/Pages/Statistics/BayesTheorem'
 import TTestAndANOVA from './components/Pages/Statistics/TTestAndANOVA'
 import Heteroskedasticity from './components/Pages/Statistics/Heteroskedasticity'
 import StochasticProcess from './components/Pages/Statistics/StochasticProcess'
@@ -67,6 +69,8 @@ import DeepLearning from './components/Pages/NueralNetwork/DeepLearning'
 import ConvolutionalNN from './components/Pages/NueralNetwork/ConvolutionalNN'
 import RecurrentNN from './components/Pages/NueralNetwork/RecurrentNN'
 import AutoEncoder from './components/Pages/NueralNetwork/AutoEncoder'
+//======================================= Time Series ML =========================================
+import DenoisingData from './components/Pages/TimeSeriesML/DenoisingData'
 //======================================= GAN =========================================
 import VanillaGAN from './components/Pages/GAN/VanillaGAN'
 //======================================= AWS =========================================
@@ -87,19 +91,21 @@ const routing = (
       <Router>
         <Switch>
         <Route exact path="/" component={Home} />
+          {/*======================================= Info =========================================*/}
           <Route exact path="/info/education" component={Education} />
           <Route exact path="/info/experience" component={Experience} />
           <Route exact path="/info/recent-projects" component={RecentProjects} />
           <Route exact path="/info/resume" component={Resume} />
           <Route exact path="/info/about" component={About} />
-
+          <Route exact path="/info/hire-me" component={Hireme} />
           <Route exact path="/tutorial" component={Tutorial} />
-
+          {/*======================================= Python =========================================*/}
           <Route exact path="/tutorial/python/basics" component={Basics} />
           <Route exact path="/tutorial/python/parallelization" component={Parallelization} />
           <Route exact path="/tutorial/python/numpy" component={Numpy} />
-
+          {/*======================================= Statistics =========================================*/}
           <Route exact path="/tutorial/statistics/Probability" component={Probability} />
+          <Route exact path="/tutorial/statistics/bayes-theorem" component={BayesTheorem} />
           <Route exact path="/tutorial/statistics/Heteroskedasticity" component={Heteroskedasticity} />
           <Route exact path="/tutorial/statistics/ttest-and-anova" component={TTestAndANOVA} />
           <Route exact path="/tutorial/statistics/stochastic-process" component={StochasticProcess} />
@@ -108,25 +114,25 @@ const routing = (
           <Route exact path="/tutorial/statistics/time-series" component={TimeSeries} />
           <Route exact path="/tutorial/statistics/normal-distribution-theory" component={NormalDistributionTheory} />
           <Route exact path="/tutorial/statistics/PCA" component={PCA} />
-
+          {/*======================================= Econometrics =========================================*/}
           <Route exact path="/tutorial/econometrics/OLS" component={OLS} />
           <Route exact path="/tutorial/econometrics/gaussian-markov-theorem" component={GaussianMarkov} />
           <Route exact path="/tutorial/econometrics/GLS" component={GLS} />
-
+          {/*======================================= Database =========================================*/}
           <Route exact path="/tutorial/database/relational-database" component={RelationalDataBase} />
-
+          {/*======================================= Software Engineering =========================================*/}
           <Route exact path="/tutorial/software-engineering/linux" component={Linux} />
           <Route exact path="/tutorial/software-engineering/git" component={Git} />
           <Route exact path="/tutorial/software-engineering/analysis-of-algorithms" component={AnalysisOfAlgorithms} />
           <Route exact path="/tutorial/software-engineering/debug" component={Debug} />
           <Route exact path="/tutorial/software-engineering/network-protocol" component={NetworkProtocol} />
           <Route exact path="/tutorial/software-engineering/sorting-algorithm" component={SortingAlgorithm} />
-
+          {/*======================================= Finance =========================================*/}
           <Route exact path="/tutorial/finance/options-strategy" component={OptionsStrategy} />
-
+          {/*======================================= Quant =========================================*/}
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />
-          
+          {/*======================================= Machine Learning =========================================*/}
           <Route exact path="/tutorial/machine-learning/common-problem" component={CommonProblem} />
           <Route exact path="/tutorial/machine-learning/eda" component={EDA} />
           <Route exact path="/tutorial/machine-learning/data-cleaning" component={DataCleaning} />
@@ -141,7 +147,7 @@ const routing = (
           <Route exact path="/tutorial/machine-learning/logistic-regression" component={LogisticRegression} />
           <Route exact path="/tutorial/machine-learning/regression-decision-tree" component={RegressionDecisionTree} />
           <Route exact path="/tutorial/machine-learning/xgboost" component={XGBoost} />
-          
+          {/*======================================= Neural Network =========================================*/}
           <Route exact path="/tutorial/neural-network/neural-network-basics" component={NeuralNetworkBascis} />
           <Route exact path="/tutorial/neural-network/activation-function" component={ActivationFunction} />
           <Route exact path="/tutorial/neural-network/weight-initialization" component={WeightInitialization} />
@@ -150,14 +156,16 @@ const routing = (
           <Route exact path="/tutorial/neural-network/convolutional-neural-network" component={ConvolutionalNN} />
           <Route exact path="/tutorial/neural-network/recurrent-neural-network" component={RecurrentNN} />
           <Route exact path="/tutorial/neural-network/auto-encoder" component={AutoEncoder} />
-
+          {/*======================================= Time Series ML =========================================*/}
+          <Route exact path="/tutorial/time-series-ml/denoising-data" component={DenoisingData} />
+          {/*======================================= GAN =========================================*/}
           <Route exact path="/tutorial/GAN/vanilla-GAN" component={VanillaGAN} />
-
+          {/*======================================= AWS =========================================*/}
           <Route exact path="/tutorial/AWS/extending-disk-space" component={ExtendingDisk} />
           <Route exact path="/tutorial/AWS/aws-jupyter-notebook" component={AWSJupyterNotebook} />
-
+          {/*======================================= Big Data =========================================*/}
           <Route exact path="/tutorial/big-data/aws-ec2-hadoop" component ={AWSEC2Hadoop} />
-
+          {/*======================================= Others =========================================*/}
           <Route exact path="/tutorial/others/useful-website" component={UsefulWebsite} />
           <Redirect to="/" />
       </Switch>

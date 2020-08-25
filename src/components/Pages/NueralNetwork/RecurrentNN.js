@@ -26,6 +26,7 @@ class HomePage extends Component {
             previous cell.
             <FancyBox caption="RNN" alt="RNN" link="https://drive.google.com/uc?id=1KvVxl9OCO1eSUvVMd2YJZ_IfIgV7QDXN"/>
             <PassageTitle label="Statefulness" />
+            <PassageTitle label='Vanish Gradients of RNN' />
             <PassageTitle label="GRU" />
             <PassageTitle label="Long Short Term Memory (LSTM)" />
             <p>
