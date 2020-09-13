@@ -100,6 +100,7 @@ export const MLTable = (props) =>(
             <li><NavLink  to="/tutorial/machine-learning/logistic-regression/" activeClassName={"ActivePage"}>Logistic Regression</NavLink ></li>
             <li><NavLink  to="/tutorial/machine-learning/regression-decision-tree/" activeClassName={"ActivePage"}>Regression Decision Tree</NavLink ></li>
             <li><NavLink  to="/tutorial/machine-learning/xgboost/" activeClassName={"ActivePage"}>XGBoost</NavLink ></li>
+            <li><NavLink  to="/tutorial/machine-learning/bayesian-optimization/" activeClassName={"ActivePage"}>Bayesian Optimization</NavLink ></li>
         </ul>
     </div>
 ) 
@@ -124,6 +125,14 @@ export const TimeSeriesMLTable = (props) =>(
     <div className="NavigationTableContainer" >
         <ul>
         <li><NavLink  to="/tutorial/time-series-ml/denoising-data/" activeClassName={"ActivePage"}>Denoising Data</NavLink ></li>
+        </ul>
+    </div>
+)
+
+export const NLPTable = (props) =>(
+    <div className="NavigationTableContainer" >
+        <ul>
+        <li><NavLink  to="/tutorial/time-series-ml/word-embeddings/" activeClassName={"ActivePage"}>Word Embeddings</NavLink ></li>
         </ul>
     </div>
 )

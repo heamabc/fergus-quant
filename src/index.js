@@ -60,6 +60,7 @@ import BigDataset from  './components/Pages/MachineLearning/BigDataset'
 import LogisticRegression from  './components/Pages/MachineLearning/LogisticRegression'
 import RegressionDecisionTree from  './components/Pages/MachineLearning/RegressionDecisionTree'
 import XGBoost from  './components/Pages/MachineLearning/XGBoost'
+import BayesianOptimization from  './components/Pages/MachineLearning/BayesianOptimization'
 //======================================= Neural Network =========================================
 import NeuralNetworkBascis from './components/Pages/NueralNetwork/NeuralNetworkBasics'
 import LearningRateScheduler from './components/Pages/NueralNetwork/LearningRateScheduler'
@@ -71,6 +72,8 @@ import RecurrentNN from './components/Pages/NueralNetwork/RecurrentNN'
 import AutoEncoder from './components/Pages/NueralNetwork/AutoEncoder'
 //======================================= Time Series ML =========================================
 import DenoisingData from './components/Pages/TimeSeriesML/DenoisingData'
+//======================================= Time Series ML =========================================
+import WordEmbedding from './components/Pages/NLP/WordEmbedding'
 //======================================= GAN =========================================
 import VanillaGAN from './components/Pages/GAN/VanillaGAN'
 //======================================= AWS =========================================
@@ -147,6 +150,7 @@ const routing = (
           <Route exact path="/tutorial/machine-learning/logistic-regression" component={LogisticRegression} />
           <Route exact path="/tutorial/machine-learning/regression-decision-tree" component={RegressionDecisionTree} />
           <Route exact path="/tutorial/machine-learning/xgboost" component={XGBoost} />
+          <Route exact path="/tutorial/machine-learning/bayesian-optimization" component={BayesianOptimization} />
           {/*======================================= Neural Network =========================================*/}
           <Route exact path="/tutorial/neural-network/neural-network-basics" component={NeuralNetworkBascis} />
           <Route exact path="/tutorial/neural-network/activation-function" component={ActivationFunction} />
@@ -158,6 +162,8 @@ const routing = (
           <Route exact path="/tutorial/neural-network/auto-encoder" component={AutoEncoder} />
           {/*======================================= Time Series ML =========================================*/}
           <Route exact path="/tutorial/time-series-ml/denoising-data" component={DenoisingData} />
+          {/*======================================= Time Series ML =========================================*/}
+          <Route exact path="/tutorial/time-series-ml/word-embeddings" component={WordEmbedding} />
           {/*======================================= GAN =========================================*/}
           <Route exact path="/tutorial/GAN/vanilla-GAN" component={VanillaGAN} />
           {/*======================================= AWS =========================================*/}
