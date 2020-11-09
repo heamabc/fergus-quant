@@ -19,10 +19,6 @@ main{
         color: $dark-red;
     }
     
-    pre{
-        white-space: pre-wrap;
-    }
-    
     .MuiTableCell-head{
         background-color: $primary;
         color:white;
@@ -32,6 +28,7 @@ main{
         font-size: large;
         margin-top:1rem;
         margin-bottom:1.5rem;
+        white-space: pre-line;
     }
 
     mjx-container{

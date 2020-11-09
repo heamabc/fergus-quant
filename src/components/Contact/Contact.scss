@@ -1,11 +1,11 @@
 @import "../../common";
 
 .Contact {
-    display:flex;
+    display: inline-block;
     height: 50px;
     text-align: center;
-
     margin-left: 2rem;
+    width: 100%;
 
     ul{
         display:flex;

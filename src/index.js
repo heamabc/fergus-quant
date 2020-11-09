@@ -41,6 +41,7 @@ import Debug from './components/Pages/SoftwareEngineering/Debug'
 import NetworkProtocol from './components/Pages/SoftwareEngineering/NetworkProtocol'
 import SortingAlgorithm from './components/Pages/SoftwareEngineering/SortingAlgorithm'
 //======================================= Finance =========================================
+import FuturesPricing from './components/Pages/Finance/FuturesPricing'
 import OptionsStrategy from './components/Pages/Finance/OptionsStrategy'
 //======================================= Quant =========================================
 import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
@@ -131,6 +132,7 @@ const routing = (
           <Route exact path="/tutorial/software-engineering/network-protocol" component={NetworkProtocol} />
           <Route exact path="/tutorial/software-engineering/sorting-algorithm" component={SortingAlgorithm} />
           {/*======================================= Finance =========================================*/}
+          <Route exact path="/tutorial/finance/futures-pricing" component={FuturesPricing} />
           <Route exact path="/tutorial/finance/options-strategy" component={OptionsStrategy} />
           {/*======================================= Quant =========================================*/}
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />

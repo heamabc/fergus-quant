@@ -20,11 +20,32 @@
       color: $primary;
       margin-bottom: 10px;
     }
+
+    .header {
+      .date, .arrow{
+        display: inline-block;
+      }
+      
+      .arrow{
+        float: right; 
+        cursor: pointer;
+        background: none;
+        border: none;
+        transform: scale(1.7);
+      }
+    }
   
     .location {
       @extend .fontRoboto;
       color: black;
       margin-bottom: 10px;
+    }
+
+    p{
+      white-space: pre-line;
+      line-height: 1.5;
+      margin-left: 30px;
+      margin-bottom:0;
     }
   
     & > *:last-child {
