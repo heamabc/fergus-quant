@@ -8,3 +8,9 @@
 
     width: 100%;
 }
+
+@include phone{
+    .ContactContainer{
+        text-align:center;
+    }
+}

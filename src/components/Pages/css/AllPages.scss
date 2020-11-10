@@ -6,6 +6,10 @@ main{
     padding-right:2rem;
     width:100%;
 
+    a{
+        color:$primary;
+    }
+
     a:hover{
         color: $orange;
     }

@@ -18,9 +18,9 @@ class Contact extends Component {
                     <li><div className="vl" /></li>
                     <li><a href="https://linkedin.com/in/tak-hei-kwan" target="_blank"><LinkedInIcon className="MaterialIcon" /></a></li>
                     <li><div className="vl" /></li>
-                    <li><PhoneIcon className="MaterialIcon" /> +852 6125 5752</li>
+                    <li><PhoneIcon className="MaterialIcon" /><h4>+852 6125 5752</h4></li>
                     <li><div className="vl" /></li>
-                    <li><a href="mailto:takhei611@gmail.com"><MailIcon className="MaterialIcon" /></a> takhei611@gmail.com</li>
+                    <li><a href="mailto:takhei611@gmail.com"><MailIcon className="MaterialIcon" /></a><h4>takhei611@gmail.com</h4></li>
                 </ul>
             </div>
         )

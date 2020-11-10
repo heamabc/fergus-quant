@@ -9,12 +9,30 @@
 
 .CategoryTitleContainer{
   @extend .fontLemonMilk;
-  border-style: solid;
   background-color: $primary;
   color:white;
   margin-bottom: 1rem;
   padding-left: 2rem;
-
   border-style: solid;
-  border-color: $primary;
+  border-color: $primary; 
+  letter-spacing: 2px;
+  h3{
+    font-weight: 500; 
+  }
+  
+}
+
+@include phone{
+  .CategoryTitleContainer{
+    padding-left: 0;
+  }
+
+  h3{
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: large;
+    
+  }
 }

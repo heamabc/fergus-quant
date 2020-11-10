@@ -12,3 +12,9 @@
   transform: scale(3);
   color:$primary;
 }
+
+@include phone{
+  .ScrollToTopButton{
+      transform: scale(2);
+  }
+}

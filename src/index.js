@@ -44,6 +44,7 @@ import SortingAlgorithm from './components/Pages/SoftwareEngineering/SortingAlgo
 import FuturesPricing from './components/Pages/Finance/FuturesPricing'
 import OptionsStrategy from './components/Pages/Finance/OptionsStrategy'
 //======================================= Quant =========================================
+import NoArbAndRiskNeuP from './components/Pages/Quant/NoArbAndRiskNeuP'
 import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Quant/SmartBeta'
 //======================================= Machine Learning =========================================
@@ -135,6 +136,7 @@ const routing = (
           <Route exact path="/tutorial/finance/futures-pricing" component={FuturesPricing} />
           <Route exact path="/tutorial/finance/options-strategy" component={OptionsStrategy} />
           {/*======================================= Quant =========================================*/}
+          <Route exact path="/tutorial/quant/no-arb&risk-neu-p/" component={NoArbAndRiskNeuP} />
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />
           {/*======================================= Machine Learning =========================================*/}
