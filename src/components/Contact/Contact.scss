@@ -3,7 +3,7 @@
 .Contact {
     display: inline-block;
     margin-right: 20%;
-    margin-left:6%;
+    margin-left:15%;
 
     ul{
         display:flex;
@@ -17,8 +17,7 @@
         h4{
             display: inline-block;
             margin-bottom: 0;
-            margin-top: 0;
-            margin-right: 20px;
+            margin-top: 0.1rem;
         }
     }
 
@@ -27,18 +26,30 @@
         height: 30px;
       }
 
-    .MaterialIcon {
-        transform: scale(1.1);
+    .LinkedInIcon, .MaterialIcon {
+        transform: scale(1.2);
         display: inline-flex;
         vertical-align: top;
         margin-right:20px;
         margin-left:20px;
         color: $primary;
+        margin-top:0.2rem;
     }   
+
+    .LinkedInIcon{
+        transform: scale(1.5);
+    }
 
     svg:hover {
         color: $orange;
     }   
+    a:hover{
+        color: $orange;
+    }
+
+    a{
+        color:$primary;
+    }
 }
 
 @include phone{
