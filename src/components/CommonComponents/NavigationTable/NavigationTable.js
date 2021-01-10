@@ -81,7 +81,7 @@ export const FinanceTable =(props) => (
             <li><NavLink  to="/tutorial/finance/futures-pricing/" activeClassName={"ActivePage"}>Futures Pricing</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/options-strategy/" activeClassName={"ActivePage"}>Options Strategies</NavLink ></li>
         </ul>
-    </div>
+    </div> 
 )
 
 export const PortfolioManagementTable =(props) => (
