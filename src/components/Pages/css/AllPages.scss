@@ -5,6 +5,11 @@ main{
     padding-left: 2rem;
     padding-right:2rem;
     width:100%;
+    margin-bottom: 2rem;
+
+    a{
+        color:$primary;
+    }
 
     a:hover{
         color: $orange;
@@ -19,10 +24,6 @@ main{
         color: $dark-red;
     }
     
-    pre{
-        white-space: pre-wrap;
-    }
-    
     .MuiTableCell-head{
         background-color: $primary;
         color:white;
@@ -32,6 +33,7 @@ main{
         font-size: large;
         margin-top:1rem;
         margin-bottom:1.5rem;
+        white-space: pre-line;
     }
 
     mjx-container{

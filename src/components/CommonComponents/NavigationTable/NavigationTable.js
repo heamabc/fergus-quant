@@ -21,7 +21,6 @@ export default PythonTable
 export const StatTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
-            <li><NavLink  to="/tutorial/statistics/probability/" activeClassName={"ActivePage"}>Probability</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/bayes-theorem/" activeClassName={"ActivePage"}>Bayes Theorem</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/Heteroskedasticity/" activeClassName={"ActivePage"}>Heteroskedasticity</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/ttest-and-anova/" activeClassName={"ActivePage"}>T-Test & ANOVA</NavLink ></li>
@@ -31,6 +30,14 @@ export const StatTable =(props) => (
             <li><NavLink  to="/tutorial/statistics/time-series/" activeClassName={"ActivePage"}>Time Series</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/normal-distribution-theory/" activeClassName={"ActivePage"}>Normal Distribution Theory</NavLink ></li>
             <li><NavLink  to="/tutorial/statistics/PCA/" activeClassName={"ActivePage"}>Principal Components Analysis (PCA)</NavLink ></li>
+        </ul>
+    </div>
+)
+
+export const ProbabilityTable = (props) => (
+    <div className="NavigationTableContainer" >
+        <ul>
+            <li><NavLink  to="/tutorial/statistics/probability/" activeClassName={"ActivePage"}>Probability</NavLink ></li>
         </ul>
     </div>
 )
@@ -69,9 +76,14 @@ export const SoftwareEngineeringTable =(props) => (
 export const FinanceTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
+<<<<<<< HEAD
             <li><NavLink  to="/tutorial/finance/indexation/" activeClassName={"ActivePage"}>Indexation</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/theory-behind-indexation/" activeClassName={"ActivePage"}>Theory Behind Indexation</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/options-strategy/" activeClassName={"ActivePage"}>Options</NavLink ></li>
+=======
+        <li><NavLink  to="/tutorial/finance/futures-pricing/" activeClassName={"ActivePage"}>Futures Pricing</NavLink ></li>
+            <li><NavLink  to="/tutorial/finance/options-strategy/" activeClassName={"ActivePage"}>Options Strategies</NavLink ></li>
+>>>>>>> 8757e987408b605547defec5005907c2ac4886fb
         </ul>
     </div>
 )
@@ -90,6 +102,7 @@ export const PortfolioManagementTable =(props) => (
 export const QuantTable = (props) =>(
     <div className="NavigationTableContainer" >
         <ul>
+            <li><NavLink  to="/tutorial/quant/no-arb&risk-neu-p/" activeClassName={"ActivePage"}>No Arbitrage and Risk Neutral Probability</NavLink ></li>
             <li><NavLink  to="/tutorial/quant/portfolio-theory/" activeClassName={"ActivePage"}>Portfolio Theory</NavLink ></li>
             <li><NavLink  to="/tutorial/quant/smart-beta/" activeClassName={"ActivePage"}>Smart Beta</NavLink ></li>
         </ul>

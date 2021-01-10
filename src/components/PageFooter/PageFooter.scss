@@ -1,10 +1,16 @@
 @import "../../common";
 
 .footer{
-    text-align:center;
     margin-top: 3rem;
-    position: relative;
+    position: absolute;
     bottom: 0;
+    z-index:-1;
 
     width: 100%;
+}
+
+@include phone{
+    .ContactContainer{
+        text-align:center;
+    }
 }

@@ -41,8 +41,12 @@ import Debug from './components/Pages/SoftwareEngineering/Debug'
 import NetworkProtocol from './components/Pages/SoftwareEngineering/NetworkProtocol'
 import SortingAlgorithm from './components/Pages/SoftwareEngineering/SortingAlgorithm'
 //======================================= Finance =========================================
+<<<<<<< HEAD
 import Indexation from './components/Pages/Finance/Indexation'
 import TheoryBehindIndexation from './components/Pages/Finance/TheoryBehindIndexation'
+=======
+import FuturesPricing from './components/Pages/Finance/FuturesPricing'
+>>>>>>> 8757e987408b605547defec5005907c2ac4886fb
 import OptionsStrategy from './components/Pages/Finance/OptionsStrategy'
 //======================================= Portfolio Management =========================================
 import SAATAA from './components/Pages/PortfolioManagement/SAATAA'
@@ -50,6 +54,7 @@ import OptimizingSAA from './components/Pages/PortfolioManagement/OptimizingSAA'
 import Benchmark from './components/Pages/PortfolioManagement/Benchmark'
 import RiskAdjustedPerformance from './components/Pages/PortfolioManagement/RiskAdjustedPerformance'
 //======================================= Quant =========================================
+import NoArbAndRiskNeuP from './components/Pages/Quant/NoArbAndRiskNeuP'
 import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Quant/SmartBeta'
 //======================================= Machine Learning =========================================
@@ -140,6 +145,7 @@ const routing = (
           {/*======================================= Finance =========================================*/}
           <Route exact path="/tutorial/finance/indexation" component={Indexation} />
           <Route exact path="/tutorial/finance/theory-behind-indexation" component={TheoryBehindIndexation} />
+          <Route exact path="/tutorial/finance/futures-pricing" component={FuturesPricing} />
           <Route exact path="/tutorial/finance/options-strategy" component={OptionsStrategy} />
           {/*======================================= Portfolio Management =========================================*/}
           <Route exact path="/tutorial/portfolio-management/SAA-TAA" component={SAATAA} />
@@ -147,6 +153,7 @@ const routing = (
           <Route exact path="/tutorial/portfolio-management/risk-adjusted-performance" component={RiskAdjustedPerformance} />
           <Route exact path="/tutorial/portfolio-management/benchmark" component={Benchmark} />
           {/*======================================= Quant =========================================*/}
+          <Route exact path="/tutorial/quant/no-arb&risk-neu-p/" component={NoArbAndRiskNeuP} />
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />
           {/*======================================= Machine Learning =========================================*/}

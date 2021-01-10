@@ -1,4 +1,4 @@
-# https://fergus-quant.herokuapp.com/
+# https://www.fergus-quant.com/
 
 My personal website! It is written in ReactJS. It includes
 - Introduction about myself
