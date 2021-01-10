@@ -16,9 +16,6 @@ class HomePage extends Component {
                 <CategoryTitle label="Statistics" />
                 <StatTable />
 
-                <CategoryTitle label="Probability" />
-                <ProbabilityTable />
-
                 <CategoryTitle label="Econometrics" />
                 <EconometricsTable />
 
