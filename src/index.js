@@ -41,7 +41,14 @@ import Debug from './components/Pages/SoftwareEngineering/Debug'
 import NetworkProtocol from './components/Pages/SoftwareEngineering/NetworkProtocol'
 import SortingAlgorithm from './components/Pages/SoftwareEngineering/SortingAlgorithm'
 //======================================= Finance =========================================
+import Indexation from './components/Pages/Finance/Indexation'
+import TheoryBehindIndexation from './components/Pages/Finance/TheoryBehindIndexation'
 import OptionsStrategy from './components/Pages/Finance/OptionsStrategy'
+//======================================= Portfolio Management =========================================
+import SAATAA from './components/Pages/PortfolioManagement/SAATAA'
+import OptimizingSAA from './components/Pages/PortfolioManagement/OptimizingSAA'
+import Benchmark from './components/Pages/PortfolioManagement/Benchmark'
+import RiskAdjustedPerformance from './components/Pages/PortfolioManagement/RiskAdjustedPerformance'
 //======================================= Quant =========================================
 import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Quant/SmartBeta'
@@ -131,7 +138,14 @@ const routing = (
           <Route exact path="/tutorial/software-engineering/network-protocol" component={NetworkProtocol} />
           <Route exact path="/tutorial/software-engineering/sorting-algorithm" component={SortingAlgorithm} />
           {/*======================================= Finance =========================================*/}
+          <Route exact path="/tutorial/finance/indexation" component={Indexation} />
+          <Route exact path="/tutorial/finance/theory-behind-indexation" component={TheoryBehindIndexation} />
           <Route exact path="/tutorial/finance/options-strategy" component={OptionsStrategy} />
+          {/*======================================= Portfolio Management =========================================*/}
+          <Route exact path="/tutorial/portfolio-management/SAA-TAA" component={SAATAA} />
+          <Route exact path="/tutorial/portfolio-management/optimizing-SAA" component={OptimizingSAA} />
+          <Route exact path="/tutorial/portfolio-management/risk-adjusted-performance" component={RiskAdjustedPerformance} />
+          <Route exact path="/tutorial/portfolio-management/benchmark" component={Benchmark} />
           {/*======================================= Quant =========================================*/}
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />

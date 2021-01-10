@@ -10,6 +10,8 @@ class HomePage extends Component {
   render() {
     return (
       <Page>
+        <Title label="Technologies I Know"/>
+        
         <PassageTitle label="Name"/>
         <form noValidate autoComplete="off">
         <TextField id="outlined-full-width" fullWidth variant="outlined"/>
