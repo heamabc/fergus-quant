@@ -41,12 +41,9 @@ import Debug from './components/Pages/SoftwareEngineering/Debug'
 import NetworkProtocol from './components/Pages/SoftwareEngineering/NetworkProtocol'
 import SortingAlgorithm from './components/Pages/SoftwareEngineering/SortingAlgorithm'
 //======================================= Finance =========================================
-<<<<<<< HEAD
 import Indexation from './components/Pages/Finance/Indexation'
 import TheoryBehindIndexation from './components/Pages/Finance/TheoryBehindIndexation'
-=======
 import FuturesPricing from './components/Pages/Finance/FuturesPricing'
->>>>>>> 8757e987408b605547defec5005907c2ac4886fb
 import OptionsStrategy from './components/Pages/Finance/OptionsStrategy'
 //======================================= Portfolio Management =========================================
 import SAATAA from './components/Pages/PortfolioManagement/SAATAA'

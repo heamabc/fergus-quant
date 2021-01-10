@@ -76,14 +76,10 @@ export const SoftwareEngineeringTable =(props) => (
 export const FinanceTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
-<<<<<<< HEAD
             <li><NavLink  to="/tutorial/finance/indexation/" activeClassName={"ActivePage"}>Indexation</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/theory-behind-indexation/" activeClassName={"ActivePage"}>Theory Behind Indexation</NavLink ></li>
-            <li><NavLink  to="/tutorial/finance/options-strategy/" activeClassName={"ActivePage"}>Options</NavLink ></li>
-=======
-        <li><NavLink  to="/tutorial/finance/futures-pricing/" activeClassName={"ActivePage"}>Futures Pricing</NavLink ></li>
+            <li><NavLink  to="/tutorial/finance/futures-pricing/" activeClassName={"ActivePage"}>Futures Pricing</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/options-strategy/" activeClassName={"ActivePage"}>Options Strategies</NavLink ></li>
->>>>>>> 8757e987408b605547defec5005907c2ac4886fb
         </ul>
     </div>
 )
