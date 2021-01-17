@@ -101,6 +101,7 @@ export const QuantTable = (props) =>(
             <li><NavLink  to="/tutorial/quant/no-arb&risk-neu-p/" activeClassName={"ActivePage"}>No Arbitrage and Risk Neutral Probability</NavLink ></li>
             <li><NavLink  to="/tutorial/quant/portfolio-theory/" activeClassName={"ActivePage"}>Portfolio Theory</NavLink ></li>
             <li><NavLink  to="/tutorial/quant/smart-beta/" activeClassName={"ActivePage"}>Smart Beta</NavLink ></li>
+            <li><NavLink  to="/tutorial/quant/risk-parity/" activeClassName={"ActivePage"}>Risk Parity</NavLink ></li>
         </ul>
     </div>
 )

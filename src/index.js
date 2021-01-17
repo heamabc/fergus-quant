@@ -54,6 +54,7 @@ import RiskAdjustedPerformance from './components/Pages/PortfolioManagement/Risk
 import NoArbAndRiskNeuP from './components/Pages/Quant/NoArbAndRiskNeuP'
 import PortfolioTheory from './components/Pages/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Quant/SmartBeta'
+import RiskParity from './components/Pages/Quant/RiskParity'
 //======================================= Machine Learning =========================================
 import CommonProblem from './components/Pages/MachineLearning/CommonProblem'
 import EDA from './components/Pages/MachineLearning/EDA'
@@ -153,6 +154,7 @@ const routing = (
           <Route exact path="/tutorial/quant/no-arb&risk-neu-p/" component={NoArbAndRiskNeuP} />
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />
+          <Route exact path="/tutorial/quant/risk-parity" component={RiskParity} />
           {/*======================================= Machine Learning =========================================*/}
           <Route exact path="/tutorial/machine-learning/common-problem" component={CommonProblem} />
           <Route exact path="/tutorial/machine-learning/eda" component={EDA} />
