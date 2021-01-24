@@ -1,62 +1,61 @@
 @import "../../../common";
 
-main{
-    padding-top: 4rem;
-    padding-left: 2rem;
-    padding-right:2rem;
-    width:100%;
-    margin-bottom: 2rem;
+main {
+	padding-top: 4rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	width: 100%;
+	margin-bottom: 2rem;
 
-    a{
-        color:$primary;
-    }
+	a {
+		color: $primary;
+	}
 
-    a:hover{
-        color: $orange;
-    }
+	a:hover {
+		color: $orange;
+	}
 
-    .EntryContainer{
-        width:95%;
-    }
-    
-    code{
-        background-color: white;
-        color: $dark-red;
-    }
-    
-    .MuiTableCell-head{
-        background-color: $primary;
-        color:white;
-    }
+	.EntryContainer {
+		width: 95%;
+	}
 
-    p{
-        font-size: large;
-        margin-top:1rem;
-        margin-bottom:1.5rem;
-        white-space: pre-line;
-    }
+	code {
+		background-color: white;
+		color: $dark-red;
+	}
 
-    mjx-container{
-        font-size: x-large;
-    }
-    
-    .MuiPaper-root{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+	.MuiTableCell-head {
+		background-color: $primary;
+		color: white;
+	}
 
-    ::selection{
-        color:white;
-        background:$primary;
-    }
+	p {
+		font-size: large;
+		margin-top: 1rem;
+		margin-bottom: 1.5rem;
+		white-space: pre-line;
+	}
 
-    ::-moz-selection{
-        color:white;
-        background:$primary;
-    }
+	mjx-container {
+		font-size: x-large;
+	}
 
-    .linenums li {
-        list-style-type: decimal;
-    }
+	.MuiPaper-root {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
 
+	::selection {
+		color: white;
+		background: $primary;
+	}
+
+	::-moz-selection {
+		color: white;
+		background: $primary;
+	}
+
+	.linenums li {
+		list-style-type: decimal;
+	}
 }

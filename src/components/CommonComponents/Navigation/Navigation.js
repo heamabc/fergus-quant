@@ -11,6 +11,7 @@ const Navigation = (props) => (
         <li><NavLink  to="/info/resume/" activeClassName={"ActivePage"}>Resume</NavLink ></li>
         {/* <li><NavLink  to="/info/hire-me/" activeClassName={"ActivePage"}>Hire Me</NavLink ></li> */}
         <li><NavLink  to="/tutorial/" activeClassName={"ActivePage"}>Tutorial</NavLink ></li>
+        <li><NavLink  to="/paper-review/" activeClassName={"ActivePage"}>Paper Review</NavLink ></li>
     </ul>
 )
 

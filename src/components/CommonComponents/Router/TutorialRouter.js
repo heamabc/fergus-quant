@@ -1,127 +1,94 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom'
-import ScrollToTop from './components/CommonComponents/ScrollToTop/ScrollToTop'
-import './index.css';
-//======================================= Info =========================================
-import Home from './components/Pages/Home/Home';
-import Education from './components/Pages/Home/Education';
-import Experience from './components/Pages/Home/Experience';
-import RecentProjects from './components/Pages/Home/RecentProjects';
-import Resume from './components/Pages/Home/Resume';
-import About from './components/Pages/Home/About';
-import Tutorial from './components/Pages/Home/Tutorial';
-import PaperReview from './components/Pages/Home/PaperReview';
-import Hireme from './components/Pages/Home//HireMe';
+
 //======================================= Python =========================================
-import Basics from './components/Pages/Tutorial/Python/Basics'
-import Parallelization from './components/Pages/Tutorial/Python/Parallelization'
-import Numpy from './components/Pages/Tutorial/Python/Numpy'
+import Basics from '../../Pages/Python/Basics'
+import Parallelization from '../../Pages/Python/Parallelization'
+import Numpy from '../../Pages/Python/Numpy'
 //======================================= Statistics =========================================
-import Probability from './components/Pages/Tutorial/Statistics/Probability'
-import BayesTheorem from './components/Pages/Tutorial/Statistics/BayesTheorem'
-import TTestAndANOVA from './components/Pages/Tutorial/Statistics/TTestAndANOVA'
-import Heteroskedasticity from './components/Pages/Tutorial/Statistics/Heteroskedasticity'
-import StochasticProcess from './components/Pages/Tutorial/Statistics/StochasticProcess'
-import MomentGeneratingFunctions from './components/Pages/Tutorial/Statistics/MomentGeneratingFunctions'
-import HurstExponent from './components/Pages/Tutorial/Statistics/HurstExponent'
-import TimeSeries from './components/Pages/Tutorial/Statistics/TimeSeries'
-import NormalDistributionTheory from './components/Pages/Tutorial/Statistics/NormalDistributionTheory'
-import PCA from './components/Pages/Tutorial/Statistics/PCA'
+import Probability from '../../Pages/Statistics/Probability'
+import BayesTheorem from '../../Pages/Statistics/BayesTheorem'
+import TTestAndANOVA from '../../Pages/Statistics/TTestAndANOVA'
+import Heteroskedasticity from '../../Pages/Statistics/Heteroskedasticity'
+import StochasticProcess from '../../Pages/Statistics/StochasticProcess'
+import MomentGeneratingFunctions from '../../Pages/Statistics/MomentGeneratingFunctions'
+import HurstExponent from '../../Pages/Statistics/HurstExponent'
+import TimeSeries from '../../Pages/Statistics/TimeSeries'
+import NormalDistributionTheory from '../../Pages/Statistics/NormalDistributionTheory'
+import PCA from '../../Pages/Statistics/PCA'
 //======================================= Econometrics =========================================
-import OLS from './components/Pages/Tutorial/Econometrics/OLS'
-import GaussianMarkov from './components/Pages/Tutorial/Econometrics/GaussianMarkov'
-import GLS from './components/Pages/Tutorial/Econometrics/GLS'
+import OLS from '../../Pages/Econometrics/OLS'
+import GaussianMarkov from '../../Pages/Econometrics/GaussianMarkov'
+import GLS from '../../Pages/Econometrics/GLS'
 //======================================= DataBase =========================================
-import RelationalDataBase from './components/Pages/Tutorial/Database/RelationalDatabase'
+import RelationalDataBase from '../../Pages/Database/RelationalDatabase'
 //======================================= Software Engineering =========================================
-import Linux from './components/Pages/Tutorial/SoftwareEngineering/Linux'
-import Git from './components/Pages/Tutorial/SoftwareEngineering/Git'
-import AnalysisOfAlgorithms from './components/Pages/Tutorial/SoftwareEngineering/AnalysisOfAlgorithms'
-import Debug from './components/Pages/Tutorial/SoftwareEngineering/Debug'
-import NetworkProtocol from './components/Pages/Tutorial/SoftwareEngineering/NetworkProtocol'
-import SortingAlgorithm from './components/Pages/Tutorial/SoftwareEngineering/SortingAlgorithm'
+import Linux from '../../Pages/SoftwareEngineering/Linux'
+import Git from '../../Pages/SoftwareEngineering/Git'
+import AnalysisOfAlgorithms from '../../Pages/SoftwareEngineering/AnalysisOfAlgorithms'
+import Debug from '../../Pages/SoftwareEngineering/Debug'
+import NetworkProtocol from '../../Pages/SoftwareEngineering/NetworkProtocol'
+import SortingAlgorithm from '../../Pages/SoftwareEngineering/SortingAlgorithm'
 //======================================= Finance =========================================
-import Indexation from './components/Pages/Tutorial/Finance/Indexation'
-import TheoryBehindIndexation from './components/Pages/Tutorial/Finance/TheoryBehindIndexation'
-import FuturesPricing from './components/Pages/Tutorial/Finance/FuturesPricing'
-import OptionsStrategy from './components/Pages/Tutorial/Finance/OptionsStrategy'
+import Indexation from '../../Pages/Finance/Indexation'
+import TheoryBehindIndexation from '../../Pages/Finance/TheoryBehindIndexation'
+import FuturesPricing from '../../Pages/Finance/FuturesPricing'
+import OptionsStrategy from '../../Pages/Finance/OptionsStrategy'
 //======================================= Portfolio Management =========================================
-import SAATAA from './components/Pages/Tutorial/PortfolioManagement/SAATAA'
-import OptimizingSAA from './components/Pages/Tutorial/PortfolioManagement/OptimizingSAA'
-import Benchmark from './components/Pages/Tutorial/PortfolioManagement/Benchmark'
-import RiskAdjustedPerformance from './components/Pages/Tutorial/PortfolioManagement/RiskAdjustedPerformance'
+import SAATAA from '../../Pages/PortfolioManagement/SAATAA'
+import OptimizingSAA from '../../Pages/PortfolioManagement/OptimizingSAA'
+import Benchmark from '../../Pages/PortfolioManagement/Benchmark'
+import RiskAdjustedPerformance from '../../Pages/PortfolioManagement/RiskAdjustedPerformance'
 //======================================= Quant =========================================
-import NoArbAndRiskNeuP from './components/Pages/Tutorial/Quant/NoArbAndRiskNeuP'
-import PortfolioTheory from './components/Pages/Tutorial/Quant/PortfolioTheory'
-import SmartBeta from './components/Pages/Tutorial/Quant/SmartBeta'
-import RiskParity from './components/Pages/Tutorial/Quant/RiskParity'
+import NoArbAndRiskNeuP from '../../Pages/Quant/NoArbAndRiskNeuP'
+import PortfolioTheory from '../../Pages/Quant/PortfolioTheory'
+import SmartBeta from '../../Pages/Quant/SmartBeta'
+import RiskParity from '../../Pages/Quant/RiskParity'
 //======================================= Machine Learning =========================================
-import CommonProblem from './components/Pages/Tutorial/MachineLearning/CommonProblem'
-import EDA from './components/Pages/Tutorial/MachineLearning/EDA'
-import DataCleaning from './components/Pages/Tutorial/MachineLearning/DataCleaning'
-import MLBasics from './components/Pages/Tutorial/MachineLearning/MLBasics'
-import Regularization from './components/Pages/Tutorial/MachineLearning/Regularization'
-import MLTechniques from './components/Pages/Tutorial/MachineLearning/MLTechniques'
-import EvaluationMetrics from './components/Pages/Tutorial/MachineLearning/EvaluationMetrics'
-import SequenceModelDL from './components/Pages/Tutorial/MachineLearning/SequenceModelDL'
-import ImbalancedData from './components/Pages/Tutorial/MachineLearning/ImbalancedData'
-import FeatureSelection from './components/Pages/Tutorial/MachineLearning/FeatureSelection'
-import BigDataset from  './components/Pages/Tutorial/MachineLearning/BigDataset'
-import LogisticRegression from  './components/Pages/Tutorial/MachineLearning/LogisticRegression'
-import RegressionDecisionTree from  './components/Pages/Tutorial/MachineLearning/RegressionDecisionTree'
-import XGBoost from  './components/Pages/Tutorial/MachineLearning/XGBoost'
-import BayesianOptimization from  './components/Pages/Tutorial/MachineLearning/BayesianOptimization'
+import CommonProblem from '../../Pages/MachineLearning/CommonProblem'
+import EDA from '../../Pages/MachineLearning/EDA'
+import DataCleaning from '../../Pages/MachineLearning/DataCleaning'
+import MLBasics from '../../Pages/MachineLearning/MLBasics'
+import Regularization from '../../Pages/MachineLearning/Regularization'
+import MLTechniques from '../../Pages/MachineLearning/MLTechniques'
+import EvaluationMetrics from '../../Pages/MachineLearning/EvaluationMetrics'
+import SequenceModelDL from '../../Pages/MachineLearning/SequenceModelDL'
+import ImbalancedData from '../../Pages/MachineLearning/ImbalancedData'
+import FeatureSelection from '../../Pages/MachineLearning/FeatureSelection'
+import BigDataset from  '../../Pages/MachineLearning/BigDataset'
+import LogisticRegression from  '../../Pages/MachineLearning/LogisticRegression'
+import RegressionDecisionTree from  '../../Pages/MachineLearning/RegressionDecisionTree'
+import XGBoost from  '../../Pages/MachineLearning/XGBoost'
+import BayesianOptimization from  '../../Pages/MachineLearning/BayesianOptimization'
 //======================================= Neural Network =========================================
-import NeuralNetworkBascis from './components/Pages/Tutorial/NueralNetwork/NeuralNetworkBasics'
-import LearningRateScheduler from './components/Pages/Tutorial/NueralNetwork/LearningRateScheduler'
-import WeightInitialization from './components/Pages/Tutorial/NueralNetwork/WeightInitialization'
-import ActivationFunction from './components/Pages/Tutorial/NueralNetwork/ActivationFunction'
-import DeepLearning from './components/Pages/Tutorial/NueralNetwork/DeepLearning'
-import ConvolutionalNN from './components/Pages/Tutorial/NueralNetwork/ConvolutionalNN'
-import RecurrentNN from './components/Pages/Tutorial/NueralNetwork/RecurrentNN'
-import AutoEncoder from './components/Pages/Tutorial/NueralNetwork/AutoEncoder'
+import NeuralNetworkBascis from '../../Pages/NueralNetwork/NeuralNetworkBasics'
+import LearningRateScheduler from '../../Pages/NueralNetwork/LearningRateScheduler'
+import WeightInitialization from '../../Pages/NueralNetwork/WeightInitialization'
+import ActivationFunction from '../../Pages/NueralNetwork/ActivationFunction'
+import DeepLearning from '../../Pages/NueralNetwork/DeepLearning'
+import ConvolutionalNN from '../../Pages/NueralNetwork/ConvolutionalNN'
+import RecurrentNN from '../../Pages/NueralNetwork/RecurrentNN'
+import AutoEncoder from '../../Pages/NueralNetwork/AutoEncoder'
 //======================================= Time Series ML =========================================
-import DenoisingData from './components/Pages/Tutorial/TimeSeriesML/DenoisingData'
+import DenoisingData from '../../Pages/TimeSeriesML/DenoisingData'
 //======================================= Time Series ML =========================================
-import WordEmbedding from './components/Pages/Tutorial/NLP/WordEmbedding'
+import WordEmbedding from '../../Pages/NLP/WordEmbedding'
 //======================================= GAN =========================================
-import VanillaGAN from './components/Pages/Tutorial/GAN/VanillaGAN'
+import VanillaGAN from '../../Pages/GAN/VanillaGAN'
 //======================================= AWS =========================================
-import ExtendingDisk from './components/Pages/Tutorial/AWS/ExtendingDisk'
-import AWSJupyterNotebook from './components/Pages/Tutorial/AWS/AWSJupyterNotebook'
+import ExtendingDisk from '../../Pages/AWS/ExtendingDisk'
+import AWSJupyterNotebook from '../../Pages/AWS/AWSJupyterNotebook'
 //======================================= Big Data =========================================
-import AWSEC2Hadoop from './components/Pages/Tutorial/BigData/AWSEC2Hadoop'
+import AWSEC2Hadoop from '../../Pages/BigData/AWSEC2Hadoop'
 //======================================= Others =========================================
-import UsefulWebsite from './components/Pages/Tutorial/Others/UsefulWebsite'
+import UsefulWebsite from '../../Pages/Others/UsefulWebsite'
 
-//======================================= Asset Allocation =========================================
-import AQuantitativeApproachtoTacticalAssetAllocation from './components/Pages/PaperReview/AssetAllocaion/AQuantitativeApproachtoTacticalAssetAllocation'
-
-/* TODO
-separate router component for each table
-*/
-
-const routing = (
-    <React.StrictMode>
-      <ScrollToTop />
+export default function TutorialRouter({ match }) {
+  return (
+    <div>
       <Router>
         <Switch>
-        <Route exact path="/" component={Home} />
-          {/*======================================= Info =========================================*/}
-
-            <Route exact path="/info/education" component={Education} />
-            <Route exact path="/info/experience" component={Experience} />
-            <Route exact path="/info/recent-projects" component={RecentProjects} />
-            <Route exact path="/info/resume" component={Resume} />
-            <Route exact path="/info/about" component={About} />
-            <Route exact path="/info/hire-me" component={Hireme} />
-            <Route exact path="/tutorial" component={Tutorial} />
-            <Route exact path="/paper-review" component={PaperReview} />
-
-          {/*======================================= Tutorial Route =========================================*/}
-
-          {/*======================================= Python =========================================*/}
+            {/*======================================= Python =========================================*/}
           <Route exact path="/tutorial/python/basics" component={Basics} />
           <Route exact path="/tutorial/python/parallelization" component={Parallelization} />
           <Route exact path="/tutorial/python/numpy" component={Numpy} />
@@ -202,18 +169,7 @@ const routing = (
           <Route exact path="/tutorial/big-data/aws-ec2-hadoop" component ={AWSEC2Hadoop} />
           {/*======================================= Others =========================================*/}
           <Route exact path="/tutorial/others/useful-website" component={UsefulWebsite} />
-
-            
-          {/*======================================= Paper Review Route =========================================*/}
-
-          {/*======================================= Asset Allocation =========================================*/}
-          <Route exact path="/paper-review/asset_allocation/A-Quantitative-Approach-to-Tactical-Asset-Allocation" component={AQuantitativeApproachtoTacticalAssetAllocation} />
-            
-
-          <Redirect to="/" />
-      </Switch>
-    </Router>
-    </React.StrictMode>
-)
-
-ReactDOM.render(routing, document.getElementById('root'))
+        </Switch>
+        </Router>
+      </div>
+  )}
