@@ -27,8 +27,27 @@ class HomePage extends Component {
             <p>
               Then main idea for risk parity is to constrain <b> each asset to contribute equally to the portfolio overall volatility.</b>
           </p>
+          <PassageTitle label="Naive Risk Parity" />
+          <p>
+            Naive risk parity is the simplest form of risk parity. It assumes that there is no correlation between assets. And therefore, if your 
+            risk measrue is standard deviation, then the weight of the portfolio is simply inversely proportional to the standard deviation of each 
+            assets in the portfolio. That is,
+          </p>
+          {String.raw`\begin{align}
+          W_i &= \frac{\frac{1}{\sigma_i}}{\sum_{k=1}^n{\frac{1}{\sigma_k}}} \\
+          &= \frac{\sigma_p}{\sigma_i}
+          \end{align}`}
+          <p>
+            Where,
+            <ul>
+              <li> \( W_i \) is the weight of i-th asset </li>
+              <li> \( \sigma_i \) is the volatility of the i-th asset </li>
+              <li> \( \sigma_p \) is the volatility of the portfolio </li>
+            </ul>
+          </p>
           <PassageTitle label="Risk Contribution" />
           <p>
+              Besides naive way to do it, we can also consider the covariance between assets. Let us first talk about risk contribution.
               Given a portfolio \(w \in \mathbb R^N \) and return covariance matrix \(\Sigma\), portfolio volatility is 
           </p>
           {String.raw`$$

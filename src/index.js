@@ -46,6 +46,7 @@ import Indexation from './components/Pages/Tutorial/Finance/Indexation'
 import TheoryBehindIndexation from './components/Pages/Tutorial/Finance/TheoryBehindIndexation'
 import FuturesPricing from './components/Pages/Tutorial/Finance/FuturesPricing'
 import OptionsStrategy from './components/Pages/Tutorial/Finance/OptionsStrategy'
+import VIXIntro from './components/Pages/Tutorial/Finance/VIXIntro'
 //======================================= Portfolio Management =========================================
 import SAATAA from './components/Pages/Tutorial/PortfolioManagement/SAATAA'
 import OptimizingSAA from './components/Pages/Tutorial/PortfolioManagement/OptimizingSAA'
@@ -97,6 +98,7 @@ import UsefulWebsite from './components/Pages/Tutorial/Others/UsefulWebsite'
 
 //======================================= Asset Allocation =========================================
 import AQuantitativeApproachtoTacticalAssetAllocation from './components/Pages/PaperReview/AssetAllocaion/AQuantitativeApproachtoTacticalAssetAllocation'
+import TheBlackLittermanApproachOriginalModelandExtensions from './components/Pages/PaperReview/AssetAllocaion/TheBlack-LittermanApproachOriginalModelandExtensions'
 
 /* TODO
 separate router component for each table
@@ -154,6 +156,7 @@ const routing = (
           <Route exact path="/tutorial/finance/theory-behind-indexation" component={TheoryBehindIndexation} />
           <Route exact path="/tutorial/finance/futures-pricing" component={FuturesPricing} />
           <Route exact path="/tutorial/finance/options-strategy" component={OptionsStrategy} />
+          <Route exact path="/tutorial/finance/VIX-Introduction" component={VIXIntro} />
           {/*======================================= Portfolio Management =========================================*/}
           <Route exact path="/tutorial/portfolio-management/SAA-TAA" component={SAATAA} />
           <Route exact path="/tutorial/portfolio-management/optimizing-SAA" component={OptimizingSAA} />
@@ -208,6 +211,7 @@ const routing = (
 
           {/*======================================= Asset Allocation =========================================*/}
           <Route exact path="/paper-review/asset_allocation/A-Quantitative-Approach-to-Tactical-Asset-Allocation" component={AQuantitativeApproachtoTacticalAssetAllocation} />
+          <Route exact path="/paper-review/asset_allocation/The-Black-Litterman-Approach-Original-Model-and-Extensions" component={TheBlackLittermanApproachOriginalModelandExtensions} />
             
 
           <Redirect to="/" />

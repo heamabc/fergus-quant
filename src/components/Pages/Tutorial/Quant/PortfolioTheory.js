@@ -170,7 +170,7 @@ class HomePage extends Component {
             the lowest level of risk when given an expected return.
             {String.raw`
             \begin{align}
-            \text{max  }\sigma^2_p & = w^T\Sigma w \\
+            \text{min  }\sigma^2_p & = w^T\Sigma w \\
             \text{s.t.    }\mu_p & = w^T\mu= \mu_0 = \text{target return} \\
             w^T\mathbf{1} & = 1
             \end{align}`}

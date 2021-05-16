@@ -9,12 +9,15 @@
 
 .CategoryTitleContainer{
   @extend .fontLemonMilk;
-  background-color: $primary;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  background-color: $dark-red;
   color:white;
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
+  text-align: center;
   padding-left: 2rem;
   border-style: solid;
-  border-color: $primary; 
+  // border-color: $primary; 
   letter-spacing: 2px;
   h3{
     font-weight: 500; 

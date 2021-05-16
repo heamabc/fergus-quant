@@ -6,13 +6,15 @@ import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 
 class HomePage extends Component {
     render() {
-const aqumone_description = `Streamlined portfolio construction and selection in ETF portfolio 
-Developed stock index futures and ETF rotation strategy 
-Upgraded and optimized existing backtesting system`
+const aqumone_description = `Managed 5 GAA (Global Asset Allocation) portfolios with $200 million HKD AUM in sum
+Boosted AUM by millions of dollars by developing a GAA portfolio with Bitcoin
+Designed a GAA portfolio that achieved 105% return, 1.5 Sharpe ratio, and -14% maximum drawdown from 2016 Dec to 2021 Mar
+Provided investment strategies to Wing Lung Bank, Lufax, and BOCI that helped AQUMON complete deals worth millions of dollars
+Focus on GAA, futures ETF arbitrage, active VIX hedging, and ETF factors model`
 
-const cfe_description = `Streamlined portfolio construction and selection in ETF portfolio 
-Developed stock index futures and ETF rotation strategy 
-Upgraded and optimized existing backtesting system`
+const cfe_description = `Researched on P2P loan acceptance and default prediction using machine learning models
+Studied the existing credit analysis in P2P lending platform with professionals from credit industry
+Created a website to demonstrate the AI learning process`
 
 const axa_description = `Streamlined the logic and structure of existing machine learning models
 Performed data processing and reporting on data in database

@@ -80,6 +80,7 @@ export const FinanceTable =(props) => (
             <li><NavLink  to="/tutorial/finance/theory-behind-indexation/" activeClassName={"ActivePage"}>Theory Behind Indexation</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/futures-pricing/" activeClassName={"ActivePage"}>Futures Pricing</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/options-strategy/" activeClassName={"ActivePage"}>Options Strategies</NavLink ></li>
+            <li><NavLink  to="/tutorial/finance/VIX-Introduction/" activeClassName={"ActivePage"}>VIX Introduction</NavLink ></li>
         </ul>
     </div> 
 )

@@ -44,7 +44,7 @@ export class EntryWithLink extends Component {
 		this.handleMouseHover = this.handleMouseHover.bind(this);
 
 		this.state = {
-			expandedTicket: true,
+			expandedTicket: false,
 			isHovering: false
 		};
 	}

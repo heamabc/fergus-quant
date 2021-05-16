@@ -1,11 +1,19 @@
 @import "../../../common";
 
 .NavigationTableContainer{
-    margin-bottom: 4rem;
-    
+    margin-bottom: 6rem;
+    background-color: white;
+    border-color: white; 
+    border-style: solid;
+    margin-left: 7rem;
+    margin-right: 7rem;
     ul{
         list-style-type: none;
         margin-left: 0.5rem;
+    }
+
+    a{
+        text-decoration: none;
     }
 
     li{
