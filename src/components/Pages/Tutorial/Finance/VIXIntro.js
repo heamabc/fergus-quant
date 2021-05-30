@@ -50,6 +50,16 @@ class HomePage extends Component {
           <p>
               {String.raw`$$  \sigma = \frac{2}{T} \sum_i \frac{\Delta K_i}{K^2_i} e^{RT} Q(K_i) - \frac{1}{T}[\frac{F}{K_0}-1]^2  $$`}
           </p>
+          <PassageTitle label="Characteristics of VIX" />
+          <p>
+            VIX is negatively correlated with its underlying, i.e. S&P 500.
+          </p>
+          <p>
+            VIX can increase in short period of time in 'spikes'.
+          </p>
+          <p>
+            VIX is tend to be mean reverting.
+          </p>
           <PassageTitle label="Reference" />
           https://core.ac.uk/download/pdf/43558302.pdf
         </Page>

@@ -78,8 +78,10 @@ export const FinanceTable =(props) => (
         <ul>
             <li><NavLink  to="/tutorial/finance/indexation/" activeClassName={"ActivePage"}>Indexation</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/theory-behind-indexation/" activeClassName={"ActivePage"}>Theory Behind Indexation</NavLink ></li>
+            <li><NavLink  to="/tutorial/finance/ETP/" activeClassName={"ActivePage"}>ETP</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/futures-pricing/" activeClassName={"ActivePage"}>Futures Pricing</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/options-strategy/" activeClassName={"ActivePage"}>Options Strategies</NavLink ></li>
+            <li><NavLink  to="/tutorial/finance/variance-swap/" activeClassName={"ActivePage"}>Variance Swap</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/VIX-Introduction/" activeClassName={"ActivePage"}>VIX Introduction</NavLink ></li>
         </ul>
     </div> 

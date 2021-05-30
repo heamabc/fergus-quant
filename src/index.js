@@ -44,8 +44,10 @@ import SortingAlgorithm from './components/Pages/Tutorial/SoftwareEngineering/So
 //======================================= Finance =========================================
 import Indexation from './components/Pages/Tutorial/Finance/Indexation'
 import TheoryBehindIndexation from './components/Pages/Tutorial/Finance/TheoryBehindIndexation'
+import ETP from './components/Pages/Tutorial/Finance/ETP'
 import FuturesPricing from './components/Pages/Tutorial/Finance/FuturesPricing'
 import OptionsStrategy from './components/Pages/Tutorial/Finance/OptionsStrategy'
+import VarianceSwap from './components/Pages/Tutorial/Finance/VarianceSwap'
 import VIXIntro from './components/Pages/Tutorial/Finance/VIXIntro'
 //======================================= Portfolio Management =========================================
 import SAATAA from './components/Pages/Tutorial/PortfolioManagement/SAATAA'
@@ -154,8 +156,10 @@ const routing = (
           {/*======================================= Finance =========================================*/}
           <Route exact path="/tutorial/finance/indexation" component={Indexation} />
           <Route exact path="/tutorial/finance/theory-behind-indexation" component={TheoryBehindIndexation} />
+          <Route exact path="/tutorial/finance/ETP/" component={ETP} />
           <Route exact path="/tutorial/finance/futures-pricing" component={FuturesPricing} />
           <Route exact path="/tutorial/finance/options-strategy" component={OptionsStrategy} />
+          <Route exact path="/tutorial/finance/variance-swap" component={VarianceSwap} />
           <Route exact path="/tutorial/finance/VIX-Introduction" component={VIXIntro} />
           {/*======================================= Portfolio Management =========================================*/}
           <Route exact path="/tutorial/portfolio-management/SAA-TAA" component={SAATAA} />
