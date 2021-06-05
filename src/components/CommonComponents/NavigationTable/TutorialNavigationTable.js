@@ -73,6 +73,14 @@ export const SoftwareEngineeringTable =(props) => (
     </div>
 )
 
+export const CryptoTable =(props) => (
+    <div className="NavigationTableContainer" >
+        <ul>
+        <li><NavLink  to="/tutorial/crypto/ETH2.0/" activeClassName={"ActivePage"}>ETH 2.0</NavLink ></li>
+        </ul>
+    </div>
+)
+
 export const FinanceTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
@@ -80,9 +88,11 @@ export const FinanceTable =(props) => (
             <li><NavLink  to="/tutorial/finance/theory-behind-indexation/" activeClassName={"ActivePage"}>Theory Behind Indexation</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/ETP/" activeClassName={"ActivePage"}>ETP</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/futures-pricing/" activeClassName={"ActivePage"}>Futures Pricing</NavLink ></li>
+            <li><NavLink  to="/tutorial/finance/black-scholes/" activeClassName={"ActivePage"}>Black Scholes Model</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/options-strategy/" activeClassName={"ActivePage"}>Options Strategies</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/variance-swap/" activeClassName={"ActivePage"}>Variance Swap</NavLink ></li>
             <li><NavLink  to="/tutorial/finance/VIX-Introduction/" activeClassName={"ActivePage"}>VIX Introduction</NavLink ></li>
+            <li><NavLink  to="/tutorial/finance/CDS-Introduction/" activeClassName={"ActivePage"}>CDS Introduction</NavLink ></li>
         </ul>
     </div> 
 )
@@ -94,6 +104,7 @@ export const PortfolioManagementTable =(props) => (
             <li><NavLink  to="/tutorial/portfolio-management/optimizing-SAA/" activeClassName={"ActivePage"}>Optimizing SAA</NavLink ></li>
             <li><NavLink  to="/tutorial/portfolio-management/risk-adjusted-performance/" activeClassName={"ActivePage"}>Risk Adjusted Performance</NavLink ></li>
             <li><NavLink  to="/tutorial/portfolio-management/benchmark/" activeClassName={"ActivePage"}>Benchmark</NavLink ></li>
+            <li><NavLink  to="/tutorial/portfolio-management/covariance-shrinkage/" activeClassName={"ActivePage"}>Covariance Shrinkage</NavLink ></li>
         </ul>
     </div>
 )
@@ -105,6 +116,7 @@ export const QuantTable = (props) =>(
             <li><NavLink  to="/tutorial/quant/portfolio-theory/" activeClassName={"ActivePage"}>Portfolio Theory</NavLink ></li>
             <li><NavLink  to="/tutorial/quant/smart-beta/" activeClassName={"ActivePage"}>Smart Beta</NavLink ></li>
             <li><NavLink  to="/tutorial/quant/risk-parity/" activeClassName={"ActivePage"}>Risk Parity</NavLink ></li>
+            <li><NavLink  to="/tutorial/quant/fama-french/" activeClassName={"ActivePage"}>Fama French</NavLink ></li>
         </ul>
     </div>
 )

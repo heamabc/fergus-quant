@@ -41,24 +41,30 @@ import AnalysisOfAlgorithms from './components/Pages/Tutorial/SoftwareEngineerin
 import Debug from './components/Pages/Tutorial/SoftwareEngineering/Debug'
 import NetworkProtocol from './components/Pages/Tutorial/SoftwareEngineering/NetworkProtocol'
 import SortingAlgorithm from './components/Pages/Tutorial/SoftwareEngineering/SortingAlgorithm'
+//======================================= Cypto =========================================
+import ETH2 from './components/Pages/Tutorial/Crypto/ETH2.0'
 //======================================= Finance =========================================
 import Indexation from './components/Pages/Tutorial/Finance/Indexation'
 import TheoryBehindIndexation from './components/Pages/Tutorial/Finance/TheoryBehindIndexation'
 import ETP from './components/Pages/Tutorial/Finance/ETP'
 import FuturesPricing from './components/Pages/Tutorial/Finance/FuturesPricing'
+import BlackScholes from './components/Pages/Tutorial/Finance/BlackScholes'
 import OptionsStrategy from './components/Pages/Tutorial/Finance/OptionsStrategy'
 import VarianceSwap from './components/Pages/Tutorial/Finance/VarianceSwap'
 import VIXIntro from './components/Pages/Tutorial/Finance/VIXIntro'
+import CDS from './components/Pages/Tutorial/Finance/CDS'
 //======================================= Portfolio Management =========================================
 import SAATAA from './components/Pages/Tutorial/PortfolioManagement/SAATAA'
 import OptimizingSAA from './components/Pages/Tutorial/PortfolioManagement/OptimizingSAA'
 import Benchmark from './components/Pages/Tutorial/PortfolioManagement/Benchmark'
 import RiskAdjustedPerformance from './components/Pages/Tutorial/PortfolioManagement/RiskAdjustedPerformance'
+import CovarianceShrinkage from './components/Pages/Tutorial/PortfolioManagement/CovarianceShrinkage'
 //======================================= Quant =========================================
 import NoArbAndRiskNeuP from './components/Pages/Tutorial/Quant/NoArbAndRiskNeuP'
 import PortfolioTheory from './components/Pages/Tutorial/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Tutorial/Quant/SmartBeta'
 import RiskParity from './components/Pages/Tutorial/Quant/RiskParity'
+import FamaFrench from './components/Pages/Tutorial/Quant/FamaFrench'
 //======================================= Machine Learning =========================================
 import CommonProblem from './components/Pages/Tutorial/MachineLearning/CommonProblem'
 import EDA from './components/Pages/Tutorial/MachineLearning/EDA'
@@ -154,23 +160,29 @@ const routing = (
           <Route exact path="/tutorial/software-engineering/network-protocol" component={NetworkProtocol} />
           <Route exact path="/tutorial/software-engineering/sorting-algorithm" component={SortingAlgorithm} />
           {/*======================================= Finance =========================================*/}
+          <Route exact path="/tutorial/crypto/ETH2.0" component={ETH2} />
+          {/*======================================= Finance =========================================*/}
           <Route exact path="/tutorial/finance/indexation" component={Indexation} />
           <Route exact path="/tutorial/finance/theory-behind-indexation" component={TheoryBehindIndexation} />
           <Route exact path="/tutorial/finance/ETP/" component={ETP} />
           <Route exact path="/tutorial/finance/futures-pricing" component={FuturesPricing} />
+          <Route exact path="/tutorial/finance/black-scholes" component={BlackScholes} />
           <Route exact path="/tutorial/finance/options-strategy" component={OptionsStrategy} />
           <Route exact path="/tutorial/finance/variance-swap" component={VarianceSwap} />
           <Route exact path="/tutorial/finance/VIX-Introduction" component={VIXIntro} />
+          <Route exact path="/tutorial/finance/CDS-Introduction" component={CDS} />
           {/*======================================= Portfolio Management =========================================*/}
           <Route exact path="/tutorial/portfolio-management/SAA-TAA" component={SAATAA} />
           <Route exact path="/tutorial/portfolio-management/optimizing-SAA" component={OptimizingSAA} />
           <Route exact path="/tutorial/portfolio-management/risk-adjusted-performance" component={RiskAdjustedPerformance} />
           <Route exact path="/tutorial/portfolio-management/benchmark" component={Benchmark} />
+          <Route exact path="/tutorial/portfolio-management/covariance-shrinkage" component={CovarianceShrinkage} />
           {/*======================================= Quant =========================================*/}
           <Route exact path="/tutorial/quant/no-arb&risk-neu-p/" component={NoArbAndRiskNeuP} />
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />
           <Route exact path="/tutorial/quant/risk-parity" component={RiskParity} />
+          <Route exact path="/tutorial/quant/fama-french" component={FamaFrench} />
           {/*======================================= Machine Learning =========================================*/}
           <Route exact path="/tutorial/machine-learning/common-problem" component={CommonProblem} />
           <Route exact path="/tutorial/machine-learning/eda" component={EDA} />

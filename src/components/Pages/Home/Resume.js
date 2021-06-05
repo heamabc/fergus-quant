@@ -10,7 +10,7 @@ class HomePage extends Component {
         return (
             <Page>
                 <Title style={{marginBottom: 60}} label={'Résumé'}/>
-                <LinkButton href="https://www.canva.com/design/DAEegTyH-ik/5tCo7W1BgfmunHlbL2_W7w/view?utm_content=DAEegTyH-ik&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" label="Résumé" />
+                <LinkButton href="https://www.canva.com/design/DAEgfHiutnk/XdFRemEWK4nEbHNVHA2G_Q/view?utm_content=DAEgfHiutnk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank" label="Résumé" />
             </Page>
         )
         
