@@ -37,7 +37,8 @@ export const StatTable =(props) => (
 export const ProbabilityTable = (props) => (
     <div className="NavigationTableContainer" >
         <ul>
-            <li><NavLink  to="/tutorial/statistics/probability/" activeClassName={"ActivePage"}>Probability</NavLink ></li>
+            <li><NavLink  to="/tutorial/probability/basics/" activeClassName={"ActivePage"}>Basics of Probability</NavLink ></li>
+            <li><NavLink  to="/tutorial/probability/probability-distributions/" activeClassName={"ActivePage"}>Probability Distributions</NavLink ></li>
         </ul>
     </div>
 )
@@ -76,7 +77,8 @@ export const SoftwareEngineeringTable =(props) => (
 export const CryptoTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
-        <li><NavLink  to="/tutorial/crypto/ETH2.0/" activeClassName={"ActivePage"}>ETH 2.0</NavLink ></li>
+            <li><NavLink  to="/tutorial/crypto/how-bitcoin-works/" activeClassName={"ActivePage"}>How Bitcoin Works</NavLink ></li>
+            <li><NavLink  to="/tutorial/crypto/ETH2.0/" activeClassName={"ActivePage"}>ETH 2.0</NavLink ></li>
         </ul>
     </div>
 )
@@ -105,6 +107,7 @@ export const PortfolioManagementTable =(props) => (
             <li><NavLink  to="/tutorial/portfolio-management/risk-adjusted-performance/" activeClassName={"ActivePage"}>Risk Adjusted Performance</NavLink ></li>
             <li><NavLink  to="/tutorial/portfolio-management/benchmark/" activeClassName={"ActivePage"}>Benchmark</NavLink ></li>
             <li><NavLink  to="/tutorial/portfolio-management/covariance-shrinkage/" activeClassName={"ActivePage"}>Covariance Shrinkage</NavLink ></li>
+            <li><NavLink  to="/tutorial/portfolio-management/black-litterman/" activeClassName={"ActivePage"}>Black Litterman</NavLink ></li>
         </ul>
     </div>
 )
@@ -117,6 +120,7 @@ export const QuantTable = (props) =>(
             <li><NavLink  to="/tutorial/quant/smart-beta/" activeClassName={"ActivePage"}>Smart Beta</NavLink ></li>
             <li><NavLink  to="/tutorial/quant/risk-parity/" activeClassName={"ActivePage"}>Risk Parity</NavLink ></li>
             <li><NavLink  to="/tutorial/quant/fama-french/" activeClassName={"ActivePage"}>Fama French</NavLink ></li>
+            <li><NavLink  to="/tutorial/quant/fama-mcbeth/" activeClassName={"ActivePage"}>Fama Mcbeth</NavLink ></li>
         </ul>
     </div>
 )

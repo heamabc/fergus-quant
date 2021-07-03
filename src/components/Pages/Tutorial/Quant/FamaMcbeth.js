@@ -13,16 +13,16 @@ class HomePage extends Component {
         <Page>       
           <Mathjex />
           <CodeSnippet />
-          <Title label="Bitcoin" />
-          <PassageTitle label="Promise of Bitcoin" />
+          <Title label="Fama Mcbeth Model" />
+          
+          <PassageTitle label="Reference" />
           <p>
               <ul>
-                  <li>A global currency which allows individuals to own their own money (without having to rely on national banks).</li>
-                  <li>Lower fees for transferring money across geographic borders.</li>
-                  <li>Financial stability for people who live in countries with unstable currencies. (e.g. In 2016, Venezuela’s currency hit an inflation rate of 800%). In addition, two-thirds of the current global population has no access to banking or limited access — Bitcoin is changing that.</li>
+                  <li>https://www3.nd.edu/~nmark/FinancialEconometrics/Lecture%20Slides/SlidesFall2020_16.pdf</li>
+                  <li>https://quant.stackexchange.com/a/46764</li>
               </ul>
-          </p>
           
+          </p>
         </Page>
 )}}
 

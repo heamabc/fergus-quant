@@ -31,7 +31,13 @@ class HomePage extends Component {
           </p>
           <PassageTitle label="Shrinkage Estimator of Covariance Matrix" />
           <p>
-            
+            The idea of Shrinkage estimator is to combine two estimator. One is unbiased but with high estimation error, and the other is
+            biased with low estimation error. When you combine the two, you can get an estimator with 
+            better trade-off between biasness and estimation error
+          </p>
+          <p>
+            Use the covariance from CAPM and the sample covariance matrix. Using shrinkage method to combine the two estimator of covariance.
+            CAPM covariance only has one variance, therefore the 
           </p>
           <PassageTitle label="Reference" />
           <p>

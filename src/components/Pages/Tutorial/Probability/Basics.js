@@ -10,6 +10,13 @@ class HomePage extends Component {
     render() {
       return (
         <Page>       
+          <Title label="Basics of Probability" />
+          <PassageTitle label="Probability & Expectation" />
+            {String.raw`\begin{align}
+              E[X] &= \sum_i x_i P(x_i) \\
+              E[X] &= \int xP(x) dx
+
+              \end{align}`}
           <Mathjex />
           <Title label="Conditional Probability and Bayes' Rule"/>
           <PassageTitle label="Cardinality"/>

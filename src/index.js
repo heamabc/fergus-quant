@@ -18,7 +18,6 @@ import Basics from './components/Pages/Tutorial/Python/Basics'
 import Parallelization from './components/Pages/Tutorial/Python/Parallelization'
 import Numpy from './components/Pages/Tutorial/Python/Numpy'
 //======================================= Statistics =========================================
-import Probability from './components/Pages/Tutorial/Statistics/Probability'
 import BayesTheorem from './components/Pages/Tutorial/Statistics/BayesTheorem'
 import TTestAndANOVA from './components/Pages/Tutorial/Statistics/TTestAndANOVA'
 import Heteroskedasticity from './components/Pages/Tutorial/Statistics/Heteroskedasticity'
@@ -42,6 +41,7 @@ import Debug from './components/Pages/Tutorial/SoftwareEngineering/Debug'
 import NetworkProtocol from './components/Pages/Tutorial/SoftwareEngineering/NetworkProtocol'
 import SortingAlgorithm from './components/Pages/Tutorial/SoftwareEngineering/SortingAlgorithm'
 //======================================= Cypto =========================================
+import HowBitcoinWorks from './components/Pages/Tutorial/Crypto/HowBitcoinWorks'
 import ETH2 from './components/Pages/Tutorial/Crypto/ETH2.0'
 //======================================= Finance =========================================
 import Indexation from './components/Pages/Tutorial/Finance/Indexation'
@@ -58,6 +58,7 @@ import SAATAA from './components/Pages/Tutorial/PortfolioManagement/SAATAA'
 import OptimizingSAA from './components/Pages/Tutorial/PortfolioManagement/OptimizingSAA'
 import Benchmark from './components/Pages/Tutorial/PortfolioManagement/Benchmark'
 import RiskAdjustedPerformance from './components/Pages/Tutorial/PortfolioManagement/RiskAdjustedPerformance'
+import BlackLitterman from './components/Pages/Tutorial/PortfolioManagement/BlackLitterman'
 import CovarianceShrinkage from './components/Pages/Tutorial/PortfolioManagement/CovarianceShrinkage'
 //======================================= Quant =========================================
 import NoArbAndRiskNeuP from './components/Pages/Tutorial/Quant/NoArbAndRiskNeuP'
@@ -65,6 +66,10 @@ import PortfolioTheory from './components/Pages/Tutorial/Quant/PortfolioTheory'
 import SmartBeta from './components/Pages/Tutorial/Quant/SmartBeta'
 import RiskParity from './components/Pages/Tutorial/Quant/RiskParity'
 import FamaFrench from './components/Pages/Tutorial/Quant/FamaFrench'
+import FamaMcbeth from './components/Pages/Tutorial/Quant/FamaMcbeth'
+//======================================= Probability =========================================
+import ProbabilityBasics from './components/Pages/Tutorial/Probability/Basics'
+import ProbabilityDistributions from './components/Pages/Tutorial/Probability/ProbabilityDistributions'
 //======================================= Machine Learning =========================================
 import CommonProblem from './components/Pages/Tutorial/MachineLearning/CommonProblem'
 import EDA from './components/Pages/Tutorial/MachineLearning/EDA'
@@ -136,7 +141,7 @@ const routing = (
           <Route exact path="/tutorial/python/parallelization" component={Parallelization} />
           <Route exact path="/tutorial/python/numpy" component={Numpy} />
           {/*======================================= Statistics =========================================*/}
-          <Route exact path="/tutorial/statistics/Probability" component={Probability} />
+          
           <Route exact path="/tutorial/statistics/bayes-theorem" component={BayesTheorem} />
           <Route exact path="/tutorial/statistics/Heteroskedasticity" component={Heteroskedasticity} />
           <Route exact path="/tutorial/statistics/ttest-and-anova" component={TTestAndANOVA} />
@@ -161,6 +166,7 @@ const routing = (
           <Route exact path="/tutorial/software-engineering/sorting-algorithm" component={SortingAlgorithm} />
           {/*======================================= Finance =========================================*/}
           <Route exact path="/tutorial/crypto/ETH2.0" component={ETH2} />
+          <Route exact path="/tutorial/crypto/how-bitcoin-works" component={HowBitcoinWorks} />
           {/*======================================= Finance =========================================*/}
           <Route exact path="/tutorial/finance/indexation" component={Indexation} />
           <Route exact path="/tutorial/finance/theory-behind-indexation" component={TheoryBehindIndexation} />
@@ -177,12 +183,17 @@ const routing = (
           <Route exact path="/tutorial/portfolio-management/risk-adjusted-performance" component={RiskAdjustedPerformance} />
           <Route exact path="/tutorial/portfolio-management/benchmark" component={Benchmark} />
           <Route exact path="/tutorial/portfolio-management/covariance-shrinkage" component={CovarianceShrinkage} />
+          <Route exact path="/tutorial/portfolio-management/black-litterman" component={BlackLitterman} />
           {/*======================================= Quant =========================================*/}
           <Route exact path="/tutorial/quant/no-arb&risk-neu-p/" component={NoArbAndRiskNeuP} />
           <Route exact path="/tutorial/quant/portfolio-theory" component={PortfolioTheory} />
           <Route exact path="/tutorial/quant/smart-beta" component={SmartBeta} />
           <Route exact path="/tutorial/quant/risk-parity" component={RiskParity} />
           <Route exact path="/tutorial/quant/fama-french" component={FamaFrench} />
+          <Route exact path="/tutorial/quant/fama-mcbeth" component={FamaMcbeth} />
+          {/*======================================= Quant =========================================*/}
+          <Route exact path="/tutorial/probability/basics" component={ProbabilityBasics} />
+          <Route exact path="/tutorial/probability/probability-distributions" component={ProbabilityDistributions} />
           {/*======================================= Machine Learning =========================================*/}
           <Route exact path="/tutorial/machine-learning/common-problem" component={CommonProblem} />
           <Route exact path="/tutorial/machine-learning/eda" component={EDA} />

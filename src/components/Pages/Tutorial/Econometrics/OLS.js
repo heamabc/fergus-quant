@@ -69,9 +69,11 @@ class HomePage extends Component {
             \end{align}`}
             The R squared calculate the propotion of variation in the forecast variable that is explained by the 
             regression model. Notice that as the relationship 
-            {String.raw`$$
-            SSR + SSE = SST
-            $$`}
+            {String.raw`\begin{align}
+            SSR + SSE & = SST \\
+            \sum_{i=1}^n (\hat y_i-\bar y)^2 + \sum_{i=1}^n (y_i-\hat y_i)^2 & = \sum_{i=1}^n (y_i-\bar y)^2
+            \end{align}`} 
+            SSR is the regression sum of squared, SSE is the sum of squared error, SST is the total sum of squared.
             As the SST cannot be changed by adjusting the model. Maximising R squared means maximizing SSR. Also means 
             minimizing SSE.
           </p>
@@ -84,7 +86,6 @@ class HomePage extends Component {
             \bar{R}^2 = 1-(1-R^2)\frac{T-1}{T-k-1}
             $$`}
           </p>
-
 
           <PassageTitle label="Properties of Linear Regression Models" />
           <p>
