@@ -34,6 +34,15 @@ export const StatTable =(props) => (
     </div>
 )
 
+export const OPandESTTable =(props) => (
+    <div className="NavigationTableContainer" >
+        <ul>
+            <li><NavLink  to="/tutorial/opt-and-est/optimization-and-newton-method/" activeClassName={"ActivePage"}>Optimization & Newton's Method</NavLink ></li>
+            <li><NavLink  to="/tutorial/opt-and-est/approximation-of-derivatives/" activeClassName={"ActivePage"}>Approximation of Derivatives</NavLink ></li>
+        </ul>
+    </div>
+)
+
 export const ProbabilityTable = (props) => (
     <div className="NavigationTableContainer" >
         <ul>

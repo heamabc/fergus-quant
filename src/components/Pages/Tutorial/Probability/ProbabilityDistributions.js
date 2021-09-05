@@ -18,6 +18,13 @@ class HomePage extends Component {
                 k \\
                 \end{bmatrix}
             $$`}
+            <PassageTitle label="Normal Distribution" />
+            {String.raw`$$
+                P(X=k) = \begin{bmatrix}
+                x \\
+                k \\
+                \end{bmatrix}
+            $$`}
         </Page>
 )}}
 

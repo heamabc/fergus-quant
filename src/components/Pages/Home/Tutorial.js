@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Page from '../../CommonComponents/PageTemplate/PageTemplate'
 import PassageTitle, {MinorTitle} from '../../CommonComponents/PassageTitle/PassageTitle'
 import Title, {CategoryTitle} from '../../CommonComponents/Title/Title'
-import PythonTable,{StatTable, ProbabilityTable, EconometricsTable, DataBaseTable, SoftwareEngineeringTable, CryptoTable, FinanceTable, PortfolioManagementTable, QuantTable, MLTable, NNTable , TimeSeriesMLTable, NLPTable, GANTable, AWSTable, BigDataTable, OthersTable} from '../../CommonComponents/NavigationTable/TutorialNavigationTable'
+import PythonTable,{StatTable, OPandESTTable, ProbabilityTable, EconometricsTable, DataBaseTable, SoftwareEngineeringTable, CryptoTable, FinanceTable, PortfolioManagementTable, QuantTable, MLTable, NNTable , TimeSeriesMLTable, NLPTable, GANTable, AWSTable, BigDataTable, OthersTable} from '../../CommonComponents/NavigationTable/TutorialNavigationTable'
 import '../css/AllPages.scss';
 
 
@@ -15,6 +15,9 @@ class HomePage extends Component {
 
                 <CategoryTitle label="Statistics" />
                 <StatTable />
+
+                <CategoryTitle label="Optimization & Estimation" />
+                <OPandESTTable />
 
                 <CategoryTitle label="Probability" />
                 <ProbabilityTable />

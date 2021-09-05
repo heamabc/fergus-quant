@@ -27,6 +27,9 @@ import HurstExponent from './components/Pages/Tutorial/Statistics/HurstExponent'
 import TimeSeries from './components/Pages/Tutorial/Statistics/TimeSeries'
 import NormalDistributionTheory from './components/Pages/Tutorial/Statistics/NormalDistributionTheory'
 import PCA from './components/Pages/Tutorial/Statistics/PCA'
+//======================================= OPT & EST =========================================
+import NewtonMethod from './components/Pages/Tutorial/OptAndEst/NewtonMethod'
+import ApproximationOfDerivatives from './components/Pages/Tutorial/OptAndEst/ApproximationOfDerivatives'
 //======================================= Econometrics =========================================
 import OLS from './components/Pages/Tutorial/Econometrics/OLS'
 import GaussianMarkov from './components/Pages/Tutorial/Econometrics/GaussianMarkov'
@@ -141,7 +144,6 @@ const routing = (
           <Route exact path="/tutorial/python/parallelization" component={Parallelization} />
           <Route exact path="/tutorial/python/numpy" component={Numpy} />
           {/*======================================= Statistics =========================================*/}
-          
           <Route exact path="/tutorial/statistics/bayes-theorem" component={BayesTheorem} />
           <Route exact path="/tutorial/statistics/Heteroskedasticity" component={Heteroskedasticity} />
           <Route exact path="/tutorial/statistics/ttest-and-anova" component={TTestAndANOVA} />
@@ -151,6 +153,9 @@ const routing = (
           <Route exact path="/tutorial/statistics/time-series" component={TimeSeries} />
           <Route exact path="/tutorial/statistics/normal-distribution-theory" component={NormalDistributionTheory} />
           <Route exact path="/tutorial/statistics/PCA" component={PCA} />
+          \{/*======================================= Opt & Est =========================================*/}
+          <Route exact path="/tutorial/opt-and-est/optimization-and-newton-method" component={NewtonMethod} />
+          <Route exact path="/tutorial/opt-and-est/approximation-of-derivatives" component={ApproximationOfDerivatives} />
           {/*======================================= Econometrics =========================================*/}
           <Route exact path="/tutorial/econometrics/OLS" component={OLS} />
           <Route exact path="/tutorial/econometrics/gaussian-markov-theorem" component={GaussianMarkov} />
