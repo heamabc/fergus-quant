@@ -38,6 +38,7 @@ import GLS from './components/Pages/Tutorial/Econometrics/GLS'
 import RelationalDataBase from './components/Pages/Tutorial/Database/RelationalDatabase'
 //======================================= Software Engineering =========================================
 import Linux from './components/Pages/Tutorial/SoftwareEngineering/Linux'
+import tmux from './components/Pages/Tutorial/SoftwareEngineering/tmux'
 import Git from './components/Pages/Tutorial/SoftwareEngineering/Git'
 import AnalysisOfAlgorithms from './components/Pages/Tutorial/SoftwareEngineering/AnalysisOfAlgorithms'
 import Debug from './components/Pages/Tutorial/SoftwareEngineering/Debug'
@@ -46,6 +47,7 @@ import SortingAlgorithm from './components/Pages/Tutorial/SoftwareEngineering/So
 //======================================= Cypto =========================================
 import HowBitcoinWorks from './components/Pages/Tutorial/Crypto/HowBitcoinWorks'
 import ETH2 from './components/Pages/Tutorial/Crypto/ETH2.0'
+import PerpectualSwap from './components/Pages/Tutorial/Crypto/PerpectualSwap'
 //======================================= Finance =========================================
 import Indexation from './components/Pages/Tutorial/Finance/Indexation'
 import TheoryBehindIndexation from './components/Pages/Tutorial/Finance/TheoryBehindIndexation'
@@ -107,6 +109,7 @@ import VanillaGAN from './components/Pages/Tutorial/GAN/VanillaGAN'
 //======================================= AWS =========================================
 import ExtendingDisk from './components/Pages/Tutorial/AWS/ExtendingDisk'
 import AWSJupyterNotebook from './components/Pages/Tutorial/AWS/AWSJupyterNotebook'
+import EC2Connection from './components/Pages/Tutorial/AWS/EC2Connection'
 //======================================= Big Data =========================================
 import AWSEC2Hadoop from './components/Pages/Tutorial/BigData/AWSEC2Hadoop'
 //======================================= Others =========================================
@@ -164,6 +167,7 @@ const routing = (
           <Route exact path="/tutorial/database/relational-database" component={RelationalDataBase} />
           {/*======================================= Software Engineering =========================================*/}
           <Route exact path="/tutorial/software-engineering/linux" component={Linux} />
+          <Route exact path="/tutorial/software-engineering/tmux" component={tmux} />
           <Route exact path="/tutorial/software-engineering/git" component={Git} />
           <Route exact path="/tutorial/software-engineering/analysis-of-algorithms" component={AnalysisOfAlgorithms} />
           <Route exact path="/tutorial/software-engineering/debug" component={Debug} />
@@ -172,6 +176,7 @@ const routing = (
           {/*======================================= Finance =========================================*/}
           <Route exact path="/tutorial/crypto/ETH2.0" component={ETH2} />
           <Route exact path="/tutorial/crypto/how-bitcoin-works" component={HowBitcoinWorks} />
+          <Route exact path="/tutorial/crypto/perpectual-swap" component={PerpectualSwap} />
           {/*======================================= Finance =========================================*/}
           <Route exact path="/tutorial/finance/indexation" component={Indexation} />
           <Route exact path="/tutorial/finance/theory-behind-indexation" component={TheoryBehindIndexation} />
@@ -233,6 +238,7 @@ const routing = (
           {/*======================================= AWS =========================================*/}
           <Route exact path="/tutorial/AWS/extending-disk-space" component={ExtendingDisk} />
           <Route exact path="/tutorial/AWS/aws-jupyter-notebook" component={AWSJupyterNotebook} />
+          <Route exact path="/tutorial/AWS/ec2-connection" component={EC2Connection} />
           {/*======================================= Big Data =========================================*/}
           <Route exact path="/tutorial/big-data/aws-ec2-hadoop" component ={AWSEC2Hadoop} />
           {/*======================================= Others =========================================*/}

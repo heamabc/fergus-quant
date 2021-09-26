@@ -74,6 +74,7 @@ export const SoftwareEngineeringTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
             <li><NavLink  to="/tutorial/software-engineering/linux/" activeClassName={"ActivePage"}>Linux</NavLink ></li>
+            <li><NavLink  to="/tutorial/software-engineering/tmux/" activeClassName={"ActivePage"}>tmux</NavLink ></li>
             <li><NavLink  to="/tutorial/software-engineering/git/" activeClassName={"ActivePage"}>Git</NavLink ></li>
             <li><NavLink  to="/tutorial/software-engineering/analysis-of-algorithms/" activeClassName={"ActivePage"}>Analysis of Algorithms</NavLink ></li>
             <li><NavLink  to="/tutorial/software-engineering/debug/" activeClassName={"ActivePage"}>Debug</NavLink ></li>
@@ -88,6 +89,7 @@ export const CryptoTable =(props) => (
         <ul>
             <li><NavLink  to="/tutorial/crypto/how-bitcoin-works/" activeClassName={"ActivePage"}>How Bitcoin Works</NavLink ></li>
             <li><NavLink  to="/tutorial/crypto/ETH2.0/" activeClassName={"ActivePage"}>ETH 2.0</NavLink ></li>
+            <li><NavLink  to="/tutorial/crypto/perpectual-swap/" activeClassName={"ActivePage"}>Perpectual Swap</NavLink ></li>
         </ul>
     </div>
 )
@@ -201,6 +203,7 @@ export const AWSTable = (props) =>(
         <ul>
         <li><NavLink  to="/tutorial/AWS/extending-disk-space/" activeClassName={"ActivePage"}>Extending Disk Space</NavLink ></li>
         <li><NavLink  to="/tutorial/AWS/aws-jupyter-notebook/" activeClassName={"ActivePage"}>AWS Juputer Notebook</NavLink ></li>
+        <li><NavLink  to="/tutorial/AWS/ec2-connection/" activeClassName={"ActivePage"}>EC2 Connection</NavLink ></li>
         </ul>
     </div>
 )

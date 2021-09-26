@@ -153,6 +153,21 @@ class HomePage extends Component {
                     </pre>
                     Again, the value group can be the group name or the group id.
                 </p>
+                
+                <Title label="Resource Usage Monitoring" />
+                <p>
+                    Often when we are using linux, we are dealing with a server. As everybody knows, a server cost money. The more 
+                    resource you consume, the higher the price you will pay. Therefore, resource usage monitoring is one of the most 
+                    common commands you will ever use.
+                </p>
+                <MinorTitle label='CPU and RAM' />
+                <p>
+                    The htop command is one of the most useful commnad to check the ram and CPU usage of the computer. The advantage 
+                    of this command is that it can visualize the usage.
+                    <pre className="prettyprint lang-bsh">
+                            $ htop
+                    </pre>
+                </p>
             </Page>
 )}}
 
