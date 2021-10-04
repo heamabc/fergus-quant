@@ -74,6 +74,7 @@ export const SoftwareEngineeringTable =(props) => (
     <div className="NavigationTableContainer" >
         <ul>
             <li><NavLink  to="/tutorial/software-engineering/linux/" activeClassName={"ActivePage"}>Linux</NavLink ></li>
+            <li><NavLink  to="/tutorial/software-engineering/linux-text-editors/" activeClassName={"ActivePage"}>Linux Text Editors</NavLink ></li>
             <li><NavLink  to="/tutorial/software-engineering/tmux/" activeClassName={"ActivePage"}>tmux</NavLink ></li>
             <li><NavLink  to="/tutorial/software-engineering/git/" activeClassName={"ActivePage"}>Git</NavLink ></li>
             <li><NavLink  to="/tutorial/software-engineering/analysis-of-algorithms/" activeClassName={"ActivePage"}>Analysis of Algorithms</NavLink ></li>

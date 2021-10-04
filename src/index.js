@@ -38,6 +38,7 @@ import GLS from './components/Pages/Tutorial/Econometrics/GLS'
 import RelationalDataBase from './components/Pages/Tutorial/Database/RelationalDatabase'
 //======================================= Software Engineering =========================================
 import Linux from './components/Pages/Tutorial/SoftwareEngineering/Linux'
+import LinuxEditors from './components/Pages/Tutorial/SoftwareEngineering/LinuxEditors'
 import tmux from './components/Pages/Tutorial/SoftwareEngineering/tmux'
 import Git from './components/Pages/Tutorial/SoftwareEngineering/Git'
 import AnalysisOfAlgorithms from './components/Pages/Tutorial/SoftwareEngineering/AnalysisOfAlgorithms'
@@ -167,6 +168,7 @@ const routing = (
           <Route exact path="/tutorial/database/relational-database" component={RelationalDataBase} />
           {/*======================================= Software Engineering =========================================*/}
           <Route exact path="/tutorial/software-engineering/linux" component={Linux} />
+          <Route exact path="/tutorial/software-engineering/linux-text-editors" component={LinuxEditors} />
           <Route exact path="/tutorial/software-engineering/tmux" component={tmux} />
           <Route exact path="/tutorial/software-engineering/git" component={Git} />
           <Route exact path="/tutorial/software-engineering/analysis-of-algorithms" component={AnalysisOfAlgorithms} />

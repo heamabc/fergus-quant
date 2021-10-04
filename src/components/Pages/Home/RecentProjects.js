@@ -12,6 +12,11 @@ class HomePage extends Component {
                 <Title style={{marginBottom: 60}} label={'Recent Project'}/>
                 <div className='EntryContainer'>
                 <EntryWithLink 
+                        href='https://github.com/heamabc/p2p_hkd_usdt_alert'
+                        location='P2P HKD USDT Alert'
+                        details='AWS, Linux, Telegram API, Crypto Exchange API'
+                />  
+                <EntryWithLink 
                         href='https://github.com/heamabc/Goldman-Sachs-Stock-Prediction'
                         location='Stock Price Prediction - Goldman Sachs'
                         details='GAN, Reinforcement Learning Hyperparameters Optimization, ARIMA'
