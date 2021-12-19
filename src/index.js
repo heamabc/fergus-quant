@@ -13,6 +13,8 @@ import About from './components/Pages/Home/About';
 import Tutorial from './components/Pages/Home/Tutorial';
 import PaperReview from './components/Pages/Home/PaperReview';
 import Hireme from './components/Pages/Home//HireMe';
+import Posts from "./components/posts";
+import Post from "./components/post";
 //======================================= Python =========================================
 import Basics from './components/Pages/Tutorial/Python/Basics'
 import Parallelization from './components/Pages/Tutorial/Python/Parallelization'
@@ -252,7 +254,10 @@ const routing = (
           {/*======================================= Asset Allocation =========================================*/}
           <Route exact path="/paper-review/asset_allocation/A-Quantitative-Approach-to-Tactical-Asset-Allocation" component={AQuantitativeApproachtoTacticalAssetAllocation} />
           <Route exact path="/paper-review/asset_allocation/The-Black-Litterman-Approach-Original-Model-and-Extensions" component={TheBlackLittermanApproachOriginalModelandExtensions} />
-            
+
+
+          <Route exact path="/posts" component={Posts} />
+          <Route exact path="/post/:id" render={props => <Post {...props} />} />
 
           <Redirect to="/" />
       </Switch>
